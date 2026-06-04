@@ -106,6 +106,24 @@ function resolveTexture(item) {
   return null;
 }
 
+// Read width/height from a PNG buffer's IHDR chunk (big-endian, bytes 16-23).
+function pngSize(buf) {
+  return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+}
+
+// Some modded textures (e.g. lightning_dragonbone "Shocked" weapons) ship as
+// animated vertical frame-strips (height = N * width) with a .mcmeta. We only
+// want a static icon, so crop to the first frame (the top square) via ImageMagick.
+function cropFirstFrame(srcPath, width, destPath) {
+  execFileSync('convert', [
+    srcPath,
+    '-crop',
+    `${width}x${width}+0+0`,
+    '+repage',
+    destPath,
+  ]);
+}
+
 function extract(jarKey, tex, destPath) {
   const { jar, ns } = JARS[jarKey];
   const internal = `assets/${ns}/textures/items/${tex}.png`;
@@ -114,6 +132,11 @@ function extract(jarKey, tex, destPath) {
   });
   if (!buf || buf.length === 0) throw new Error('empty');
   writeFileSync(destPath, buf);
+
+  const { width, height } = pngSize(buf);
+  if (height > width && height % width === 0) {
+    cropFirstFrame(destPath, width, destPath);
+  }
 }
 
 rmSync(OUT_DIR, { recursive: true, force: true });
