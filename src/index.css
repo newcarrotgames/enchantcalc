@@ -1,13 +1,19 @@
 :root {
   /* Minecraft GUI palette */
-  --mc-panel: #c6c6c6;
+  --mc-panel: #c6c6c6; /* light raised surface, used by buttons */
   --mc-panel-dark: #8b8b8b;
   --mc-shadow: #373737;
   --mc-light: #ffffff;
   --mc-slot: #8b8b8b;
   --mc-slot-shadow: #373737;
+  --mc-slot-light: #adadad; /* muted bevel highlight (was pure white) */
   --mc-bg: #25262b;
   --mc-bg-2: #1a1b1f;
+  /* Dark panel surfaces: light text/accents read with high contrast on these */
+  --mc-surface: #2f323b; /* panel background */
+  --mc-surface-2: #21232b; /* recessed area inside a panel (rows, etc.) */
+  --mc-surface-edge: #4b4f5b; /* raised top/left bevel edge */
+  --mc-surface-edge-dark: #14151a; /* dark bottom/right bevel edge */
   --mc-text: #f4f4f4;
   --mc-text-dark: #3f3f3f;
   --mc-tooltip-bg: #100010;
@@ -18,7 +24,7 @@
   --mc-yellow: #ffd23f;
   --mc-aqua: #55ffff;
   --mc-purple: #b06bff;
-  --mc-gray: #a8a8a8;
+  --mc-gray: #bdbdbd;
 
   font-family: 'VT323', 'Courier New', monospace;
   font-size: 20px;
@@ -81,21 +87,23 @@ button {
   cursor: pointer;
 }
 
-/* Classic raised Minecraft button / panel bevel */
+/* Classic raised Minecraft panel bevel (dark surface) */
 .mc-bevel {
-  background: var(--mc-panel);
+  background: var(--mc-surface);
   border: 2px solid;
-  border-color: var(--mc-light) var(--mc-shadow) var(--mc-shadow) var(--mc-light);
-  box-shadow: inset -2px -2px 0 0 var(--mc-panel-dark),
-    inset 2px 2px 0 0 #ffffffd0;
+  border-color: var(--mc-surface-edge) var(--mc-surface-edge-dark)
+    var(--mc-surface-edge-dark) var(--mc-surface-edge);
+  box-shadow: inset -2px -2px 0 0 var(--mc-surface-2),
+    inset 2px 2px 0 0 #ffffff14;
 }
 
 /* Inset (sunken) panel/slot bevel */
 .mc-inset {
   background: var(--mc-slot);
   border: 2px solid;
-  border-color: var(--mc-shadow) var(--mc-light) var(--mc-light) var(--mc-shadow);
-  box-shadow: inset 2px 2px 0 0 var(--mc-slot-shadow);
+  border-color: var(--mc-surface-edge-dark) var(--mc-surface-edge)
+    var(--mc-surface-edge) var(--mc-surface-edge-dark);
+  box-shadow: inset 2px 2px 0 0 #00000040;
 }
 
 .mc-btn {
