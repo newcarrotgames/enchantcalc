@@ -1425,11 +1425,14 @@
       "sword"
     ],
     "effect": {
-      "kind": "info",
-      "condition": "attack speed + iframe bypass"
+      "kind": "attackSpeedMultiplier",
+      "base": 0,
+      "perLevel": 0.2
     },
-    "incompatibleGroups": [],
-    "description": "+20% swing speed and +2% iframe bypass per level.",
+    "incompatibleGroups": [
+      "attack_speed"
+    ],
+    "description": "Greatly increases attack speed: x(1 + 0.20 x Level), so +100% (double DPS) at level 5. Also a (1% x Level) chance per hit to bypass a target’s invulnerability frames, landing an extra hit at half damage.",
     "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
   },
   {
@@ -1443,11 +1446,14 @@
       "sword"
     ],
     "effect": {
-      "kind": "info",
-      "condition": "reduces attack speed"
+      "kind": "attackSpeedMultiplier",
+      "base": -0.2,
+      "perLevel": -0.1
     },
-    "incompatibleGroups": [],
-    "description": "Reduces attack speed.",
+    "incompatibleGroups": [
+      "attack_speed"
+    ],
+    "description": "Curse: greatly reduces attack speed: x(1 - (0.20 + 0.10 x Level)), so x0.3 at level 5. Also increases fall damage and reduces jump height.",
     "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
   },
   {
@@ -1461,11 +1467,14 @@
       "sword"
     ],
     "effect": {
-      "kind": "info",
-      "condition": "reduces damage"
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": -1
     },
-    "incompatibleGroups": [],
-    "description": "Reduces attack damage.",
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Curse: reduces attack damage by (1 x Level). Mutually exclusive with the Sharpness family.",
     "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
   },
   {

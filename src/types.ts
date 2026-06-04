@@ -66,6 +66,7 @@ export interface ItemDef {
 
 export type EnchantEffectKind =
   | 'flatDamage' // adds flat melee damage per hit (Sharpness family, Smite, ...)
+  | 'attackSpeedMultiplier' // scales the weapon's attack speed (Swifter Slashes, Heavy Weight)
   | 'percentReduction' // RLCraft custom % reduction per level (capped)
   | 'vanillaProtection' // EPF-based vanilla protection
   | 'info'; // listed but not modelled numerically (DoT, chance-based, cosmetic)
@@ -74,6 +75,8 @@ export interface EnchantEffect {
   kind: EnchantEffectKind;
 
   // flatDamage: damage = base + perLevel * level
+  // attackSpeedMultiplier: speed bonus fraction = base + perLevel * level
+  //   (e.g. +0.2/level -> effective attack speed x(1 + 0.2 * level)); may be negative.
   base?: number;
   perLevel?: number;
 

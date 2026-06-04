@@ -40,7 +40,37 @@ const JARS = {
   defiled: { jar: join(MODS, 'spartandefiled-1.12.2-1.2.jar'), ns: 'spartandefiled' },
   iaf: { jar: join(MODS, 'Ice and Fire-2.0.9.jar'), ns: 'iceandfire' },
   rlmixins: { jar: join(MODS, 'RLMixins-1.4.6.jar'), ns: 'rlmixins' },
+  bs: { jar: join(MODS, 'better_survival-1.5.4.jar'), ns: 'mujmajnkraftsbettersurvival' },
+  fi: { jar: join(MODS, 'forgottenitems-1.12.2-1.3.1.4.jar'), ns: 'forgottenitems' },
   vanilla: { jar: VANILLA_JAR, ns: 'minecraft' },
+};
+
+// Nunchaku icon material key -> Better Survival texture base name. Vanilla +
+// Better Survival metals are prefixed `item`; Ice and Fire materials are not.
+const NUNCHAKU_TEX = {
+  wood: 'itemwood',
+  stone: 'itemstone',
+  iron: 'itemiron',
+  gold: 'itemgold',
+  diamond: 'itemdiamond',
+  copper: 'itemcopper',
+  bronze: 'itembronze',
+  invar: 'iteminvar',
+  silver: 'itemsilver',
+  electrum: 'itemelectrum',
+  aluminium: 'itemaluminium',
+  steel: 'itemsteel',
+  signalum: 'itemsignalum',
+  lumium: 'itemlumium',
+  enderium: 'itemenderium',
+  dragonbone: 'dragonbone',
+  fire_dragonbone: 'firedragonbone',
+  ice_dragonbone: 'icedragonbone',
+  lightning_dragonbone: 'lightningdragonbone',
+  desert_myrmex: 'desertchitin',
+  desert_venom: 'desertstinger',
+  jungle_myrmex: 'junglechitin',
+  jungle_venom: 'junglestinger',
 };
 
 // Spartan addon material key (our icon material) -> { jar, texture suffix }.
@@ -73,6 +103,7 @@ const ARMOR_SETS = {
   dragonscale: (slot) => ({ jar: 'iaf', tex: `armor_red_${slot}` }),
   desert_myrmex_chitin: (slot) => ({ jar: 'iaf', tex: `myrmex_desert_${slot}` }),
   jungle_myrmex_chitin: (slot) => ({ jar: 'iaf', tex: `myrmex_jungle_${slot}` }),
+  golem: (slot) => ({ jar: 'fi', tex: `golem_${slot}` }),
 };
 
 // Items with no sensible texture; keep the procedural SVG fallback.
@@ -88,6 +119,12 @@ function resolveTexture(item) {
       const [matWord, type] = item.id.split('_'); // e.g. golden_axe
       const mat = VANILLA_WEAPON_MAT[matWord] ?? matWord;
       return { jar: 'vanilla', tex: `${mat}_${type}` };
+    }
+    // Nunchaku (Better Survival) use their own, irregular texture names.
+    if (item.id.startsWith('nunchaku_')) {
+      const base = NUNCHAKU_TEX[material];
+      if (base) return { jar: 'bs', tex: `${base}nunchaku` };
+      return null;
     }
     // Spartan weapon id is `${type}_${material}`; strip the material suffix.
     const type = item.id.slice(0, item.id.length - material.length - 1);

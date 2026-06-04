@@ -28,6 +28,8 @@ const dmg = (base, perLevel, condition) => ({
   perLevel,
   ...(condition ? { condition } : {}),
 });
+// Attack-speed multiplier: effective attack speed x (1 + base + perLevel*Level).
+const spd = (base, perLevel) => ({ kind: 'attackSpeedMultiplier', base, perLevel });
 const pct = (perLevelPct, damageType) => ({
   kind: 'percentReduction',
   perLevelPct,
@@ -43,6 +45,7 @@ const info = (condition) => ({ kind: 'info', ...(condition ? { condition } : {})
 
 const MELEE = ['melee_damage'];
 const PROT = ['protection'];
+const ATTACK_SPEED = ['attack_speed'];
 
 // [id, name, maxLevel, appliesTo, effect, opts]
 // opts: { pack, mod, rarity, groups, src, desc }
@@ -136,9 +139,9 @@ const raw = [
   ['reviled_blade', 'Reviled Blade', 4, ['sword'], info('more damage at low enemy HP'), { rarity: 'veryRare', desc: 'Damage increases the lower the enemy\u2019s health.' }],
   ['instability', 'Instability', 3, ['sword'], info('more damage at low durability'), { rarity: 'veryRare', desc: 'Lower durability = more damage, at a cost.' }],
   ['atomic_deconstructor', 'Atomic Deconstructor', 2, ['sword'], info('tiny instakill chance'), { rarity: 'rare', desc: 'Small chance to instantly kill non-bosses (0.1% x Level).' }],
-  ['swifter_slashes', 'Swifter Slashes', 5, ['sword'], info('attack speed + iframe bypass'), { rarity: 'veryRare', desc: '+20% swing speed and +2% iframe bypass per level.' }],
-  ['heavy_weight', 'Heavy Weight', 5, ['sword'], info('reduces attack speed'), { rarity: 'rare', desc: 'Reduces attack speed.' }],
-  ['bluntness', 'Bluntness', 5, ['sword'], info('reduces damage'), { rarity: 'rare', desc: 'Reduces attack damage.' }],
+  ['swifter_slashes', 'Swifter Slashes', 5, ['sword'], spd(0, 0.2), { rarity: 'veryRare', groups: ATTACK_SPEED, desc: 'Greatly increases attack speed: x(1 + 0.20 x Level), so +100% (double DPS) at level 5. Also a (1% x Level) chance per hit to bypass a target\u2019s invulnerability frames, landing an extra hit at half damage.' }],
+  ['heavy_weight', 'Heavy Weight', 5, ['sword'], spd(-0.2, -0.1), { rarity: 'rare', groups: ATTACK_SPEED, desc: 'Curse: greatly reduces attack speed: x(1 - (0.20 + 0.10 x Level)), so x0.3 at level 5. Also increases fall damage and reduces jump height.' }],
+  ['bluntness', 'Bluntness', 5, ['sword'], dmg(0, -1), { rarity: 'rare', groups: MELEE, desc: 'Curse: reduces attack damage by (1 x Level). Mutually exclusive with the Sharpness family.' }],
   ['true_strike', 'True Strike', 1, ['sword'], info('ignores evasion'), { rarity: 'rare', desc: 'Ignores 75% of Evasion; blocks Curse of Inaccuracy.' }],
   ['parry', 'Parry', 1, ['sword'], info('chance to parry'), { rarity: 'rare', desc: 'Chance to parry and knock back attackers.' }],
   ['unsheathing', 'Unsheathing', 1, ['sword'], info('auto-equip on hit'), { rarity: 'veryRare', desc: 'Auto-equips when you take damage.' }],

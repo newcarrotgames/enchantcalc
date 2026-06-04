@@ -8412,6 +8412,420 @@
     ]
   },
   {
+    "id": "nunchaku_wood",
+    "name": "Wooden Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:wood",
+    "baseDamage": 2.5,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_stone",
+    "name": "Stone Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:stone",
+    "baseDamage": 3,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_iron",
+    "name": "Iron Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:iron",
+    "baseDamage": 3.5,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_gold",
+    "name": "Golden Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:gold",
+    "baseDamage": 2.5,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_diamond",
+    "name": "Diamond Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:diamond",
+    "baseDamage": 4,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_copper",
+    "name": "Copper Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:copper",
+    "baseDamage": 3.25,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_bronze",
+    "name": "Bronze Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:bronze",
+    "baseDamage": 3.4,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_invar",
+    "name": "Invar Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:invar",
+    "baseDamage": 3.55,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_silver",
+    "name": "Silver Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:silver",
+    "baseDamage": 3,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_electrum",
+    "name": "Electrum Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:electrum",
+    "baseDamage": 2.8,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_aluminium",
+    "name": "Aluminium Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:aluminium",
+    "baseDamage": 3.4,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_steel",
+    "name": "Steel Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:steel",
+    "baseDamage": 3.75,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_signalum",
+    "name": "Signalum Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:signalum",
+    "baseDamage": 3.5,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_lumium",
+    "name": "Lumium Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:lumium",
+    "baseDamage": 3.75,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_enderium",
+    "name": "Enderium Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:enderium",
+    "baseDamage": 4.5,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_dragonbone",
+    "name": "Dragonbone Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:dragonbone",
+    "baseDamage": 4.5,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_fire_dragonbone",
+    "name": "Flamed Dragonbone Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:fire_dragonbone",
+    "baseDamage": 5.25,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_ice_dragonbone",
+    "name": "Iced Dragonbone Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:ice_dragonbone",
+    "baseDamage": 5.25,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_lightning_dragonbone",
+    "name": "Shocked Dragonbone Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:lightning_dragonbone",
+    "baseDamage": 5.25,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_desert_myrmex",
+    "name": "Desert Myrmex Chitin Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:desert_myrmex",
+    "baseDamage": 3,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_desert_venom",
+    "name": "Desert Myrmex Stinger Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:desert_venom",
+    "baseDamage": 3,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_jungle_myrmex",
+    "name": "Jungle Myrmex Chitin Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:jungle_myrmex",
+    "baseDamage": 3,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
+    "id": "nunchaku_jungle_venom",
+    "name": "Jungle Myrmex Stinger Nunchaku",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "category": "weapon",
+    "slot": "mainhand",
+    "group": "Nunchaku",
+    "icon": "nunchaku:jungle_venom",
+    "baseDamage": 3,
+    "attackSpeed": 3.14,
+    "accepts": [
+      "sword",
+      "weapon",
+      "any"
+    ],
+    "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
+  },
+  {
     "id": "leather_helmet",
     "name": "Leather Helmet",
     "pack": "vanilla",
@@ -9018,5 +9432,77 @@
       "any"
     ],
     "note": "On par with diamond. Full set: +1 step height (Millipede)."
+  },
+  {
+    "id": "golem_helmet",
+    "name": "Golem Helmet",
+    "pack": "rlcraft",
+    "mod": "Forgotten Items",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Golem Armor",
+    "icon": "helmet:golem",
+    "armorPoints": 5,
+    "toughness": 4.5,
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "note": "Very high armor (4.5 toughness) and knockback resistance, but heavy. Locational armor 23/19/16/15."
+  },
+  {
+    "id": "golem_chestplate",
+    "name": "Golem Chestplate",
+    "pack": "rlcraft",
+    "mod": "Forgotten Items",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Golem Armor",
+    "icon": "chestplate:golem",
+    "armorPoints": 8,
+    "toughness": 4.5,
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "note": "Very high armor (4.5 toughness) and knockback resistance, but heavy. Locational armor 23/19/16/15."
+  },
+  {
+    "id": "golem_leggings",
+    "name": "Golem Leggings",
+    "pack": "rlcraft",
+    "mod": "Forgotten Items",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Golem Armor",
+    "icon": "leggings:golem",
+    "armorPoints": 6,
+    "toughness": 4.5,
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "note": "Very high armor (4.5 toughness) and knockback resistance, but heavy. Locational armor 23/19/16/15."
+  },
+  {
+    "id": "golem_boots",
+    "name": "Golem Boots",
+    "pack": "rlcraft",
+    "mod": "Forgotten Items",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Golem Armor",
+    "icon": "boots:golem",
+    "armorPoints": 4,
+    "toughness": 4.5,
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "note": "Very high armor (4.5 toughness) and knockback resistance, but heavy. Locational armor 23/19/16/15."
   }
 ]

@@ -39,6 +39,11 @@ const MATERIALS: Record<string, Material> = {
   electrum: { light: '#f0d98a', dark: '#c2a851' },
   nickel: { light: '#d9d3a8', dark: '#a39d72' },
   lead: { light: '#7d7f93', dark: '#54566a' },
+  aluminium: { light: '#d7dbde', dark: '#a0a5a9' },
+  signalum: { light: '#e08a4f', dark: '#a8522a' },
+  lumium: { light: '#f4e89a', dark: '#c2b052' },
+  enderium: { light: '#2f8f86', dark: '#1c5b55' },
+  golem: { light: '#8f8a82', dark: '#5d5953' },
   umbrium: { light: '#7a5fa6', dark: '#4c3a6b' },
   dragonbone: { light: '#ece7d3', dark: '#b7ad8e' },
   fire_dragonbone: { light: '#ff8a3c', dark: '#b3471a' },
@@ -180,6 +185,18 @@ export function ItemIcon({
           />
         </svg>
       );
+    case 'nunchaku':
+      return (
+        <svg {...svgProps(size)}>
+          {/* two batons joined by a chain */}
+          <rect x="6" y="4" width="4" height="13" fill={m.light} stroke={stroke} />
+          <rect x="22" y="15" width="4" height="13" fill={m.light} stroke={stroke} />
+          <rect x="9" y="15" width="3" height="2" fill="#3a3a3a" />
+          <rect x="12" y="16" width="3" height="2" fill="#3a3a3a" />
+          <rect x="15" y="16" width="3" height="2" fill="#3a3a3a" />
+          <rect x="18" y="15" width="3" height="2" fill="#3a3a3a" />
+        </svg>
+      );
     case 'fist':
       return (
         <svg {...svgProps(size)}>
@@ -249,6 +266,8 @@ function enchantCover(def: EnchantDef): string {
   switch (def.effect.kind) {
     case 'flatDamage':
       return '#b03030';
+    case 'attackSpeedMultiplier':
+      return '#3aa05b';
     case 'percentReduction':
     case 'vanillaProtection':
       return '#3a5bd0';

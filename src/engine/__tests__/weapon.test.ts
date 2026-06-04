@@ -56,4 +56,41 @@ describe('computeWeapon', () => {
     expect(r.min).toBeCloseTo(19); // 7 + 12
     expect(r.max).toBeCloseTo(22.5); // 7*1.5 + 12
   });
+
+  it('Swifter Slashes V doubles attack speed and DPS', () => {
+    // x(1 + 0.2*5) = x2.0 on the weapon attack speed.
+    const r = computeWeapon(item('diamond_sword'), [
+      { enchantId: 'swifter_slashes', level: 5 },
+    ]);
+    expect(r.attackSpeedMultiplier).toBeCloseTo(2.0);
+    expect(r.effectiveAttackSpeed).toBeCloseTo(3.2); // 1.6 * 2
+    expect(r.min).toBeCloseTo(7); // per-hit damage unchanged
+    expect(r.dpsMin).toBeCloseTo(22.4); // 7 * 3.2
+    expect(r.speedContributions).toHaveLength(1);
+  });
+
+  it('Heavy Weight V greatly reduces attack speed', () => {
+    // x(1 - (0.2 + 0.1*5)) = x0.3
+    const r = computeWeapon(item('iron_sword'), [
+      { enchantId: 'heavy_weight', level: 5 },
+    ]);
+    expect(r.attackSpeedMultiplier).toBeCloseTo(0.3);
+    expect(r.dpsMin).toBeCloseTo(6 * 1.6 * 0.3); // 2.88
+  });
+
+  it('Bluntness V reduces per-hit damage and clamps DPS at zero', () => {
+    const r = computeWeapon(item('wooden_sword'), [
+      { enchantId: 'bluntness', level: 5 },
+    ]);
+    expect(r.flatBonus).toBeCloseTo(-5);
+    expect(r.min).toBeCloseTo(0); // 4 - 5 clamped to 0
+    expect(r.dpsMin).toBeCloseTo(0);
+  });
+
+  it('iron nunchaku is fast with low per-hit damage', () => {
+    // baseDamage = 1 + (3 + 2) * 0.5 = 3.5, speed = 4 - 2.4*0.36 = 3.14
+    const r = computeWeapon(item('nunchaku_iron'), []);
+    expect(r.baseDamage).toBeCloseTo(3.5);
+    expect(r.attackSpeed).toBeCloseTo(3.14);
+  });
 });

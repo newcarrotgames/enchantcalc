@@ -78,6 +78,14 @@ function WeaponResultView({
           {r.baseDamage} / {r.attackSpeed}/s
         </span>
       </div>
+      {r.attackSpeedMultiplier !== 1 && (
+        <div className="stat-row">
+          <span className="k">Effective speed</span>
+          <span className="v">
+            {r.effectiveAttackSpeed}/s (x{round2(r.attackSpeedMultiplier)})
+          </span>
+        </div>
+      )}
       {r.flatBonus > 0 && (
         <div className="stat-row">
           <span className="k">Enchant bonus</span>
@@ -91,12 +99,19 @@ function WeaponResultView({
         </div>
       )}
 
-      {r.contributions.length > 0 && (
+      {(r.contributions.length > 0 || r.speedContributions.length > 0) && (
         <div className="stat-note">
           {r.contributions.map((c) => (
             <div key={c.enchantId}>
-              {c.name} {roman(c.level)}: +{round2(c.flat)}
+              {c.name} {roman(c.level)}: {c.flat >= 0 ? '+' : ''}
+              {round2(c.flat)}
               {c.conditional ? ` (${c.condition})` : ''}
+            </div>
+          ))}
+          {r.speedContributions.map((c) => (
+            <div key={c.enchantId}>
+              {c.name} {roman(c.level)}: {c.deltaFraction >= 0 ? '+' : ''}
+              {Math.round(c.deltaFraction * 100)}% attack speed
             </div>
           ))}
         </div>
@@ -106,7 +121,8 @@ function WeaponResultView({
         Min = no crit, no situational bonus. Max = critical hit (x1.5)
         {r.unarmoredMultiplier > 1 ? ' x unarmored bonus' : ''} plus best
         situational enchant. Sharpness-type flat damage is added after the crit
-        multiplier (Minecraft 1.12 order).
+        multiplier (Minecraft 1.12 order). DPS uses the effective attack speed,
+        so attack-speed enchants (e.g. Swifter Slashes) scale it.
       </div>
     </div>
   );

@@ -121,6 +121,69 @@ function generateSpartanWeapons() {
   return items;
 }
 
+// --- Nunchaku (Better Survival) ---------------------------------------------
+// Nunchaku come from the Better Survival mod (mujmajnkraftsbettersurvival), NOT
+// Spartan Weaponry. Better Survival weapons derive their stats from a vanilla
+// sword of the same material (verified by decompiling ItemCustomWeapon):
+//   attackDamage attribute = (3 + materialDamage) * damageFactor
+//   attackSpeed  attribute = 4.0 + (-2.4 * delayFactor)
+// The displayed per-hit damage is 1 (player base) + the attribute modifier, so
+//   baseDamage  = 1 + (3 + materialDamage) * damageFactor
+// From config/mujmajnkraftsbettersurvival.cfg: Nunchaku Damage Factor = 0.5,
+// Attack Delay Factor = 0.36 (so nunchaku are very fast, low damage per hit).
+// Material attack-damage values come from Better Survival's own materials
+// (config "X Stats" 4th value) and Ice and Fire tool materials for the modded
+// variants (verified by decompiling IafItemRegistry):
+//   silver 1.0, copper 1.5 (IaF), dragonbone 4.0, flamed/iced/shocked 5.5,
+//   myrmex chitin & stinger 1.0.
+const NUNCHAKU_DAMAGE_FACTOR = 0.5;
+const NUNCHAKU_DELAY_FACTOR = 0.36;
+const NUNCHAKU_SPEED = round2(4.0 + -2.4 * NUNCHAKU_DELAY_FACTOR);
+
+const NUNCHAKU_MATERIALS = [
+  { key: 'wood', name: 'Wooden', dmg: 0 },
+  { key: 'stone', name: 'Stone', dmg: 1 },
+  { key: 'iron', name: 'Iron', dmg: 2 },
+  { key: 'gold', name: 'Golden', dmg: 0 },
+  { key: 'diamond', name: 'Diamond', dmg: 3 },
+  { key: 'copper', name: 'Copper', dmg: 1.5 },
+  { key: 'bronze', name: 'Bronze', dmg: 1.8 },
+  { key: 'invar', name: 'Invar', dmg: 2.1 },
+  { key: 'silver', name: 'Silver', dmg: 1.0 },
+  { key: 'electrum', name: 'Electrum', dmg: 0.6 },
+  { key: 'aluminium', name: 'Aluminium', dmg: 1.8 },
+  { key: 'steel', name: 'Steel', dmg: 2.5 },
+  { key: 'signalum', name: 'Signalum', dmg: 2.0 },
+  { key: 'lumium', name: 'Lumium', dmg: 2.5 },
+  { key: 'enderium', name: 'Enderium', dmg: 4.0 },
+  { key: 'dragonbone', name: 'Dragonbone', dmg: 4.0 },
+  { key: 'fire_dragonbone', name: 'Flamed Dragonbone', dmg: 5.5 },
+  { key: 'ice_dragonbone', name: 'Iced Dragonbone', dmg: 5.5 },
+  { key: 'lightning_dragonbone', name: 'Shocked Dragonbone', dmg: 5.5 },
+  { key: 'desert_myrmex', name: 'Desert Myrmex Chitin', dmg: 1.0 },
+  { key: 'desert_venom', name: 'Desert Myrmex Stinger', dmg: 1.0 },
+  { key: 'jungle_myrmex', name: 'Jungle Myrmex Chitin', dmg: 1.0 },
+  { key: 'jungle_venom', name: 'Jungle Myrmex Stinger', dmg: 1.0 },
+];
+
+function generateNunchaku() {
+  return NUNCHAKU_MATERIALS.map((mat) => ({
+    id: `nunchaku_${mat.key}`,
+    name: `${mat.name} Nunchaku`,
+    pack: 'rlcraft',
+    mod: 'Better Survival',
+    category: 'weapon',
+    slot: 'mainhand',
+    group: 'Nunchaku',
+    icon: `nunchaku:${mat.key}`,
+    baseDamage: round2(1 + (3 + mat.dmg) * NUNCHAKU_DAMAGE_FACTOR),
+    attackSpeed: NUNCHAKU_SPEED,
+    accepts: ['sword', 'weapon', 'any'],
+    note:
+      'Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up.',
+  }));
+}
+
 // --- Vanilla weapons --------------------------------------------------------
 const VANILLA_WEAPONS = [
   { id: 'fist', name: 'Fist', icon: 'fist:default', baseDamage: 1, attackSpeed: 4, accepts: [], group: 'Unarmed', note: 'Bare hand. No enchants.' },
@@ -197,6 +260,11 @@ const MODDED_ARMOR = [
   // Myrmex Chitin: full 4-piece set, locational 19/19/14/12 -> vanilla 4/8/5/3.
   { key: 'desert_myrmex_chitin', name: 'Desert Myrmex Chitin', mod: 'Ice and Fire', color: 'desert_myrmex', points: [4, 8, 5, 3], toughness: 0, note: 'On par with diamond. Full set: +1 step height (Millipede).' },
   { key: 'jungle_myrmex_chitin', name: 'Jungle Myrmex Chitin', mod: 'Ice and Fire', color: 'jungle_myrmex', points: [4, 8, 5, 3], toughness: 0, note: 'On par with diamond. Full set: +1 step height (Millipede).' },
+  // Golem Armor (Forgotten Items): material reduction [feet 4, legs 6, chest 8,
+  // head 5] (verified by decompiling ItemList.addArmorMaterial) -> vanilla
+  // [helmet 5, chest 8, legs 6, boots 4], toughness 4.5, plus +0.25 knockback
+  // resistance per piece. Locational armor 23/19/16/15.
+  { key: 'golem', name: 'Golem', mod: 'Forgotten Items', color: 'golem', points: [5, 8, 6, 4], toughness: 4.5, note: 'Very high armor (4.5 toughness) and knockback resistance, but heavy. Locational armor 23/19/16/15.' },
 ];
 
 function generateModdedArmor() {
@@ -227,6 +295,7 @@ function generateModdedArmor() {
 const all = [
   ...VANILLA_WEAPONS,
   ...generateSpartanWeapons(),
+  ...generateNunchaku(),
   ...generateArmor(),
   ...generateModdedArmor(),
 ];
