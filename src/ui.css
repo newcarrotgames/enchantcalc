@@ -1,0 +1,480 @@
+.app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 18px 18px 60px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.app-header h1 {
+  font-size: 22px;
+  color: var(--mc-yellow);
+}
+.app-header .subtitle {
+  color: var(--mc-gray);
+  font-size: 20px;
+  margin-top: 8px;
+}
+.header-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 290px minmax(300px, 1fr) 380px;
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 1080px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Panels */
+.panel {
+  padding: 10px;
+  margin-bottom: 16px;
+}
+.panel-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 11px;
+  color: #2b2b2b;
+  text-shadow: 1px 1px 0 #ffffff80;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Filters */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.filter-row .mc-btn {
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+/* Search field */
+.search-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  background: #1b1c20;
+  color: #fff;
+  border: 2px solid;
+  border-color: var(--mc-shadow) var(--mc-light) var(--mc-light) var(--mc-shadow);
+  outline: none;
+}
+.search-input::placeholder {
+  color: #7c7c7c;
+}
+.search-input:focus {
+  border-color: #ffff57 var(--mc-shadow) var(--mc-shadow) #ffff57;
+}
+
+/* Palette grids */
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 52px);
+  gap: 6px;
+  justify-content: start;
+  padding: 4px;
+}
+.palette-grid.enchants {
+  grid-template-columns: 1fr;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+/* Scroll container for grouped item palette */
+.palette-scroll {
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.palette-group {
+  margin-bottom: 2px;
+}
+.group-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #fff;
+  background: #2b2c30;
+  border: 2px solid;
+  border-color: var(--mc-light) var(--mc-shadow) var(--mc-shadow) var(--mc-light);
+  padding: 4px 8px;
+  cursor: pointer;
+  text-align: left;
+}
+.group-header:hover {
+  background: #34353a;
+}
+.group-caret {
+  width: 12px;
+  color: #ffd24a;
+}
+.group-name {
+  flex: 1;
+}
+.count-pill {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  color: #c8c8c8;
+  background: #1b1c20;
+  border: 1px solid #000;
+  padding: 2px 5px;
+}
+
+/* Inventory slot */
+.inv-slot {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mc-slot);
+  border: 2px solid;
+  border-color: var(--mc-shadow) var(--mc-light) var(--mc-light) var(--mc-shadow);
+  position: relative;
+  user-select: none;
+}
+.inv-slot.draggable {
+  cursor: grab;
+}
+.inv-slot.draggable:hover {
+  background: #a6a6a6;
+  outline: 2px solid #ffffffb0;
+}
+
+/* Enchant palette row */
+.ench-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px;
+  background: var(--mc-slot);
+  border: 2px solid;
+  border-color: var(--mc-shadow) var(--mc-light) var(--mc-light) var(--mc-shadow);
+  cursor: grab;
+  user-select: none;
+}
+.ench-row:hover {
+  background: #a6a6a6;
+  outline: 2px solid #ffffffb0;
+}
+.ench-row .ench-name {
+  font-size: 18px;
+  color: #f4f4f4;
+  text-shadow: 1px 1px 0 #000;
+  line-height: 1.1;
+}
+.ench-row .ench-sub {
+  font-size: 14px;
+  color: #d7c4ff;
+}
+
+/* Build board */
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.board-slot {
+  display: flex;
+  gap: 10px;
+  padding: 8px;
+  align-items: flex-start;
+}
+.board-slot.is-over {
+  outline: 3px solid var(--mc-yellow);
+}
+.big-slot {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mc-slot);
+  border: 2px solid;
+  border-color: var(--mc-shadow) var(--mc-light) var(--mc-light) var(--mc-shadow);
+  position: relative;
+}
+.big-slot .slot-ghost {
+  position: absolute;
+  font-size: 12px;
+  color: #00000055;
+  font-family: 'Press Start 2P', monospace;
+  pointer-events: none;
+}
+.slot-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.slot-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+.slot-item-name {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+}
+.slot-item-empty {
+  font-size: 18px;
+  color: #9a9a9a;
+}
+.slot-meta {
+  font-size: 15px;
+  color: var(--mc-aqua);
+}
+
+/* Applied enchant chips */
+.chip-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 7px;
+}
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #2b2b33;
+  border: 1px solid #000;
+  padding: 3px 5px;
+}
+.chip .chip-name {
+  flex: 1 1 auto;
+  font-size: 17px;
+  color: #d7c4ff;
+  text-shadow: 1px 1px 0 #000;
+}
+.chip .lvl-btn {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 16px;
+}
+.chip .lvl-val {
+  min-width: 26px;
+  text-align: center;
+  font-size: 17px;
+  color: var(--mc-yellow);
+}
+.chip .x-btn {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #7a1d1d;
+}
+
+.hint {
+  font-size: 15px;
+  color: #8f8f8f;
+  margin-top: 4px;
+}
+
+.stat-sub {
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+/* Locational armor region table */
+.region-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.region-table th {
+  text-align: left;
+  font-size: 12px;
+  color: #9a9a9a;
+  border-bottom: 1px solid #000;
+  padding: 3px 4px;
+}
+.region-table td {
+  padding: 4px;
+  border-bottom: 1px solid #2a2b2f;
+  vertical-align: top;
+  color: #e6e6e6;
+}
+.region-table th:not(:first-child),
+.region-table td:not(:first-child) {
+  text-align: right;
+  white-space: nowrap;
+}
+.region-table tr.is-critical td:first-child {
+  color: #ffd24a;
+}
+.region-item {
+  font-size: 12px;
+  color: #8f8f8f;
+}
+.region-item.region-empty {
+  font-style: italic;
+}
+
+/* Stats */
+.stat-block {
+  margin-bottom: 14px;
+}
+.stat-headline {
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+}
+.stat-big {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 18px;
+  color: var(--mc-green);
+  text-shadow: 2px 2px 0 #000;
+  margin: 6px 0;
+}
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 2px 0;
+  border-bottom: 1px dotted #ffffff20;
+}
+.stat-row .k {
+  color: var(--mc-gray);
+}
+.stat-row .v {
+  color: #fff;
+}
+.stat-note {
+  font-size: 15px;
+  color: #8f8f8f;
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
+.layer-bar {
+  height: 12px;
+  background: #00000040;
+  border: 1px solid #000;
+  margin: 3px 0 8px;
+  position: relative;
+  overflow: hidden;
+}
+.layer-bar > span {
+  display: block;
+  height: 100%;
+}
+
+/* Scenario controls */
+.control-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.control-row label {
+  flex: 1 1 auto;
+  color: var(--mc-gray);
+}
+.control-row input[type='number'] {
+  width: 64px;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 3px 4px;
+  background: #1b1c20;
+  color: #fff;
+  border: 2px solid;
+  border-color: var(--mc-shadow) var(--mc-light) var(--mc-light) var(--mc-shadow);
+}
+.seg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.seg .mc-btn {
+  padding: 3px 7px;
+  font-size: 15px;
+}
+
+/* Notice / toast */
+.notice {
+  position: fixed;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  background: #2a1414;
+  border: 2px solid;
+  border-color: #ff8080 #5a0000 #5a0000 #ff8080;
+  color: #ffd0d0;
+  padding: 8px 14px;
+  font-size: 18px;
+  z-index: 2000;
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* Tooltip */
+.tt-wrap {
+  display: inline-flex;
+}
+.mc-tooltip {
+  position: fixed;
+  z-index: 3000;
+  pointer-events: none;
+  max-width: 280px;
+  background: var(--mc-tooltip-bg);
+  border: 2px solid var(--mc-tooltip-border-2);
+  outline: 2px solid #000;
+  padding: 6px 9px;
+  font-size: 17px;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+}
+.mc-tooltip .tt-title {
+  color: #fff;
+}
+.mc-tooltip .tt-purple {
+  color: var(--mc-purple);
+}
+.mc-tooltip .tt-gray {
+  color: var(--mc-gray);
+}
+.mc-tooltip .tt-yellow {
+  color: var(--mc-yellow);
+}
+.mc-tooltip .tt-red {
+  color: var(--mc-red);
+}
+
+/* Drag overlay item */
+.drag-overlay {
+  opacity: 0.92;
+  transform: scale(1.05);
+}

@@ -1,0 +1,133 @@
+:root {
+  /* Minecraft GUI palette */
+  --mc-panel: #c6c6c6;
+  --mc-panel-dark: #8b8b8b;
+  --mc-shadow: #373737;
+  --mc-light: #ffffff;
+  --mc-slot: #8b8b8b;
+  --mc-slot-shadow: #373737;
+  --mc-bg: #25262b;
+  --mc-bg-2: #1a1b1f;
+  --mc-text: #f4f4f4;
+  --mc-text-dark: #3f3f3f;
+  --mc-tooltip-bg: #100010;
+  --mc-tooltip-border: #280a4f;
+  --mc-tooltip-border-2: #5b1bb0;
+  --mc-green: #5ce15c;
+  --mc-red: #ff5555;
+  --mc-yellow: #ffd23f;
+  --mc-aqua: #55ffff;
+  --mc-purple: #b06bff;
+  --mc-gray: #a8a8a8;
+
+  font-family: 'VT323', 'Courier New', monospace;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--mc-text);
+  -webkit-font-smoothing: none;
+  font-smooth: never;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--mc-bg);
+  background-image: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.18) 0px,
+      rgba(0, 0, 0, 0.18) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.18) 0px,
+      rgba(0, 0, 0, 0.18) 2px,
+      transparent 2px,
+      transparent 4px
+    );
+  background-size: 32px 32px;
+  image-rendering: pixelated;
+}
+
+img,
+svg {
+  image-rendering: pixelated;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Press Start 2P', 'VT323', monospace;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  text-shadow: 2px 2px 0 #000;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--mc-text-dark);
+  cursor: pointer;
+}
+
+/* Classic raised Minecraft button / panel bevel */
+.mc-bevel {
+  background: var(--mc-panel);
+  border: 2px solid;
+  border-color: var(--mc-light) var(--mc-shadow) var(--mc-shadow) var(--mc-light);
+  box-shadow: inset -2px -2px 0 0 var(--mc-panel-dark),
+    inset 2px 2px 0 0 #ffffffd0;
+}
+
+/* Inset (sunken) panel/slot bevel */
+.mc-inset {
+  background: var(--mc-slot);
+  border: 2px solid;
+  border-color: var(--mc-shadow) var(--mc-light) var(--mc-light) var(--mc-shadow);
+  box-shadow: inset 2px 2px 0 0 var(--mc-slot-shadow);
+}
+
+.mc-btn {
+  background: var(--mc-panel);
+  border: 2px solid;
+  border-color: var(--mc-light) var(--mc-shadow) var(--mc-shadow) var(--mc-light);
+  padding: 8px 14px;
+  color: #2b2b2b;
+  text-shadow: 1px 1px 0 #ffffff80;
+  user-select: none;
+}
+.mc-btn:hover {
+  background: #d3d3d3;
+  border-color: #ffff57 var(--mc-shadow) var(--mc-shadow) #ffff57;
+  color: #1d1d1d;
+}
+.mc-btn:active {
+  border-color: var(--mc-shadow) var(--mc-light) var(--mc-light) var(--mc-shadow);
+}
+.mc-btn.is-active {
+  border-color: #ffff57 var(--mc-shadow) var(--mc-shadow) #ffff57;
+  background: #d9d98a;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--mc-bg-2);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--mc-panel-dark);
+  border: 2px solid var(--mc-shadow);
+}

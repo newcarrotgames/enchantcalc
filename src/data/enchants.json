@@ -1,0 +1,1976 @@
+[
+  {
+    "id": "sharpness",
+    "name": "Sharpness",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 5,
+    "rarity": "common",
+    "appliesTo": [
+      "sword",
+      "axe"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0.5,
+      "perLevel": 0.5
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Increases melee damage. +(0.5 + 0.5 x Level).",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "smite",
+    "name": "Smite",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 5,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "sword",
+      "axe"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 2.5,
+      "condition": "vs undead"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Extra damage to undead. +(2.5 x Level).",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "bane_of_arthropods",
+    "name": "Bane of Arthropods",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 5,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "sword",
+      "axe"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 2.5,
+      "condition": "vs arthropods"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Extra damage to arthropods. +(2.5 x Level).",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "knockback",
+    "name": "Knockback",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 2,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases knockback dealt.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "fire_aspect",
+    "name": "Fire Aspect",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "burn damage over time"
+    },
+    "incompatibleGroups": [
+      "fire_aspect"
+    ],
+    "description": "Sets the target on fire (burn damage over time, not counted per hit).",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "looting",
+    "name": "Looting",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 3,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases mob loot.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "protection",
+    "name": "Protection",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 4,
+    "rarity": "common",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "vanillaProtection",
+      "epfPerLevel": 1
+    },
+    "incompatibleGroups": [
+      "protection"
+    ],
+    "description": "Reduces most damage. +1 EPF per level.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "projectile_protection",
+    "name": "Projectile Protection",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 4,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "vanillaProtection",
+      "epfPerLevel": 2,
+      "damageType": "projectile"
+    },
+    "incompatibleGroups": [
+      "protection"
+    ],
+    "description": "Reduces projectile damage. +2 EPF per level.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "blast_protection",
+    "name": "Blast Protection",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 4,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "vanillaProtection",
+      "epfPerLevel": 2,
+      "damageType": "blast"
+    },
+    "incompatibleGroups": [
+      "protection"
+    ],
+    "description": "Reduces explosion damage. +2 EPF per level.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "fire_protection",
+    "name": "Fire Protection",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 4,
+    "rarity": "common",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "vanillaProtection",
+      "epfPerLevel": 2,
+      "damageType": "fire"
+    },
+    "incompatibleGroups": [
+      "protection"
+    ],
+    "description": "Reduces fire damage. +2 EPF per level.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "feather_falling",
+    "name": "Feather Falling",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 4,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "boots"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "reduces fall damage"
+    },
+    "incompatibleGroups": [
+      "feather_falling"
+    ],
+    "description": "Reduces fall damage only.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "thorns",
+    "name": "Thorns",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 3,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "reflects damage"
+    },
+    "incompatibleGroups": [],
+    "description": "Chance to reflect damage to attackers.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "respiration",
+    "name": "Respiration",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 3,
+    "rarity": "rare",
+    "appliesTo": [
+      "helmet"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Extends underwater breathing.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "aqua_affinity",
+    "name": "Aqua Affinity",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 1,
+    "rarity": "rare",
+    "appliesTo": [
+      "helmet"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases underwater mining speed.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "depth_strider",
+    "name": "Depth Strider",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 3,
+    "rarity": "rare",
+    "appliesTo": [
+      "boots"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [
+      "boots_water"
+    ],
+    "description": "Increases underwater movement speed.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "frost_walker",
+    "name": "Frost Walker",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "boots"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [
+      "boots_water"
+    ],
+    "description": "Freezes water into ice as you walk.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "power",
+    "name": "Power",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 5,
+    "rarity": "common",
+    "appliesTo": [
+      "bow"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases arrow damage.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "punch",
+    "name": "Punch",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "bow"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases arrow knockback.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "flame",
+    "name": "Flame",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 1,
+    "rarity": "rare",
+    "appliesTo": [
+      "bow"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [
+      "flame"
+    ],
+    "description": "Arrows set targets on fire.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "infinity",
+    "name": "Infinity",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 1,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "bow"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Arrows are not consumed.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "unbreaking",
+    "name": "Unbreaking",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 3,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "any"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases durability.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "mending",
+    "name": "Mending",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 1,
+    "rarity": "rare",
+    "appliesTo": [
+      "any"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Repairs the item using XP.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "efficiency",
+    "name": "Efficiency",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 5,
+    "rarity": "common",
+    "appliesTo": [
+      "tool"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases mining speed.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "fortune",
+    "name": "Fortune",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 3,
+    "rarity": "rare",
+    "appliesTo": [
+      "tool"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases block drops.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "silk_touch",
+    "name": "Silk Touch",
+    "pack": "vanilla",
+    "mod": "Minecraft",
+    "maxLevel": 1,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "tool"
+    ],
+    "effect": {
+      "kind": "info"
+    },
+    "incompatibleGroups": [],
+    "description": "Mined blocks drop themselves.",
+    "source": "https://minecraft.wiki/w/Enchanting"
+  },
+  {
+    "id": "lesser_sharpness",
+    "name": "Lesser Sharpness",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "common",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0.25,
+      "perLevel": 0.25
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Weakest tier of Sharpness. +(0.25 + 0.25 x Level).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "advanced_sharpness",
+    "name": "Advanced Sharpness",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword",
+      "axe"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 1.25,
+      "perLevel": 0.95
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Advanced Sharpness. +(1.25 + 0.95 x Level).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "supreme_sharpness",
+    "name": "Supreme Sharpness",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 4,
+      "perLevel": 1.6
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Strongest tier of Sharpness. +(4 + 1.6 x Level).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "lesser_smite",
+    "name": "Lesser Smite",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "common",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 1.25,
+      "condition": "vs undead"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Weakest tier of Smite. +(1.25 x Level) vs undead.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "advanced_smite",
+    "name": "Advanced Smite",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword",
+      "axe"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 3.25,
+      "condition": "vs undead"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Advanced Smite. +(3.25 x Level) vs undead.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "supreme_smite",
+    "name": "Supreme Smite",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 5,
+      "condition": "vs undead"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Strongest tier of Smite. +(5 x Level) vs undead.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "lesser_bane",
+    "name": "Lesser Bane of Arthropods",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "common",
+    "appliesTo": [
+      "sword",
+      "axe"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 1.25,
+      "condition": "vs arthropods"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Weakest tier of Bane. +(1.25 x Level) vs arthropods.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "advanced_bane",
+    "name": "Advanced Bane of Arthropods",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword",
+      "axe"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 3.25,
+      "condition": "vs arthropods"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Advanced Bane. +(3.25 x Level) vs arthropods.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "supreme_bane",
+    "name": "Supreme Bane of Arthropods",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 5,
+      "condition": "vs arthropods"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Strongest tier of Bane. +(5 x Level) vs arthropods.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "reinforced_sharpness",
+    "name": "Reinforced Sharpness",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "axe",
+      "tool"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0.5,
+      "perLevel": 0.5
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Sharpness for tools. +(0.5 + 0.5 x Level).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "butchering",
+    "name": "Butchering",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 1.25,
+      "perLevel": 1.25,
+      "condition": "vs animals"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Extra damage to animals. +(1.25 + 1.25 x Level).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "ash_destroyer",
+    "name": "Ash Destroyer",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 1,
+      "perLevel": 0.2,
+      "condition": "vs burning targets"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Extra damage if the target is on fire. +(1 + 0.2 x Level).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "dark_shadows",
+    "name": "Dark Shadows",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 3,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 0.75,
+      "condition": "in darkness"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Extra damage in the dark. +(0.75 x Level); applies Blindness at level 3.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "defusing_edge",
+    "name": "Defusing Edge",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 2,
+      "condition": "vs creepers"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Extra damage to Creepers. +(2 x Level); chance to defuse.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "inhumane",
+    "name": "Inhumane",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 2.5,
+      "condition": "vs illagers"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Extra damage to Illagers. +(2.5 x Level).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "spell_breaker",
+    "name": "Spell Breaker",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword",
+      "axe"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 1.5,
+      "condition": "vs magic mobs"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Extra damage to magic mobs. +(1.5 x Level), +0.5 x Level per status effect.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "subject_english",
+    "name": "Subject English",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0.8,
+      "perLevel": 0.3,
+      "condition": "vs smart mobs"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Extra damage to smart mobs. +(0.8 + 0.3 x Level), plus up to 12 vs certain mobs.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "water_aspect",
+    "name": "Water Aspect",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "flatDamage",
+      "base": 0,
+      "perLevel": 2.5,
+      "condition": "vs blaze/enderman/magma/submerged"
+    },
+    "incompatibleGroups": [
+      "melee_damage"
+    ],
+    "description": "Bonus vs Blaze, Endermen, Magma Cubes and submerged targets. +(2.5 x Level).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "penetrating_edge",
+    "name": "Penetrating Edge",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 6,
+    "rarity": "rare",
+    "appliesTo": [
+      "axe"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "more damage vs high-armor targets"
+    },
+    "incompatibleGroups": [],
+    "description": "Enemies with more armor take more damage.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "advanced_protection",
+    "name": "Advanced Protection",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "percentReduction",
+      "perLevelPct": 0.24,
+      "cap": 0.8
+    },
+    "incompatibleGroups": [
+      "protection"
+    ],
+    "description": "Reduces all damage by (Level x 24%), max 80%.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "physical_protection",
+    "name": "Physical Protection",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "rare",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "percentReduction",
+      "perLevelPct": 0.24,
+      "cap": 0.8,
+      "damageType": "physical"
+    },
+    "incompatibleGroups": [
+      "protection"
+    ],
+    "description": "Reduces physical damage by (Level x 24%), max 80%.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "magic_protection",
+    "name": "Magic Protection",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "percentReduction",
+      "perLevelPct": 0.24,
+      "cap": 0.8,
+      "damageType": "magic"
+    },
+    "incompatibleGroups": [
+      "protection"
+    ],
+    "description": "Reduces magic damage by (Level x 24%), max 80%.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "advanced_projectile_protection",
+    "name": "Advanced Projectile Protection",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "rare",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "percentReduction",
+      "perLevelPct": 0.24,
+      "cap": 0.8,
+      "damageType": "projectile"
+    },
+    "incompatibleGroups": [
+      "protection"
+    ],
+    "description": "Reduces projectile damage by (Level x 24%), max 80%.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "advanced_thorns",
+    "name": "Advanced Thorns",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 3,
+    "rarity": "rare",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "reflects damage"
+    },
+    "incompatibleGroups": [],
+    "description": "Stronger Thorns.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "burning_thorns",
+    "name": "Burning Thorns",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 3,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "reflects + ignites attacker"
+    },
+    "incompatibleGroups": [],
+    "description": "When attacked, damages and ignites the attacker.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "advanced_feather_falling",
+    "name": "Advanced Feather Falling",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "boots"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "reduces fall damage"
+    },
+    "incompatibleGroups": [
+      "feather_falling"
+    ],
+    "description": "Reduces fall damage by (Level x 20%).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "advanced_fire_protection",
+    "name": "Advanced Fire Protection",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "reduces fire"
+    },
+    "incompatibleGroups": [],
+    "description": "Stronger fire protection.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "advanced_blast_protection",
+    "name": "Advanced Blast Protection",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "rare",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "explosion resistance"
+    },
+    "incompatibleGroups": [],
+    "description": "Grants explosion resistance scaled by level.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "curse_of_vulnerability",
+    "name": "Curse of Vulnerability",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "armor"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "amplifies damage taken"
+    },
+    "incompatibleGroups": [],
+    "description": "Curse: amplifies damage taken.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "evasion",
+    "name": "Evasion",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 1,
+    "rarity": "rare",
+    "appliesTo": [
+      "leggings"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "chance to dodge"
+    },
+    "incompatibleGroups": [],
+    "description": "Chance to evade attacks.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "inner_berserk",
+    "name": "Inner Berserk",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "chestplate"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "more damage at low HP"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases damage dealt as your health lowers.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "strengthened_vitality",
+    "name": "Strengthened Vitality",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "chestplate"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "increases max health"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases your maximum health.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "meltdown",
+    "name": "Meltdown",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "chestplate"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "explodes when hit"
+    },
+    "incompatibleGroups": [],
+    "description": "Chance to explode when attacked (no terrain/player damage).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "critical_strike",
+    "name": "Critical Strike",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "chance-based extra damage"
+    },
+    "incompatibleGroups": [],
+    "description": "Chance to deal extra damage based on attack damage.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "lifesteal",
+    "name": "Lifesteal",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "heals on hit"
+    },
+    "incompatibleGroups": [],
+    "description": "Heals you based on damage dealt.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "envenomed",
+    "name": "Envenomed",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 3,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "applies poison/wither"
+    },
+    "incompatibleGroups": [],
+    "description": "Applies poison and wither.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "fiery_edge",
+    "name": "Fiery Edge",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "extended fire"
+    },
+    "incompatibleGroups": [
+      "fire_aspect"
+    ],
+    "description": "Sets enemies on fire for longer; can bypass iframes.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "lesser_fire_aspect",
+    "name": "Lesser Fire Aspect",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "common",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "burn over time"
+    },
+    "incompatibleGroups": [
+      "fire_aspect"
+    ],
+    "description": "Weakest tier of Fire Aspect.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "advanced_fire_aspect",
+    "name": "Advanced Fire Aspect",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "burn over time"
+    },
+    "incompatibleGroups": [
+      "fire_aspect"
+    ],
+    "description": "Advanced Fire Aspect.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "supreme_fire_aspect",
+    "name": "Supreme Fire Aspect",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "burn over time"
+    },
+    "incompatibleGroups": [
+      "fire_aspect"
+    ],
+    "description": "Strongest Fire Aspect.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "freezing",
+    "name": "Freezing",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 3,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "slows / mining fatigue"
+    },
+    "incompatibleGroups": [],
+    "description": "Applies Mining Fatigue and Slowness, stacking per hit.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "levitator",
+    "name": "Levitator",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "applies levitation"
+    },
+    "incompatibleGroups": [],
+    "description": "Applies Levitation on hit.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "flinging",
+    "name": "Flinging",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "launches enemies up"
+    },
+    "incompatibleGroups": [],
+    "description": "Knocks enemies upward.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "mortalitas",
+    "name": "Mortalitas",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 8,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "grows stronger with kills"
+    },
+    "incompatibleGroups": [],
+    "description": "Each kill raises your damage / lowers the target’s, up to 8.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "reviled_blade",
+    "name": "Reviled Blade",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "more damage at low enemy HP"
+    },
+    "incompatibleGroups": [],
+    "description": "Damage increases the lower the enemy’s health.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "instability",
+    "name": "Instability",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 3,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "more damage at low durability"
+    },
+    "incompatibleGroups": [],
+    "description": "Lower durability = more damage, at a cost.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "atomic_deconstructor",
+    "name": "Atomic Deconstructor",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "tiny instakill chance"
+    },
+    "incompatibleGroups": [],
+    "description": "Small chance to instantly kill non-bosses (0.1% x Level).",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "swifter_slashes",
+    "name": "Swifter Slashes",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "attack speed + iframe bypass"
+    },
+    "incompatibleGroups": [],
+    "description": "+20% swing speed and +2% iframe bypass per level.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "heavy_weight",
+    "name": "Heavy Weight",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "reduces attack speed"
+    },
+    "incompatibleGroups": [],
+    "description": "Reduces attack speed.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "bluntness",
+    "name": "Bluntness",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "reduces damage"
+    },
+    "incompatibleGroups": [],
+    "description": "Reduces attack damage.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "true_strike",
+    "name": "True Strike",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 1,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "ignores evasion"
+    },
+    "incompatibleGroups": [],
+    "description": "Ignores 75% of Evasion; blocks Curse of Inaccuracy.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "parry",
+    "name": "Parry",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 1,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "chance to parry"
+    },
+    "incompatibleGroups": [],
+    "description": "Chance to parry and knock back attackers.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "unsheathing",
+    "name": "Unsheathing",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 1,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "auto-equip on hit"
+    },
+    "incompatibleGroups": [],
+    "description": "Auto-equips when you take damage.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "luck_magnification",
+    "name": "Luck Magnification",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "weapon"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "luck + crit damage"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases luck; acts as Looting and boosts crit damage in mainhand.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "adept",
+    "name": "Adept",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 3,
+    "rarity": "rare",
+    "appliesTo": [
+      "sword"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "more XP"
+    },
+    "incompatibleGroups": [],
+    "description": "Multiplies XP drops.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "brutality",
+    "name": "Brutality",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "axe"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "more armor damage"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases damage to enemy armor.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "culling",
+    "name": "Culling",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 3,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "axe"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "execute low HP"
+    },
+    "incompatibleGroups": [],
+    "description": "Bonus crit/execute vs low-HP enemies with an axe.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "desolator",
+    "name": "Desolator",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "rare",
+    "appliesTo": [
+      "axe"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "negative resistance"
+    },
+    "incompatibleGroups": [],
+    "description": "Chance to apply negative resistance / weakness.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "disarmament",
+    "name": "Disarmament",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "axe"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "chance to disarm"
+    },
+    "incompatibleGroups": [],
+    "description": "Chance to disarm enemies.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "purification",
+    "name": "Purification",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 5,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "axe"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "purifies mobs"
+    },
+    "incompatibleGroups": [],
+    "description": "Purifies zombie villagers, magma cubes, etc.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "curse_of_decay",
+    "name": "Curse of Decay",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 1,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "any"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "item despawns fast"
+    },
+    "incompatibleGroups": [],
+    "description": "Dropped item despawns within seconds.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "curse_of_holding",
+    "name": "Curse of Holding",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "any"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "debuffs holder"
+    },
+    "incompatibleGroups": [],
+    "description": "Debuffs the holder.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "curse_of_possession",
+    "name": "Curse of Possession",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 1,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "any"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "cannot be dropped"
+    },
+    "incompatibleGroups": [],
+    "description": "Item cannot be dropped; lost on death.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "curse_of_inaccuracy",
+    "name": "Curse of Inaccuracy",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "veryRare",
+    "appliesTo": [
+      "sword",
+      "bow"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "attacks miss"
+    },
+    "incompatibleGroups": [],
+    "description": "Melee attacks miss / bow shots are inaccurate.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "penetration",
+    "name": "Penetration",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "weapon"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "partial armor ignore"
+    },
+    "incompatibleGroups": [],
+    "description": "Damage dealt partially ignores armor.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "vampirism",
+    "name": "Vampirism",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "weapon"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "heals on hit"
+    },
+    "incompatibleGroups": [],
+    "description": "Heals you for a portion of damage dealt.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "agility",
+    "name": "Agility",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "leggings"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "movement speed"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases movement speed.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "high_jump",
+    "name": "High Jump",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "boots"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "jump height"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases jump height.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "multishot",
+    "name": "Multishot",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "maxLevel": 4,
+    "rarity": "rare",
+    "appliesTo": [
+      "bow"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "multiple arrows"
+    },
+    "incompatibleGroups": [],
+    "description": "Shoot multiple arrows at once.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "rapid_fire",
+    "name": "Rapid Fire",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "maxLevel": 2,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "bow"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "faster draw"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases bow/crossbow draw speed.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "fling",
+    "name": "Fling",
+    "pack": "rlcraft",
+    "mod": "Better Survival",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "weapon"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "launches enemies"
+    },
+    "incompatibleGroups": [],
+    "description": "Throws a hit enemy into the air.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "razors_edge",
+    "name": "Razor's Edge",
+    "pack": "rlcraft",
+    "mod": "Spartan Weaponry",
+    "maxLevel": 5,
+    "rarity": "rare",
+    "appliesTo": [
+      "weapon"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "throwing damage"
+    },
+    "incompatibleGroups": [],
+    "description": "Increases damage of throwing weapons.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "propulsion",
+    "name": "Propulsion",
+    "pack": "rlcraft",
+    "mod": "Spartan Weaponry",
+    "maxLevel": 3,
+    "rarity": "uncommon",
+    "appliesTo": [
+      "weapon"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "throw range"
+    },
+    "incompatibleGroups": [],
+    "description": "Extends throwing range.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "return",
+    "name": "Return",
+    "pack": "rlcraft",
+    "mod": "Spartan Weaponry",
+    "maxLevel": 3,
+    "rarity": "rare",
+    "appliesTo": [
+      "weapon"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "returns to player"
+    },
+    "incompatibleGroups": [],
+    "description": "Thrown weapons return to you.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "spikes",
+    "name": "Spikes",
+    "pack": "rlcraft",
+    "mod": "Spartan Shields",
+    "maxLevel": 3,
+    "rarity": "rare",
+    "appliesTo": [
+      "shield"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "damage when blocking"
+    },
+    "incompatibleGroups": [],
+    "description": "Damages enemies that hit you while blocking.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "natural_blocking",
+    "name": "Natural Blocking",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "shield"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "passive block reduction"
+    },
+    "incompatibleGroups": [],
+    "description": "Shield passively reduces 20%/30% of damage before armor.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "empowered_defense",
+    "name": "Empowered Defense",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 2,
+    "rarity": "rare",
+    "appliesTo": [
+      "shield"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "stronger block"
+    },
+    "incompatibleGroups": [],
+    "description": "Empowers the shield, can negate disabling and reflect.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  },
+  {
+    "id": "burning_shield",
+    "name": "Burning Shield",
+    "pack": "rlcraft",
+    "mod": "So Many Enchantments",
+    "maxLevel": 4,
+    "rarity": "rare",
+    "appliesTo": [
+      "shield"
+    ],
+    "effect": {
+      "kind": "info",
+      "condition": "ignites attackers"
+    },
+    "incompatibleGroups": [],
+    "description": "Reflects damage by igniting attackers.",
+    "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
+  }
+]
