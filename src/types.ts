@@ -69,7 +69,11 @@ export type EnchantEffectKind =
   | 'attackSpeedMultiplier' // scales the weapon's attack speed (Swifter Slashes, Heavy Weight)
   | 'percentReduction' // RLCraft custom % reduction per level (capped)
   | 'vanillaProtection' // EPF-based vanilla protection
-  | 'info'; // listed but not modelled numerically (DoT, chance-based, cosmetic)
+  | 'dot' // damage over time after a hit (Fire Aspect family, Envenomed)
+  | 'info'; // listed but not modelled numerically (chance-based, cosmetic)
+
+// Kind of damage-over-time an enchant inflicts on the target after a hit.
+export type DotType = 'fire' | 'poison' | 'wither';
 
 export interface EnchantEffect {
   kind: EnchantEffectKind;
@@ -86,6 +90,18 @@ export interface EnchantEffect {
 
   // vanillaProtection: enchantment protection factor added per level
   epfPerLevel?: number;
+
+  // dot: estimated damage-over-time the target takes after being hit.
+  //   estimated total (if it lands) = base + perLevel * level, unless
+  //   dotDamageByLevel is given (1-indexed by level) for non-linear effects.
+  dotType?: DotType;
+  dotDamageByLevel?: number[]; // overrides base/perLevel when present
+  dotChancePerLevel?: number; // probability per level it applies (default 1 = always)
+  dotRandom?: boolean; // per-hit roll varies 0..max (Lesser Fire Aspect)
+  dotCanKill?: boolean; // false = caps the target at 1 HP (poison)
+  dotSecondsBase?: number; // display: effect duration = base + perLevel * level
+  dotSecondsPerLevel?: number;
+  dotNote?: string; // extra caveat shown in the breakdown
 
   // Restricts the effect to a damage type (protections) or situation (flatDamage).
   damageType?: DamageType;

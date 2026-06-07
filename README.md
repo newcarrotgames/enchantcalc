@@ -98,9 +98,12 @@ three of the eight limbs).
 - Armor is modelled per body region (locational), but the overall number is a
   hit-weighted average rather than a simulation of First Aid's exact per-hit limb
   selection and per-limb HP pools.
-- Chance-based and damage-over-time enchants (Critical Strike, Fire Aspect,
-  Thorns, Lifesteal, etc.) are listed for reference but not added to the numeric
-  range.
+- Damage-over-time enchants (the Fire Aspect family, Envenomed) are estimated in
+  a separate "Damage over time" figure, not folded into the per-hit range, since
+  they tick over time, do not crit or scale with attack speed, and are often
+  resisted (fire-immune mobs, poison capping the target at 1 HP, chance to apply).
+- Purely chance-based or cosmetic enchants (Critical Strike, Thorns, Lifesteal,
+  etc.) are listed for reference but not added to the numeric range.
 - Mob-specific and environmental modifiers are surfaced as the "situational"
   bonus in the max value rather than per-mob.
 

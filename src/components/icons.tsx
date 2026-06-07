@@ -271,6 +271,8 @@ function enchantCover(def: EnchantDef): string {
     case 'percentReduction':
     case 'vanillaProtection':
       return '#3a5bd0';
+    case 'dot':
+      return '#cf6a1f';
     default:
       return '#6a6a6a';
   }

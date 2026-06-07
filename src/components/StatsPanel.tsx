@@ -99,6 +99,34 @@ function WeaponResultView({
         </div>
       )}
 
+      {r.dots.length > 0 && (
+        <>
+          <div className="stat-row">
+            <span className="k">Damage over time</span>
+            <span className="v">
+              {r.dotExpected === r.dotMax
+                ? `+${round2(r.dotMax)}`
+                : `~${round2(r.dotExpected)} (up to ${round2(r.dotMax)})`}
+            </span>
+          </div>
+          <div className="stat-note">
+            {r.dots.map((d) => (
+              <div key={d.enchantId}>
+                {d.name} {roman(d.level)}: {d.type} {dotAmountLabel(d)} over {d.seconds}s
+                {d.chance < 1 ? ` (${Math.round(d.chance * 100)}% chance)` : ''}
+                {!d.canKill ? ' [can\u2019t kill]' : ''}
+                {d.note ? ` - ${d.note}` : ''}
+              </div>
+            ))}
+            <div style={{ marginTop: 4 }}>
+              DoT is estimated and listed separately: it ticks over time, does not
+              crit or scale with attack speed, and many targets resist it. Not
+              added to the per-hit range above.
+            </div>
+          </div>
+        </>
+      )}
+
       {(r.contributions.length > 0 || r.speedContributions.length > 0) && (
         <div className="stat-note">
           {r.contributions.map((c) => (
@@ -285,6 +313,13 @@ function LayerBars({
       ))}
     </div>
   );
+}
+
+function dotAmountLabel(d: {
+  min: number;
+  max: number;
+}): string {
+  return d.min === d.max ? `~${round2(d.max)}` : `${round2(d.min)}-${round2(d.max)}`;
 }
 
 function round2(n: number): number {

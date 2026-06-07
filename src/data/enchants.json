@@ -95,13 +95,18 @@
       "sword"
     ],
     "effect": {
-      "kind": "info",
-      "condition": "burn damage over time"
+      "kind": "dot",
+      "dotType": "fire",
+      "base": -1,
+      "perLevel": 4,
+      "dotSecondsBase": 0,
+      "dotSecondsPerLevel": 4,
+      "dotNote": "Burning mobs only (fire-immune mobs unaffected); reduced by Fire Protection."
     },
     "incompatibleGroups": [
       "fire_aspect"
     ],
-    "description": "Sets the target on fire (burn damage over time, not counted per hit).",
+    "description": "Sets the target on fire. Burn deals ~(Level*4 - 1) over Level*4 seconds.",
     "source": "https://minecraft.wiki/w/Enchanting"
   },
   {
@@ -1201,11 +1206,23 @@
       "sword"
     ],
     "effect": {
-      "kind": "info",
-      "condition": "applies poison/wither"
+      "kind": "dot",
+      "dotType": "poison",
+      "base": 0,
+      "perLevel": 0,
+      "dotSecondsBase": 2,
+      "dotSecondsPerLevel": 0.5,
+      "dotDamageByLevel": [
+        2,
+        5,
+        18
+      ],
+      "dotChancePerLevel": 0.2,
+      "dotCanKill": false,
+      "dotNote": "Chance-based; Poison can’t kill (stops at 1 HP). Wither (Level 3) can kill. No effect on poison/wither-immune mobs."
     },
     "incompatibleGroups": [],
-    "description": "Applies poison and wither.",
+    "description": "Chance to apply Poison (and Wither at Level 3). Est. ~[2, 5, 18] damage by level if it lands.",
     "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
   },
   {
@@ -1219,13 +1236,18 @@
       "sword"
     ],
     "effect": {
-      "kind": "info",
-      "condition": "extended fire"
+      "kind": "dot",
+      "dotType": "fire",
+      "base": -1,
+      "perLevel": 8,
+      "dotSecondsBase": 0,
+      "dotSecondsPerLevel": 8,
+      "dotNote": "Also a chance to bypass the target’s iframes while it burns. Fire-immune mobs unaffected."
     },
     "incompatibleGroups": [
       "fire_aspect"
     ],
-    "description": "Sets enemies on fire for longer; can bypass iframes.",
+    "description": "Fire Aspect variant with longer burn (~Level*8 - 1 over Level*8 s); can bypass iframes.",
     "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
   },
   {
@@ -1239,13 +1261,19 @@
       "sword"
     ],
     "effect": {
-      "kind": "info",
-      "condition": "burn over time"
+      "kind": "dot",
+      "dotType": "fire",
+      "base": -1,
+      "perLevel": 4,
+      "dotSecondsBase": 0,
+      "dotSecondsPerLevel": 4,
+      "dotRandom": true,
+      "dotNote": "Burn length rolls 0..Level*4 s each hit, so damage swings from 0. Fire-immune mobs unaffected."
     },
     "incompatibleGroups": [
       "fire_aspect"
     ],
-    "description": "Weakest tier of Fire Aspect.",
+    "description": "Weakest Fire Aspect: random burn up to ~(Level*4 - 1).",
     "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
   },
   {
@@ -1259,13 +1287,18 @@
       "sword"
     ],
     "effect": {
-      "kind": "info",
-      "condition": "burn over time"
+      "kind": "dot",
+      "dotType": "fire",
+      "base": -1,
+      "perLevel": 8,
+      "dotSecondsBase": 0,
+      "dotSecondsPerLevel": 8,
+      "dotNote": "Fire-immune mobs unaffected; reduced by Fire Protection."
     },
     "incompatibleGroups": [
       "fire_aspect"
     ],
-    "description": "Advanced Fire Aspect.",
+    "description": "Advanced Fire Aspect: ~(Level*8 - 1) burn over Level*8 seconds.",
     "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
   },
   {
@@ -1279,13 +1312,18 @@
       "sword"
     ],
     "effect": {
-      "kind": "info",
-      "condition": "burn over time"
+      "kind": "dot",
+      "dotType": "fire",
+      "base": -1,
+      "perLevel": 16,
+      "dotSecondsBase": 0,
+      "dotSecondsPerLevel": 16,
+      "dotNote": "Fire-immune mobs unaffected; reduced by Fire Protection."
     },
     "incompatibleGroups": [
       "fire_aspect"
     ],
-    "description": "Strongest Fire Aspect.",
+    "description": "Strongest Fire Aspect: ~(Level*16 - 1) burn over Level*16 seconds.",
     "source": "https://rlcraft.wiki.gg/wiki/Enchanting"
   },
   {

@@ -18,6 +18,26 @@ export interface SpeedContribution {
   deltaFraction: number;
 }
 
+export interface DotContribution {
+  enchantId: string;
+  name: string;
+  level: number;
+  type: 'fire' | 'poison' | 'wither';
+  /** Lowest estimated DoT damage this hit (0 if it can whiff / roll low). */
+  min: number;
+  /** Highest estimated DoT damage when the effect lands in full. */
+  max: number;
+  /** Probability-weighted estimate (max x chance), for chance-based effects. */
+  expected: number;
+  /** Chance the effect applies on a hit (1 = always). */
+  chance: number;
+  /** Effect duration in seconds, for display. */
+  seconds: number;
+  /** False when the effect can't kill (poison caps the target at 1 HP). */
+  canKill: boolean;
+  note?: string;
+}
+
 export interface WeaponResult {
   baseDamage: number;
   /** The weapon's intrinsic attack speed (attacks/second), before enchants. */
@@ -40,6 +60,12 @@ export interface WeaponResult {
   dpsMax: number;
   contributions: WeaponContribution[];
   speedContributions: SpeedContribution[];
+  /** Per-enchant damage-over-time estimates (fire, poison, wither). */
+  dots: DotContribution[];
+  /** Total best-case DoT damage that can land in full (sum of dot.max). */
+  dotMax: number;
+  /** Probability-weighted total DoT damage (sum of dot.expected). */
+  dotExpected: number;
 }
 
 const CRIT_MULTIPLIER = 1.5;
@@ -65,10 +91,16 @@ export function computeWeapon(item: ItemDef, applied: AppliedEnchant[]): WeaponR
   let speedAmountSum = 0;
   const contributions: WeaponContribution[] = [];
   const speedContributions: SpeedContribution[] = [];
+  const dots: DotContribution[] = [];
 
   for (const a of applied) {
     const def = getEnchant(a.enchantId);
     if (!def) continue;
+
+    if (def.effect.kind === 'dot') {
+      dots.push(computeDot(def.id, def.name, a.level, def.effect));
+      continue;
+    }
 
     if (def.effect.kind === 'flatDamage') {
       const { base = 0, perLevel = 0, condition } = def.effect;
@@ -110,6 +142,9 @@ export function computeWeapon(item: ItemDef, applied: AppliedEnchant[]): WeaponR
   const critWeaponPart = baseDamage * CRIT_MULTIPLIER * unarmoredMultiplier;
   const max = Math.max(0, critWeaponPart + flatBonus + conditionalBonus);
 
+  const dotMax = dots.reduce((sum, d) => sum + d.max, 0);
+  const dotExpected = dots.reduce((sum, d) => sum + d.expected, 0);
+
   return {
     baseDamage,
     attackSpeed,
@@ -125,6 +160,65 @@ export function computeWeapon(item: ItemDef, applied: AppliedEnchant[]): WeaponR
     dpsMax: round2(max * effectiveAttackSpeed),
     contributions,
     speedContributions,
+    dots,
+    dotMax: round2(dotMax),
+    dotExpected: round2(dotExpected),
+  };
+}
+
+/**
+ * Estimate the damage-over-time a single enchant inflicts after a hit. These
+ * are deliberately kept out of the per-hit min/max range: DoT damage ticks over
+ * time, doesn't crit, isn't scaled by attack speed, and is often situational
+ * (fire-immune mobs, poison capping the target at 1 HP, chance to apply).
+ *
+ * Values are derived from the So Many Enchantments source (see generateEnchants).
+ */
+function computeDot(
+  enchantId: string,
+  name: string,
+  level: number,
+  effect: import('../types').EnchantEffect,
+): DotContribution {
+  const {
+    dotType = 'fire',
+    dotDamageByLevel,
+    base = 0,
+    perLevel = 0,
+    dotChancePerLevel,
+    dotRandom = false,
+    dotCanKill = true,
+    dotSecondsBase = 0,
+    dotSecondsPerLevel = 0,
+    dotNote,
+  } = effect;
+
+  const full = dotDamageByLevel
+    ? dotDamageByLevel[level - 1] ?? 0
+    : base + perLevel * level;
+  const max = Math.max(0, full);
+  // Lesser Fire Aspect rolls 0..max each hit; otherwise the floor is the full
+  // amount (a clean, deterministic tick total).
+  const min = dotRandom ? 0 : max;
+  const chance =
+    dotChancePerLevel != null ? Math.min(1, dotChancePerLevel * level) : 1;
+  // Expected value folds in both the apply chance and the 0..max roll.
+  const rollMean = dotRandom ? (min + max) / 2 : max;
+  const expected = rollMean * chance;
+  const seconds = dotSecondsBase + dotSecondsPerLevel * level;
+
+  return {
+    enchantId,
+    name,
+    level,
+    type: dotType,
+    min: round2(min),
+    max: round2(max),
+    expected: round2(expected),
+    chance,
+    seconds: round2(seconds),
+    canKill: dotCanKill,
+    note: dotNote,
   };
 }
 

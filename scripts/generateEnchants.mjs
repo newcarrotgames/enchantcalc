@@ -42,6 +42,19 @@ const epf = (epfPerLevel, damageType) => ({
   ...(damageType ? { damageType } : {}),
 });
 const info = (condition) => ({ kind: 'info', ...(condition ? { condition } : {}) });
+// Damage over time inflicted after a hit (fire/poison/wither). Estimated total
+// (if it lands) = dmgBase + dmgPerLevel*Level, unless opts.dotDamageByLevel is
+// supplied for non-linear effects. Duration (s) = secBase + secPerLevel*Level.
+// opts: { dotDamageByLevel, dotChancePerLevel, dotRandom, dotCanKill, dotNote }
+const dot = (type, dmgBase, dmgPerLevel, secBase, secPerLevel, opts = {}) => ({
+  kind: 'dot',
+  dotType: type,
+  base: dmgBase,
+  perLevel: dmgPerLevel,
+  dotSecondsBase: secBase,
+  dotSecondsPerLevel: secPerLevel,
+  ...opts,
+});
 
 const MELEE = ['melee_damage'];
 const PROT = ['protection'];
@@ -55,7 +68,11 @@ const raw = [
   ['smite', 'Smite', 5, ['sword', 'axe'], dmg(0, 2.5, 'vs undead'), { pack: 'vanilla', mod: 'Minecraft', rarity: 'uncommon', groups: MELEE, src: MC, desc: 'Extra damage to undead. +(2.5 x Level).' }],
   ['bane_of_arthropods', 'Bane of Arthropods', 5, ['sword', 'axe'], dmg(0, 2.5, 'vs arthropods'), { pack: 'vanilla', mod: 'Minecraft', rarity: 'uncommon', groups: MELEE, src: MC, desc: 'Extra damage to arthropods. +(2.5 x Level).' }],
   ['knockback', 'Knockback', 2, ['sword'], info(), { pack: 'vanilla', mod: 'Minecraft', rarity: 'uncommon', src: MC, desc: 'Increases knockback dealt.' }],
-  ['fire_aspect', 'Fire Aspect', 2, ['sword'], info('burn damage over time'), { pack: 'vanilla', mod: 'Minecraft', rarity: 'rare', groups: ['fire_aspect'], src: MC, desc: 'Sets the target on fire (burn damage over time, not counted per hit).' }],
+  // Fire damage = 1/sec and the first second isn't counted, so burn total ~=
+  // (fireSeconds - 1); SME sets fireSeconds = j*4 where j is the fire-aspect
+  // "level value" (vanilla j = Level). Verified from the SoManyEnchantments jar
+  // (EnchantmentTierFA, EntityPlayerMixinSetFire) and the MC wiki ((Level*4)-1).
+  ['fire_aspect', 'Fire Aspect', 2, ['sword'], dot('fire', -1, 4, 0, 4, { dotNote: 'Burning mobs only (fire-immune mobs unaffected); reduced by Fire Protection.' }), { pack: 'vanilla', mod: 'Minecraft', rarity: 'rare', groups: ['fire_aspect'], src: MC, desc: 'Sets the target on fire. Burn deals ~(Level*4 - 1) over Level*4 seconds.' }],
   ['looting', 'Looting', 3, ['sword'], info(), { pack: 'vanilla', mod: 'Minecraft', rarity: 'rare', src: MC, desc: 'Increases mob loot.' }],
 
   // ---- Vanilla armor ----
@@ -127,11 +144,15 @@ const raw = [
   // ---- So Many Enchantments: weapon utility / effects (info) ----
   ['critical_strike', 'Critical Strike', 4, ['sword'], info('chance-based extra damage'), { rarity: 'rare', desc: 'Chance to deal extra damage based on attack damage.' }],
   ['lifesteal', 'Lifesteal', 2, ['sword'], info('heals on hit'), { rarity: 'rare', desc: 'Heals you based on damage dealt.' }],
-  ['envenomed', 'Envenomed', 3, ['sword'], info('applies poison/wither'), { rarity: 'rare', desc: 'Applies poison and wither.' }],
-  ['fiery_edge', 'Fiery Edge', 2, ['sword'], info('extended fire'), { rarity: 'veryRare', groups: ['fire_aspect'], desc: 'Sets enemies on fire for longer; can bypass iframes.' }],
-  ['lesser_fire_aspect', 'Lesser Fire Aspect', 2, ['sword'], info('burn over time'), { rarity: 'common', groups: ['fire_aspect'], desc: 'Weakest tier of Fire Aspect.' }],
-  ['advanced_fire_aspect', 'Advanced Fire Aspect', 2, ['sword'], info('burn over time'), { rarity: 'rare', groups: ['fire_aspect'], desc: 'Advanced Fire Aspect.' }],
-  ['supreme_fire_aspect', 'Supreme Fire Aspect', 2, ['sword'], info('burn over time'), { rarity: 'veryRare', groups: ['fire_aspect'], desc: 'Strongest Fire Aspect.' }],
+  // Envenomed (SME EnchantmentEnvenomed): (20% x Level) chance to apply Poison
+  // (amp Level-1) and, at Level 3, Wither (amp Level-1), each for (40+10*Level)
+  // ticks. Estimated landed damage by level ~= Poison [2,5,11] + Wither [0,0,7]
+  // = [2,5,18] (poison caps the target at 1 HP). Verified from the jar bytecode.
+  ['envenomed', 'Envenomed', 3, ['sword'], dot('poison', 0, 0, 2, 0.5, { dotDamageByLevel: [2, 5, 18], dotChancePerLevel: 0.2, dotCanKill: false, dotNote: 'Chance-based; Poison can\u2019t kill (stops at 1 HP). Wither (Level 3) can kill. No effect on poison/wither-immune mobs.' }), { rarity: 'rare', desc: 'Chance to apply Poison (and Wither at Level 3). Est. ~[2, 5, 18] damage by level if it lands.' }],
+  ['fiery_edge', 'Fiery Edge', 2, ['sword'], dot('fire', -1, 8, 0, 8, { dotNote: 'Also a chance to bypass the target\u2019s iframes while it burns. Fire-immune mobs unaffected.' }), { rarity: 'veryRare', groups: ['fire_aspect'], desc: 'Fire Aspect variant with longer burn (~Level*8 - 1 over Level*8 s); can bypass iframes.' }],
+  ['lesser_fire_aspect', 'Lesser Fire Aspect', 2, ['sword'], dot('fire', -1, 4, 0, 4, { dotRandom: true, dotNote: 'Burn length rolls 0..Level*4 s each hit, so damage swings from 0. Fire-immune mobs unaffected.' }), { rarity: 'common', groups: ['fire_aspect'], desc: 'Weakest Fire Aspect: random burn up to ~(Level*4 - 1).' }],
+  ['advanced_fire_aspect', 'Advanced Fire Aspect', 2, ['sword'], dot('fire', -1, 8, 0, 8, { dotNote: 'Fire-immune mobs unaffected; reduced by Fire Protection.' }), { rarity: 'rare', groups: ['fire_aspect'], desc: 'Advanced Fire Aspect: ~(Level*8 - 1) burn over Level*8 seconds.' }],
+  ['supreme_fire_aspect', 'Supreme Fire Aspect', 2, ['sword'], dot('fire', -1, 16, 0, 16, { dotNote: 'Fire-immune mobs unaffected; reduced by Fire Protection.' }), { rarity: 'veryRare', groups: ['fire_aspect'], desc: 'Strongest Fire Aspect: ~(Level*16 - 1) burn over Level*16 seconds.' }],
   ['freezing', 'Freezing', 3, ['sword'], info('slows / mining fatigue'), { rarity: 'veryRare', desc: 'Applies Mining Fatigue and Slowness, stacking per hit.' }],
   ['levitator', 'Levitator', 2, ['sword'], info('applies levitation'), { rarity: 'rare', desc: 'Applies Levitation on hit.' }],
   ['flinging', 'Flinging', 2, ['sword'], info('launches enemies up'), { rarity: 'uncommon', desc: 'Knocks enemies upward.' }],
