@@ -1,5 +1,7 @@
 # RLCraft Enchant Calculator
 
+**Live site: <https://newcarrotgames.github.io/enchantcalc/>**
+
 A Minecraft-styled web app for [RLCraft](https://rlcraft.wiki.gg/) (and RLCraft
 Dregora) players. Drag items and enchants onto a build board and instantly see:
 
