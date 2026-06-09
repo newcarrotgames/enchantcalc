@@ -1,0 +1,12 @@
+[
+  {
+    "modid": "itemdumper",
+    "name": "Item Dumper",
+    "description": "Dumps every registered item's in-game stats to JSON for the RLCraft enchant calculator. Run /dumpitems in-game.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "authorList": ["enchantcalc"],
+    "credits": "",
+    "url": ""
+  }
+]

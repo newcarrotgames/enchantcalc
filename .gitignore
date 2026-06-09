@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# itemdumper Forge mod build artifacts (keep the gradle wrapper itself)
+itemdumper/.gradle
+itemdumper/build
+itemdumper/bin
+itemdumper/run
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

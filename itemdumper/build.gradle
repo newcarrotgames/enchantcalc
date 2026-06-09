@@ -1,0 +1,55 @@
+// ItemDumper - a tiny RLCraft (Minecraft 1.12.2 / Forge) mod that dumps every
+// registered item's in-game stats to JSON, so the enchant calculator catalog can
+// be cross-referenced against ground truth.
+//
+// Toolchain: 1.12.2 mods build with ForgeGradle 2.3, which requires Gradle 4.10.x
+// and a Java 8 JDK. The gradle wrapper in this folder is pinned to 4.10.3.
+//   JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 ./gradlew build
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '2.3.10'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = '1.0.0'
+group = 'com.enchantcalc.itemdumper'
+archivesBaseName = 'itemdumper'
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+    options.encoding = 'UTF-8'
+}
+
+minecraft {
+    // Compiled against Forge 14.23.5.2847 (the last 1.12.2 build that ships the
+    // FG 2.3 'userdev' artifact). The jar is ABI-compatible with and runs on the
+    // pack's 14.23.5.2860 runtime.
+    version = '1.12.2-14.23.5.2847'
+    runDir = 'run'
+    // Canonical stable MCP mappings for 1.12.2.
+    mappings = 'stable_39'
+}
+
+dependencies {
+}
+
+processResources {
+    inputs.property 'version', project.version
+    inputs.property 'mcversion', project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version': project.version, 'mcversion': project.minecraft.version
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
