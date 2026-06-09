@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# GitHub Actions workflow kept locally but untracked: pushing workflow files
+# needs the 'workflow' OAuth scope. Pages currently deploys from the gh-pages
+# branch instead. To switch back to Actions: grant the scope, then untrack this
+# line and commit .github/workflows/deploy.yml.
+.github/workflows/
+
 # itemdumper Forge mod build artifacts (keep the gradle wrapper itself)
 itemdumper/.gradle
 itemdumper/build
