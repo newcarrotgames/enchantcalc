@@ -27,13 +27,14 @@ describe('computeWeapon', () => {
     expect(r.max).toBeCloseTo(9); // crit only
   });
 
-  it('iron katana applies the 1.5x unarmored multiplier in the max', () => {
-    // base 5.5, speed 2.0, unarmored 1.5, + Sharpness V (3.0)
+  it('iron katana applies the 1.5x conditional (no-chest-armor) multiplier in the max', () => {
+    // base 5.5, speed 2.0, conditional best-case 1.5 (Chest Damage Bonus,
+    // damageBonusChestMultiplier=1.5), + Sharpness V (3.0)
     const r = computeWeapon(item('katana_iron'), [
       { enchantId: 'sharpness', level: 5 },
     ]);
     expect(r.min).toBeCloseTo(8.5); // 5.5 + 3
-    // crit + unarmored: 5.5 * 1.5 * 1.5 = 12.375, + 3 = 15.375
+    // crit + conditional: 5.5 * 1.5 * 1.5 = 12.375, + 3 = 15.375
     expect(r.max).toBeCloseTo(15.38);
   });
 

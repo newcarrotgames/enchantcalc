@@ -4,11 +4,13 @@ import com.google.common.collect.Multimap;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -217,6 +219,23 @@ public class DumpCommand extends CommandBase {
             row.put("attackSpeed", round(4.0 + (spdMod != null ? spdMod : 0.0)));
         }
 
+        // Dump every attribute-modifier key on the mainhand (not just the four
+        // hardcoded ones). Spartan Weaponry and friends may attach extras like
+        // reach distance here; this surfaces anything attribute-shaped.
+        Map<String, Object> mainhandMods = allModifiers(mainhand);
+        if (!mainhandMods.isEmpty()) {
+            row.put("mainhandModifiers", mainhandMods);
+        }
+
+        // Capture the full tooltip lines (formatting codes stripped). This is
+        // where mod-specific weapon traits surface that are NOT vanilla
+        // attributes, e.g. Spartan Weaponry's "Damage Reduction: X%" on sabers.
+        safePut(row, "tooltip", new Supplier() {
+            public Object get() {
+                return tooltipLines(stack);
+            }
+        });
+
         // Armor stats: read the modifiers for the slot the armor occupies.
         if (item instanceof ItemArmor) {
             ItemArmor armor = (ItemArmor) item;
@@ -241,6 +260,48 @@ public class DumpCommand extends CommandBase {
         }
 
         return row;
+    }
+
+    /** Sum every attribute-modifier key in the map into a {key: amount} object. */
+    private Map<String, Object> allModifiers(Multimap<String, AttributeModifier> map) {
+        Map<String, Object> out = new LinkedHashMap<String, Object>();
+        if (map == null) {
+            return out;
+        }
+        for (String key : map.keySet()) {
+            Double sum = sumModifiers(map, key);
+            if (sum != null) {
+                out.put(key, round(sum));
+            }
+        }
+        return out;
+    }
+
+    /** Render the item's tooltip with the section-sign color codes stripped. */
+    private List<String> tooltipLines(ItemStack stack) {
+        List<String> raw = stack.getTooltip((EntityPlayer) null, ITooltipFlag.TooltipFlags.NORMAL);
+        List<String> clean = new ArrayList<String>(raw.size());
+        for (String line : raw) {
+            clean.add(stripCodes(line));
+        }
+        return clean;
+    }
+
+    /** Remove Minecraft formatting codes (the section sign followed by one char). */
+    private static String stripCodes(String s) {
+        if (s == null) {
+            return null;
+        }
+        StringBuilder sb = new StringBuilder(s.length());
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '\u00a7' && i + 1 < s.length()) {
+                i++;
+                continue;
+            }
+            sb.append(c);
+        }
+        return sb.toString();
     }
 
     private Double sumModifiers(Multimap<String, AttributeModifier> map, String key) {

@@ -187,7 +187,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_stone",
@@ -204,7 +205,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_iron",
@@ -221,7 +223,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_gold",
@@ -238,7 +241,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_diamond",
@@ -255,7 +259,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_copper",
@@ -272,7 +277,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_tin",
@@ -289,7 +295,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_bronze",
@@ -306,7 +313,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_steel",
@@ -324,7 +332,7 @@
       "weapon",
       "any"
     ],
-    "note": "+2 damage vs Nether mobs & Fire elementals."
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "dagger_silver",
@@ -342,7 +350,7 @@
       "weapon",
       "any"
     ],
-    "note": "+50% damage vs undead."
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind. +50% damage vs undead."
   },
   {
     "id": "dagger_invar",
@@ -359,7 +367,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_platinum",
@@ -376,7 +385,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_electrum",
@@ -393,7 +403,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_nickel",
@@ -410,7 +421,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_lead",
@@ -427,7 +439,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_umbrium",
@@ -444,7 +457,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_dragonbone",
@@ -461,7 +475,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_fire_dragonbone",
@@ -478,7 +493,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_ice_dragonbone",
@@ -495,7 +511,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_lightning_dragonbone",
@@ -512,7 +529,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_desert_myrmex",
@@ -529,7 +547,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_jungle_myrmex",
@@ -546,7 +565,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_desert_venom",
@@ -563,7 +583,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "dagger_jungle_venom",
@@ -580,7 +601,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Backstab: bonus damage when striking a foe from behind."
   },
   {
     "id": "throwing_knife_wood",
@@ -597,7 +619,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_stone",
@@ -614,7 +637,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_iron",
@@ -631,7 +655,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_gold",
@@ -648,7 +673,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_diamond",
@@ -665,7 +691,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_copper",
@@ -682,7 +709,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_tin",
@@ -699,7 +727,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_bronze",
@@ -716,7 +745,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_steel",
@@ -734,7 +764,7 @@
       "weapon",
       "any"
     ],
-    "note": "+2 damage vs Nether mobs & Fire elementals."
+    "note": "Can be thrown. Bonus damage when thrown. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "throwing_knife_silver",
@@ -752,7 +782,7 @@
       "weapon",
       "any"
     ],
-    "note": "+50% damage vs undead."
+    "note": "Can be thrown. Bonus damage when thrown. +50% damage vs undead."
   },
   {
     "id": "throwing_knife_invar",
@@ -769,7 +799,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_platinum",
@@ -786,7 +817,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_electrum",
@@ -803,7 +835,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_nickel",
@@ -820,7 +853,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_lead",
@@ -837,7 +871,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_umbrium",
@@ -854,7 +889,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_dragonbone",
@@ -871,7 +907,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_fire_dragonbone",
@@ -888,7 +925,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_ice_dragonbone",
@@ -905,7 +943,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_lightning_dragonbone",
@@ -922,7 +961,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_desert_myrmex",
@@ -939,7 +979,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_jungle_myrmex",
@@ -956,7 +997,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_desert_venom",
@@ -973,7 +1015,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_knife_jungle_venom",
@@ -990,7 +1033,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "saber_wood",
@@ -1008,7 +1052,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_stone",
@@ -1026,7 +1070,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_iron",
@@ -1044,7 +1088,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_gold",
@@ -1062,7 +1106,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_diamond",
@@ -1080,7 +1124,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_copper",
@@ -1098,7 +1142,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_tin",
@@ -1116,7 +1160,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_bronze",
@@ -1134,7 +1178,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_steel",
@@ -1152,7 +1196,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets. +2 damage vs Nether mobs & Fire elementals."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "saber_silver",
@@ -1170,7 +1214,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets. +50% damage vs undead."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes. +50% damage vs undead."
   },
   {
     "id": "saber_invar",
@@ -1188,7 +1232,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_platinum",
@@ -1206,7 +1250,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_electrum",
@@ -1224,7 +1268,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_nickel",
@@ -1242,7 +1286,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_lead",
@@ -1260,7 +1304,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_umbrium",
@@ -1278,7 +1322,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_dragonbone",
@@ -1296,7 +1340,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_fire_dragonbone",
@@ -1314,7 +1358,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_ice_dragonbone",
@@ -1332,7 +1376,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_lightning_dragonbone",
@@ -1350,7 +1394,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_desert_myrmex",
@@ -1368,7 +1412,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_jungle_myrmex",
@@ -1386,7 +1430,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_desert_venom",
@@ -1404,7 +1448,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "saber_jungle_venom",
@@ -1422,7 +1466,7 @@
       "weapon",
       "any"
     ],
-    "note": "Has an unarmored damage bonus vs unarmored targets."
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). Chest bonus: extra damage vs foes with no chest armor. Sweep: hits nearby foes."
   },
   {
     "id": "rapier_wood",
@@ -1441,7 +1485,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_stone",
@@ -1460,7 +1505,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_iron",
@@ -1479,7 +1525,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_gold",
@@ -1498,7 +1545,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_diamond",
@@ -1517,7 +1565,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_copper",
@@ -1536,7 +1585,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_tin",
@@ -1555,7 +1605,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_bronze",
@@ -1574,7 +1625,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_steel",
@@ -1593,8 +1645,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets",
-    "note": "+2 damage vs Nether mobs & Fire elementals."
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "rapier_silver",
@@ -1613,8 +1665,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets",
-    "note": "+50% damage vs undead."
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability). +50% damage vs undead."
   },
   {
     "id": "rapier_invar",
@@ -1633,7 +1685,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_platinum",
@@ -1652,7 +1705,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_electrum",
@@ -1671,7 +1725,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_nickel",
@@ -1690,7 +1745,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_lead",
@@ -1709,7 +1765,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_umbrium",
@@ -1728,7 +1785,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_dragonbone",
@@ -1747,7 +1805,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_fire_dragonbone",
@@ -1766,7 +1825,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_ice_dragonbone",
@@ -1785,7 +1845,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_lightning_dragonbone",
@@ -1804,7 +1865,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_desert_myrmex",
@@ -1823,7 +1885,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_jungle_myrmex",
@@ -1842,7 +1905,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_desert_venom",
@@ -1861,7 +1925,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "rapier_jungle_venom",
@@ -1880,7 +1945,8 @@
       "any"
     ],
     "unarmoredMultiplier": 2,
-    "unarmoredNote": "2x damage vs unarmored targets"
+    "unarmoredNote": "2x damage vs foes with no armor",
+    "note": "Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability)."
   },
   {
     "id": "katana_wood",
@@ -1899,8 +1965,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_stone",
@@ -1919,8 +1985,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_iron",
@@ -1939,8 +2005,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_gold",
@@ -1959,8 +2025,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_diamond",
@@ -1979,8 +2045,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_copper",
@@ -1999,8 +2065,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_tin",
@@ -2019,8 +2085,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_bronze",
@@ -2039,8 +2105,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_steel",
@@ -2059,8 +2125,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used). +2 damage vs Nether mobs & Fire elementals."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "katana_silver",
@@ -2079,8 +2145,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used). +50% damage vs undead."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes. +50% damage vs undead."
   },
   {
     "id": "katana_invar",
@@ -2099,8 +2165,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_platinum",
@@ -2119,8 +2185,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_electrum",
@@ -2139,8 +2205,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_nickel",
@@ -2159,8 +2225,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_lead",
@@ -2179,8 +2245,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_umbrium",
@@ -2199,8 +2265,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_dragonbone",
@@ -2219,8 +2285,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_fire_dragonbone",
@@ -2239,8 +2305,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_ice_dragonbone",
@@ -2259,8 +2325,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_lightning_dragonbone",
@@ -2279,8 +2345,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_desert_myrmex",
@@ -2299,8 +2365,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_jungle_myrmex",
@@ -2319,8 +2385,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_desert_venom",
@@ -2339,8 +2405,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "katana_jungle_venom",
@@ -2359,8 +2425,8 @@
       "any"
     ],
     "unarmoredMultiplier": 1.5,
-    "unarmoredNote": "1.5x damage vs unarmored targets",
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "unarmoredNote": "1.5x damage vs foes with no chest armor",
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_wood",
@@ -2378,7 +2444,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_stone",
@@ -2396,7 +2462,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_iron",
@@ -2414,7 +2480,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_gold",
@@ -2432,7 +2498,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_diamond",
@@ -2450,7 +2516,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_copper",
@@ -2468,7 +2534,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_tin",
@@ -2486,7 +2552,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_bronze",
@@ -2504,7 +2570,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_steel",
@@ -2522,7 +2588,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets. +2 damage vs Nether mobs & Fire elementals."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "longsword_silver",
@@ -2540,7 +2606,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets. +50% damage vs undead."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes. +50% damage vs undead."
   },
   {
     "id": "longsword_invar",
@@ -2558,7 +2624,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_platinum",
@@ -2576,7 +2642,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_electrum",
@@ -2594,7 +2660,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_nickel",
@@ -2612,7 +2678,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_lead",
@@ -2630,7 +2696,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_umbrium",
@@ -2648,7 +2714,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_dragonbone",
@@ -2666,7 +2732,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_fire_dragonbone",
@@ -2684,7 +2750,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_ice_dragonbone",
@@ -2702,7 +2768,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_lightning_dragonbone",
@@ -2720,7 +2786,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_desert_myrmex",
@@ -2738,7 +2804,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_jungle_myrmex",
@@ -2756,7 +2822,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_desert_venom",
@@ -2774,7 +2840,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "longsword_jungle_venom",
@@ -2792,7 +2858,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "greatsword_wood",
@@ -2810,7 +2876,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_stone",
@@ -2828,7 +2894,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_iron",
@@ -2846,7 +2912,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_gold",
@@ -2864,7 +2930,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_diamond",
@@ -2882,7 +2948,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_copper",
@@ -2900,7 +2966,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_tin",
@@ -2918,7 +2984,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_bronze",
@@ -2936,7 +3002,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_steel",
@@ -2954,7 +3020,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets. +2 damage vs Nether mobs & Fire elementals."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc). +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "greatsword_silver",
@@ -2972,7 +3038,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets. +50% damage vs undead."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc). +50% damage vs undead."
   },
   {
     "id": "greatsword_invar",
@@ -2990,7 +3056,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_platinum",
@@ -3008,7 +3074,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_electrum",
@@ -3026,7 +3092,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_nickel",
@@ -3044,7 +3110,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_lead",
@@ -3062,7 +3128,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_umbrium",
@@ -3080,7 +3146,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_dragonbone",
@@ -3098,7 +3164,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_fire_dragonbone",
@@ -3116,7 +3182,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_ice_dragonbone",
@@ -3134,7 +3200,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_lightning_dragonbone",
@@ -3152,7 +3218,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_desert_myrmex",
@@ -3170,7 +3236,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_jungle_myrmex",
@@ -3188,7 +3254,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_desert_venom",
@@ -3206,7 +3272,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "greatsword_jungle_venom",
@@ -3224,7 +3290,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes (wide arc)."
   },
   {
     "id": "scythe_wood",
@@ -3241,7 +3307,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_stone",
@@ -3258,7 +3325,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_iron",
@@ -3275,7 +3343,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_gold",
@@ -3292,7 +3361,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_diamond",
@@ -3309,7 +3379,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_copper",
@@ -3326,7 +3397,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_tin",
@@ -3343,7 +3415,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_bronze",
@@ -3360,7 +3433,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_steel",
@@ -3378,7 +3452,7 @@
       "weapon",
       "any"
     ],
-    "note": "+2 damage vs Nether mobs & Fire elementals."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "scythe_silver",
@@ -3396,7 +3470,7 @@
       "weapon",
       "any"
     ],
-    "note": "+50% damage vs undead."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet. +50% damage vs undead."
   },
   {
     "id": "scythe_invar",
@@ -3413,7 +3487,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_platinum",
@@ -3430,7 +3505,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_electrum",
@@ -3447,7 +3523,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_nickel",
@@ -3464,7 +3541,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_lead",
@@ -3481,7 +3559,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_umbrium",
@@ -3498,7 +3577,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_dragonbone",
@@ -3515,7 +3595,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_fire_dragonbone",
@@ -3532,7 +3613,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_ice_dragonbone",
@@ -3549,7 +3631,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_lightning_dragonbone",
@@ -3566,7 +3649,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_desert_myrmex",
@@ -3583,7 +3667,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_jungle_myrmex",
@@ -3600,7 +3685,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_desert_venom",
@@ -3617,7 +3703,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "scythe_jungle_venom",
@@ -3634,7 +3721,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Wide sweep: hits foes in a wide arc. Head bonus: extra damage vs foes with no helmet."
   },
   {
     "id": "spear_wood",
@@ -3652,7 +3740,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_stone",
@@ -3670,7 +3758,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_iron",
@@ -3688,7 +3776,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_gold",
@@ -3706,7 +3794,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_diamond",
@@ -3724,7 +3812,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_copper",
@@ -3742,7 +3830,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_tin",
@@ -3760,7 +3848,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_bronze",
@@ -3778,7 +3866,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_steel",
@@ -3796,7 +3884,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +2 damage vs Nether mobs & Fire elementals."
+    "note": "Extended melee reach. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "spear_silver",
@@ -3814,7 +3902,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +50% damage vs undead."
+    "note": "Extended melee reach. +50% damage vs undead."
   },
   {
     "id": "spear_invar",
@@ -3832,7 +3920,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_platinum",
@@ -3850,7 +3938,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_electrum",
@@ -3868,7 +3956,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_nickel",
@@ -3886,7 +3974,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_lead",
@@ -3904,7 +3992,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_umbrium",
@@ -3922,7 +4010,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_dragonbone",
@@ -3940,7 +4028,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_fire_dragonbone",
@@ -3958,7 +4046,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_ice_dragonbone",
@@ -3976,7 +4064,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_lightning_dragonbone",
@@ -3994,7 +4082,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_desert_myrmex",
@@ -4012,7 +4100,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_jungle_myrmex",
@@ -4030,7 +4118,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_desert_venom",
@@ -4048,7 +4136,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "spear_jungle_venom",
@@ -4066,7 +4154,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Extended melee reach."
   },
   {
     "id": "lance_wood",
@@ -4083,7 +4171,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_stone",
@@ -4100,7 +4189,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_iron",
@@ -4117,7 +4207,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_gold",
@@ -4134,7 +4225,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_diamond",
@@ -4151,7 +4243,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_copper",
@@ -4168,7 +4261,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_tin",
@@ -4185,7 +4279,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_bronze",
@@ -4202,7 +4297,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_steel",
@@ -4220,7 +4316,7 @@
       "weapon",
       "any"
     ],
-    "note": "+2 damage vs Nether mobs & Fire elementals."
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "lance_silver",
@@ -4238,7 +4334,7 @@
       "weapon",
       "any"
     ],
-    "note": "+50% damage vs undead."
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted. +50% damage vs undead."
   },
   {
     "id": "lance_invar",
@@ -4255,7 +4351,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_platinum",
@@ -4272,7 +4369,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_electrum",
@@ -4289,7 +4387,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_nickel",
@@ -4306,7 +4405,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_lead",
@@ -4323,7 +4423,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_umbrium",
@@ -4340,7 +4441,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_dragonbone",
@@ -4357,7 +4459,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_fire_dragonbone",
@@ -4374,7 +4477,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_ice_dragonbone",
@@ -4391,7 +4495,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_lightning_dragonbone",
@@ -4408,7 +4513,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_desert_myrmex",
@@ -4425,7 +4531,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_jungle_myrmex",
@@ -4442,7 +4549,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_desert_venom",
@@ -4459,7 +4567,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "lance_jungle_venom",
@@ -4476,7 +4585,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Extended melee reach. Riding bonus: extra damage while mounted."
   },
   {
     "id": "pike_wood",
@@ -4494,7 +4604,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_stone",
@@ -4512,7 +4622,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_iron",
@@ -4530,7 +4640,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_gold",
@@ -4548,7 +4658,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_diamond",
@@ -4566,7 +4676,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_copper",
@@ -4584,7 +4694,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_tin",
@@ -4602,7 +4712,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_bronze",
@@ -4620,7 +4730,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_steel",
@@ -4638,7 +4748,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +2 damage vs Nether mobs & Fire elementals."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "pike_silver",
@@ -4656,7 +4766,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +50% damage vs undead."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. +50% damage vs undead."
   },
   {
     "id": "pike_invar",
@@ -4674,7 +4784,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_platinum",
@@ -4692,7 +4802,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_electrum",
@@ -4710,7 +4820,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_nickel",
@@ -4728,7 +4838,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_lead",
@@ -4746,7 +4856,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_umbrium",
@@ -4764,7 +4874,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_dragonbone",
@@ -4782,7 +4892,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_fire_dragonbone",
@@ -4800,7 +4910,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_ice_dragonbone",
@@ -4818,7 +4928,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_lightning_dragonbone",
@@ -4836,7 +4946,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_desert_myrmex",
@@ -4854,7 +4964,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_jungle_myrmex",
@@ -4872,7 +4982,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_desert_venom",
@@ -4890,7 +5000,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "pike_jungle_venom",
@@ -4908,7 +5018,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach."
   },
   {
     "id": "halberd_wood",
@@ -4926,7 +5036,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_stone",
@@ -4944,7 +5054,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_iron",
@@ -4962,7 +5072,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_gold",
@@ -4980,7 +5090,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_diamond",
@@ -4998,7 +5108,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_copper",
@@ -5016,7 +5126,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_tin",
@@ -5034,7 +5144,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_bronze",
@@ -5052,7 +5162,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_steel",
@@ -5070,7 +5180,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +2 damage vs Nether mobs & Fire elementals."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "halberd_silver",
@@ -5088,7 +5198,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +50% damage vs undead."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield. +50% damage vs undead."
   },
   {
     "id": "halberd_invar",
@@ -5106,7 +5216,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_platinum",
@@ -5124,7 +5234,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_electrum",
@@ -5142,7 +5252,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_nickel",
@@ -5160,7 +5270,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_lead",
@@ -5178,7 +5288,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_umbrium",
@@ -5196,7 +5306,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_dragonbone",
@@ -5214,7 +5324,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_fire_dragonbone",
@@ -5232,7 +5342,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_ice_dragonbone",
@@ -5250,7 +5360,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_lightning_dragonbone",
@@ -5268,7 +5378,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_desert_myrmex",
@@ -5286,7 +5396,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_jungle_myrmex",
@@ -5304,7 +5414,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_desert_venom",
@@ -5322,7 +5432,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "halberd_jungle_venom",
@@ -5340,7 +5450,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Shield breach: can disable a blocking foe’s shield."
   },
   {
     "id": "glaive_wood",
@@ -5358,7 +5468,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_stone",
@@ -5376,7 +5486,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_iron",
@@ -5394,7 +5504,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_gold",
@@ -5412,7 +5522,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_diamond",
@@ -5430,7 +5540,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_copper",
@@ -5448,7 +5558,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_tin",
@@ -5466,7 +5576,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_bronze",
@@ -5484,7 +5594,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_steel",
@@ -5502,7 +5612,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets. +2 damage vs Nether mobs & Fire elementals."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "glaive_silver",
@@ -5520,7 +5630,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets. +50% damage vs undead."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes. +50% damage vs undead."
   },
   {
     "id": "glaive_invar",
@@ -5538,7 +5648,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_platinum",
@@ -5556,7 +5666,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_electrum",
@@ -5574,7 +5684,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_nickel",
@@ -5592,7 +5702,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_lead",
@@ -5610,7 +5720,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_umbrium",
@@ -5628,7 +5738,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_dragonbone",
@@ -5646,7 +5756,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_fire_dragonbone",
@@ -5664,7 +5774,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_ice_dragonbone",
@@ -5682,7 +5792,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_lightning_dragonbone",
@@ -5700,7 +5810,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_desert_myrmex",
@@ -5718,7 +5828,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_jungle_myrmex",
@@ -5736,7 +5846,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_desert_venom",
@@ -5754,7 +5864,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "glaive_jungle_venom",
@@ -5772,7 +5882,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Extended melee reach. Sweep: hits nearby foes."
   },
   {
     "id": "javelin_wood",
@@ -5789,7 +5899,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_stone",
@@ -5806,7 +5917,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_iron",
@@ -5823,7 +5935,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_gold",
@@ -5840,7 +5953,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_diamond",
@@ -5857,7 +5971,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_copper",
@@ -5874,7 +5989,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_tin",
@@ -5891,7 +6007,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_bronze",
@@ -5908,7 +6025,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_steel",
@@ -5926,7 +6044,7 @@
       "weapon",
       "any"
     ],
-    "note": "+2 damage vs Nether mobs & Fire elementals."
+    "note": "Can be thrown. Bonus damage when thrown. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "javelin_silver",
@@ -5944,7 +6062,7 @@
       "weapon",
       "any"
     ],
-    "note": "+50% damage vs undead."
+    "note": "Can be thrown. Bonus damage when thrown. +50% damage vs undead."
   },
   {
     "id": "javelin_invar",
@@ -5961,7 +6079,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_platinum",
@@ -5978,7 +6097,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_electrum",
@@ -5995,7 +6115,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_nickel",
@@ -6012,7 +6133,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_lead",
@@ -6029,7 +6151,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_umbrium",
@@ -6046,7 +6169,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_dragonbone",
@@ -6063,7 +6187,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_fire_dragonbone",
@@ -6080,7 +6205,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_ice_dragonbone",
@@ -6097,7 +6223,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "javelin_lightning_dragonbone",
@@ -6114,7 +6241,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "quarterstaff_wood",
@@ -6132,7 +6260,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_stone",
@@ -6150,7 +6278,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_iron",
@@ -6168,7 +6296,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_gold",
@@ -6186,7 +6314,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_diamond",
@@ -6204,7 +6332,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_copper",
@@ -6222,7 +6350,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_tin",
@@ -6240,7 +6368,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_bronze",
@@ -6258,7 +6386,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_steel",
@@ -6276,7 +6404,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets. +2 damage vs Nether mobs & Fire elementals."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "quarterstaff_silver",
@@ -6294,7 +6422,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets. +50% damage vs undead."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes. +50% damage vs undead."
   },
   {
     "id": "quarterstaff_invar",
@@ -6312,7 +6440,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_platinum",
@@ -6330,7 +6458,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_electrum",
@@ -6348,7 +6476,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_nickel",
@@ -6366,7 +6494,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "quarterstaff_lead",
@@ -6384,7 +6512,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). Has an unarmored damage bonus vs unarmored targets."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Sweep: hits nearby foes."
   },
   {
     "id": "mace_wood",
@@ -6659,7 +6787,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_stone",
@@ -6677,7 +6805,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_iron",
@@ -6695,7 +6823,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_gold",
@@ -6713,7 +6841,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_diamond",
@@ -6731,7 +6859,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_copper",
@@ -6749,7 +6877,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_tin",
@@ -6767,7 +6895,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_bronze",
@@ -6785,7 +6913,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_steel",
@@ -6803,7 +6931,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +2 damage vs Nether mobs & Fire elementals."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "hammer_silver",
@@ -6821,7 +6949,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +50% damage vs undead."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet. +50% damage vs undead."
   },
   {
     "id": "hammer_invar",
@@ -6839,7 +6967,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_platinum",
@@ -6857,7 +6985,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_electrum",
@@ -6875,7 +7003,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_nickel",
@@ -6893,7 +7021,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_lead",
@@ -6911,7 +7039,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_umbrium",
@@ -6929,7 +7057,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_dragonbone",
@@ -6947,7 +7075,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_fire_dragonbone",
@@ -6965,7 +7093,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_ice_dragonbone",
@@ -6983,7 +7111,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_lightning_dragonbone",
@@ -7001,7 +7129,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_desert_myrmex",
@@ -7019,7 +7147,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_jungle_myrmex",
@@ -7037,7 +7165,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_desert_venom",
@@ -7055,7 +7183,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "hammer_jungle_venom",
@@ -7073,7 +7201,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Enhanced knockback. Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet."
   },
   {
     "id": "warhammer_wood",
@@ -7091,7 +7219,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_stone",
@@ -7109,7 +7237,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_iron",
@@ -7127,7 +7255,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_gold",
@@ -7145,7 +7273,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_diamond",
@@ -7163,7 +7291,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_copper",
@@ -7181,7 +7309,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_tin",
@@ -7199,7 +7327,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_bronze",
@@ -7217,7 +7345,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_steel",
@@ -7235,7 +7363,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +2 damage vs Nether mobs & Fire elementals."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "warhammer_silver",
@@ -7253,7 +7381,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +50% damage vs undead."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor. +50% damage vs undead."
   },
   {
     "id": "warhammer_invar",
@@ -7271,7 +7399,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_platinum",
@@ -7289,7 +7417,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_electrum",
@@ -7307,7 +7435,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_nickel",
@@ -7325,7 +7453,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_lead",
@@ -7343,7 +7471,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_umbrium",
@@ -7361,7 +7489,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_dragonbone",
@@ -7379,7 +7507,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_fire_dragonbone",
@@ -7397,7 +7525,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_ice_dragonbone",
@@ -7415,7 +7543,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_lightning_dragonbone",
@@ -7433,7 +7561,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_desert_myrmex",
@@ -7451,7 +7579,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_jungle_myrmex",
@@ -7469,7 +7597,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_desert_venom",
@@ -7487,7 +7615,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "warhammer_jungle_venom",
@@ -7505,7 +7633,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Armor piercing: 50% of damage ignores armor."
   },
   {
     "id": "battleaxe_wood",
@@ -7524,7 +7652,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_stone",
@@ -7543,7 +7671,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_iron",
@@ -7562,7 +7690,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_gold",
@@ -7581,7 +7709,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_diamond",
@@ -7600,7 +7728,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_copper",
@@ -7619,7 +7747,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_tin",
@@ -7638,7 +7766,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_bronze",
@@ -7657,7 +7785,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_steel",
@@ -7676,7 +7804,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +2 damage vs Nether mobs & Fire elementals."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "battleaxe_silver",
@@ -7695,7 +7823,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used). +50% damage vs undead."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed. +50% damage vs undead."
   },
   {
     "id": "battleaxe_invar",
@@ -7714,7 +7842,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_platinum",
@@ -7733,7 +7861,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_electrum",
@@ -7752,7 +7880,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_nickel",
@@ -7771,7 +7899,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "battleaxe_lead",
@@ -7790,7 +7918,7 @@
       "weapon",
       "any"
     ],
-    "note": "Two-Handed (mining fatigue if offhand is used)."
+    "note": "Two-Handed (using the offhand lowers damage and attack speed). Versatile: usable one- or two-handed."
   },
   {
     "id": "throwing_axe_wood",
@@ -7808,7 +7936,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_stone",
@@ -7826,7 +7955,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_iron",
@@ -7844,7 +7974,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_gold",
@@ -7862,7 +7993,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_diamond",
@@ -7880,7 +8012,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_copper",
@@ -7898,7 +8031,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_tin",
@@ -7916,7 +8050,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_bronze",
@@ -7934,7 +8069,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_steel",
@@ -7953,7 +8089,7 @@
       "weapon",
       "any"
     ],
-    "note": "+2 damage vs Nether mobs & Fire elementals."
+    "note": "Can be thrown. Bonus damage when thrown. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "throwing_axe_silver",
@@ -7972,7 +8108,7 @@
       "weapon",
       "any"
     ],
-    "note": "+50% damage vs undead."
+    "note": "Can be thrown. Bonus damage when thrown. +50% damage vs undead."
   },
   {
     "id": "throwing_axe_invar",
@@ -7990,7 +8126,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_platinum",
@@ -8008,7 +8145,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_electrum",
@@ -8026,7 +8164,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_nickel",
@@ -8044,7 +8183,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_lead",
@@ -8062,7 +8202,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_umbrium",
@@ -8080,7 +8221,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_dragonbone",
@@ -8098,7 +8240,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_fire_dragonbone",
@@ -8116,7 +8259,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_ice_dragonbone",
@@ -8134,7 +8278,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "throwing_axe_lightning_dragonbone",
@@ -8152,7 +8297,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown. Bonus damage when thrown."
   },
   {
     "id": "boomerang_wood",
@@ -8169,7 +8315,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_stone",
@@ -8186,7 +8333,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_iron",
@@ -8203,7 +8351,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_gold",
@@ -8220,7 +8369,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_diamond",
@@ -8237,7 +8387,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_copper",
@@ -8254,7 +8405,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_tin",
@@ -8271,7 +8423,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_bronze",
@@ -8288,7 +8441,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_steel",
@@ -8306,7 +8460,7 @@
       "weapon",
       "any"
     ],
-    "note": "+2 damage vs Nether mobs & Fire elementals."
+    "note": "Can be thrown; returns to the thrower. +2 damage vs Nether mobs & Fire elementals."
   },
   {
     "id": "boomerang_silver",
@@ -8324,7 +8478,7 @@
       "weapon",
       "any"
     ],
-    "note": "+50% damage vs undead."
+    "note": "Can be thrown; returns to the thrower. +50% damage vs undead."
   },
   {
     "id": "boomerang_invar",
@@ -8341,7 +8495,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_platinum",
@@ -8358,7 +8513,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_electrum",
@@ -8375,7 +8531,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_nickel",
@@ -8392,7 +8549,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "boomerang_lead",
@@ -8409,7 +8567,8 @@
       "sword",
       "weapon",
       "any"
-    ]
+    ],
+    "note": "Can be thrown; returns to the thrower."
   },
   {
     "id": "nunchaku_wood",

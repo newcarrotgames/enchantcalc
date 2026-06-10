@@ -30,6 +30,8 @@ node scripts/extractIcons.mjs      # re-extract real sprites (needs local instal
 
 ```
 scripts/       generateItems.mjs, generateEnchants.mjs  <- SOURCE OF TRUTH for data
+               crossReferenceItems.mjs (diff in-game dump vs catalog)
+itemdumper/    Forge 1.12.2 mod that dumps in-game item stats to JSON (see below)
 src/
   data/        items.json, enchants.json (GENERATED), catalog.ts (typed accessor)
   engine/      weapon.ts, armor.ts, incompat.ts (pure functions) + __tests__/
@@ -127,6 +129,71 @@ Authoritative game data lives at (WSL path):
 
 Cross-check uncertain numbers against the RLCraft wiki (rlcraft.wiki.gg /
 rlcraft.fandom.com) before encoding them. Prefer local files over memory.
+
+## Item dumper mod (itemdumper/) - ground-truth validation
+
+`itemdumper/` is a small **Minecraft 1.12.2 / Forge** mod that dumps every
+registered item's real in-game stats to JSON, so the generated catalog can be
+cross-referenced against ground truth instead of hand-derived numbers. It adds
+one server command, `/dumpitems [all|weapons|armor|combat]`, that walks the item
+registry, enumerates every creative sub-item, and writes attack damage/speed
+(from the mainhand attribute modifiers, which is how Spartan Weaponry etc. set
+damage), armor points/toughness, durability, mod id, food values, etc.
+
+Build toolchain quirks (these are load-bearing; do not "modernize" blindly):
+
+- Requires a **Java 8 JDK** at `/usr/lib/jvm/java-8-openjdk-amd64`. The gradle
+  wrapper is pinned to **Gradle 4.10.3** and the plugin to **ForgeGradle 2.3.10**.
+- Compiled against **Forge 14.23.5.2847**, NOT the pack's runtime 2860. Builds
+  2855/2860 only publish a `userdev3` artifact that FG 2.3 cannot consume; 2847
+  is the last build with the `userdev` artifact FG 2.3 needs. The jar is
+  ABI-compatible and runs fine on 2860.
+- The MDK uses `stable_39` mappings, which already use the newer method names
+  (`ResourceLocation.getNamespace()/getPath()`, `ItemStack.getTranslationKey()`).
+- `gradle.properties` sets `-Xmx3G` (the decompile/genSrgs steps OOM otherwise).
+- Generating the wrapper needed the build script moved aside first (Gradle 8.x
+  can't evaluate the FG 2.3 script).
+
+Usage:
+
+```bash
+./itemdumper/build-and-install.sh   # builds (Java 8) + copies jar into the pack's mods/
+# then in-game, op/cheats on, run:  /dumpitems combat
+node scripts/crossReferenceItems.mjs   # diffs the dump vs src/data/items.json
+```
+
+- Output goes to `<gamedir>/itemdumps/itemdump[-filter].json`, i.e. inside the
+  local install: `.../RLCraft Dregora (Local Dev)/itemdumps/`.
+- The command is manual (registered on `FMLServerStartingEvent`); it does NOT
+  auto-dump on startup.
+- `crossReferenceItems.mjs` matches catalog items to in-game items by normalized
+  display name and reports stat mismatches, catalog items not found in game
+  (possible phantom material/weapon combos), and in-game combat items missing
+  from the catalog.
+- Build artifacts (`itemdumper/build`, `.gradle`, `run`) are gitignored; the
+  gradle wrapper jar IS committed.
+
+## Git, identity, and GitHub Pages deploy
+
+- Repo: `https://github.com/newcarrotgames/enchantcalc` (public). Live site:
+  `https://newcarrotgames.github.io/enchantcalc/`.
+- **NEVER let any commit reference a work account.** The repo had to be deleted
+  and recreated once over a leaked work email. Commit identity is pinned per-repo
+  via local config to `New Carrot Games <newcarrotgames@gmail.com>`; verify with
+  `git config user.email` before committing. GitHub attributes commits by email.
+- This shell wraps `git commit` and injects a `--trailer` flag that the local
+  git 2.25.1 does not support, so plain `git commit` fails with
+  "unknown option `trailer'". Work around it by committing with the real binary:
+  **`/usr/bin/git commit ...`** (other git subcommands are unaffected).
+- **Pages deploys from the `gh-pages` branch** (legacy/branch mode), NOT GitHub
+  Actions. The `gh` token lacks the `workflow` scope, so pushing
+  `.github/workflows/deploy.yml` is rejected. That file is kept on disk but is
+  gitignored (`.github/workflows/`) and `deploy.yml` is purged from history.
+  To redeploy after changes: `npm run build`, then commit `dist/` contents onto a
+  fresh `gh-pages` branch and force-push it (with the New Carrot Games identity
+  via `GIT_AUTHOR_*`/`GIT_COMMITTER_*` env vars). To switch back to Actions,
+  grant the scope (`gh auth refresh -h github.com -s workflow`), un-ignore and
+  commit the workflow, and set Pages source back to "GitHub Actions".
 
 ## Conventions
 

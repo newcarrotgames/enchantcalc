@@ -63,7 +63,7 @@ function WeaponResultView({
         <span className="v">{r.min}</span>
       </div>
       <div className="stat-row">
-        <span className="k">Per hit (crit{r.unarmoredMultiplier > 1 ? ' + unarmored' : ''})</span>
+        <span className="k">Per hit (crit{r.unarmoredMultiplier > 1 ? ' + situational' : ''})</span>
         <span className="v">{r.max}</span>
       </div>
       <div className="stat-row">
@@ -147,7 +147,7 @@ function WeaponResultView({
 
       <div className="stat-note">
         Min = no crit, no situational bonus. Max = critical hit (x1.5)
-        {r.unarmoredMultiplier > 1 ? ' x unarmored bonus' : ''} plus best
+        {r.unarmoredMultiplier > 1 ? ` x situational bonus (${r.unarmoredNote})` : ''} plus best
         situational enchant. Sharpness-type flat damage is added after the crit
         multiplier (Minecraft 1.12 order). DPS uses the effective attack speed,
         so attack-speed enchants (e.g. Swifter Slashes) scale it.

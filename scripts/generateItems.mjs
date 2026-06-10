@@ -24,28 +24,60 @@ const round2 = (n) => Math.round(n * 100) / 100;
 // --- Spartan Weaponry weapon types (from spartanweaponry.cfg) ---------------
 // addon = whether the modded-material addons (Spartan Fire / Defiled) register
 // this weapon type (determines dragonbone/umbrium/myrmex coverage).
+//
+// `twoHand`, `traits`, and `cond` describe each type's Weapon Properties as
+// dumped in-game (itemdumper `/dumpitems`, the "Properties:" tooltip block),
+// cross-referenced against config/spartanweaponry.cfg for the magnitudes:
+//   damageAbsorptionFactor=0.25  damageBonusUnarmoredMultiplier=2.0
+//   damageBonusChestMultiplier=1.5  damageBonusHeadMultiplier=1.5
+//   armorPiercePercentage=50  damageBonusBackstabMultiplier=2.5
+// `cond` is a conditional best-case damage multiplier folded into the "max"
+// (engine field `unarmoredMultiplier`): rapier = unarmored 2.0, katana = no
+// chest armor 1.5. Earlier revisions mislabeled several types as having an
+// "unarmored bonus"; the dump shows that trait only exists on the rapier.
+const ABSORB = 'Damage Absorption: negates 25% of incoming melee damage while held (costs weapon durability).';
 const WEAPONS = [
-  { id: 'dagger', name: 'Dagger', base: 2.0, mult: 0.5, speed: 2.5, shape: 'dagger', addon: true },
-  { id: 'throwing_knife', name: 'Throwing Knife', base: 1.5, mult: 1.0, speed: 2.5, shape: 'dagger', addon: true, twoHand: false },
-  { id: 'saber', name: 'Saber', base: 3.0, mult: 0.5, speed: 1.6, shape: 'sword', addon: true, unarmoredNote: true },
-  { id: 'rapier', name: 'Rapier', base: 1.5, mult: 0.5, speed: 2.4, shape: 'rapier', addon: true, unarmored: 2.0 },
-  { id: 'katana', name: 'Katana', base: 4.5, mult: 0.5, speed: 2.0, shape: 'katana', addon: true, twoHand: true, unarmored: 1.5 },
-  { id: 'longsword', name: 'Longsword', base: 7.5, mult: 1.5, speed: 1.3, shape: 'sword', addon: true, twoHand: true, unarmoredNote: true },
-  { id: 'greatsword', name: 'Greatsword', base: 4.5, mult: 1.5, speed: 1.2, shape: 'greatsword', addon: true, twoHand: true, unarmoredNote: true },
-  { id: 'scythe', name: 'Scythe', base: 4.0, mult: 1.0, speed: 0.9, shape: 'polearm', addon: true },
-  { id: 'spear', name: 'Spear', base: 5.0, mult: 0.75, speed: 1.3, shape: 'polearm', addon: true, twoHand: true },
-  { id: 'lance', name: 'Lance', base: 2.0, mult: 1.0, speed: 1.0, shape: 'polearm', addon: true },
-  { id: 'pike', name: 'Pike', base: 5.0, mult: 1.5, speed: 1.4, shape: 'polearm', addon: true, twoHand: true },
-  { id: 'halberd', name: 'Halberd', base: 7.5, mult: 1.5, speed: 1.2, shape: 'polearm', addon: true, twoHand: true },
-  { id: 'glaive', name: 'Glaive', base: 5.0, mult: 2.0, speed: 1.0, shape: 'polearm', addon: true, twoHand: true, unarmoredNote: true },
-  { id: 'javelin', name: 'Javelin', base: 1.0, mult: 2.0, speed: 1.2, shape: 'polearm', addon: true },
-  { id: 'quarterstaff', name: 'Quarterstaff', base: 5.5, mult: 0.5, speed: 2.0, shape: 'polearm', addon: false, twoHand: true, unarmoredNote: true },
+  { id: 'dagger', name: 'Dagger', base: 2.0, mult: 0.5, speed: 2.5, shape: 'dagger', addon: true,
+    traits: ['Can be thrown.', 'Backstab: bonus damage when striking a foe from behind.'] },
+  { id: 'throwing_knife', name: 'Throwing Knife', base: 1.5, mult: 1.0, speed: 2.5, shape: 'dagger', addon: true,
+    traits: ['Can be thrown.', 'Bonus damage when thrown.'] },
+  { id: 'saber', name: 'Saber', base: 3.0, mult: 0.5, speed: 1.6, shape: 'sword', addon: true,
+    traits: [ABSORB, 'Chest bonus: extra damage vs foes with no chest armor.', 'Sweep: hits nearby foes.'] },
+  { id: 'rapier', name: 'Rapier', base: 1.5, mult: 0.5, speed: 2.4, shape: 'rapier', addon: true,
+    traits: [ABSORB], cond: { mult: 2.0, label: 'vs foes with no armor' } },
+  { id: 'katana', name: 'Katana', base: 4.5, mult: 0.5, speed: 2.0, shape: 'katana', addon: true, twoHand: true,
+    traits: ['Sweep: hits nearby foes.'], cond: { mult: 1.5, label: 'vs foes with no chest armor' } },
+  { id: 'longsword', name: 'Longsword', base: 7.5, mult: 1.5, speed: 1.3, shape: 'sword', addon: true, twoHand: true,
+    traits: ['Sweep: hits nearby foes.'] },
+  { id: 'greatsword', name: 'Greatsword', base: 4.5, mult: 1.5, speed: 1.2, shape: 'greatsword', addon: true, twoHand: true,
+    traits: ['Extended melee reach.', 'Sweep: hits nearby foes (wide arc).'] },
+  { id: 'scythe', name: 'Scythe', base: 4.0, mult: 1.0, speed: 0.9, shape: 'polearm', addon: true, twoHand: true,
+    traits: ['Wide sweep: hits foes in a wide arc.', 'Head bonus: extra damage vs foes with no helmet.'] },
+  { id: 'spear', name: 'Spear', base: 5.0, mult: 0.75, speed: 1.3, shape: 'polearm', addon: true,
+    traits: ['Extended melee reach.'] },
+  { id: 'lance', name: 'Lance', base: 2.0, mult: 1.0, speed: 1.0, shape: 'polearm', addon: true,
+    traits: ['Extended melee reach.', 'Riding bonus: extra damage while mounted.'] },
+  { id: 'pike', name: 'Pike', base: 5.0, mult: 1.5, speed: 1.4, shape: 'polearm', addon: true, twoHand: true,
+    traits: ['Extended melee reach.'] },
+  { id: 'halberd', name: 'Halberd', base: 7.5, mult: 1.5, speed: 1.2, shape: 'polearm', addon: true, twoHand: true,
+    traits: ['Extended melee reach.', 'Shield breach: can disable a blocking foe\u2019s shield.'] },
+  { id: 'glaive', name: 'Glaive', base: 5.0, mult: 2.0, speed: 1.0, shape: 'polearm', addon: true, twoHand: true,
+    traits: ['Extended melee reach.', 'Sweep: hits nearby foes.'] },
+  { id: 'javelin', name: 'Javelin', base: 1.0, mult: 2.0, speed: 1.2, shape: 'polearm', addon: true,
+    traits: ['Can be thrown.', 'Bonus damage when thrown.'] },
+  { id: 'quarterstaff', name: 'Quarterstaff', base: 5.5, mult: 0.5, speed: 2.0, shape: 'polearm', addon: false, twoHand: true,
+    traits: ['Sweep: hits nearby foes.'] },
   { id: 'mace', name: 'Flanged Mace', base: 3.0, mult: 1.5, speed: 1.2, shape: 'mace', addon: false },
-  { id: 'hammer', name: 'Hammer', base: 7.5, mult: 0.5, speed: 0.9, shape: 'mace', addon: true, twoHand: true },
-  { id: 'warhammer', name: 'Warhammer', base: 6.0, mult: 1.5, speed: 1.1, shape: 'mace', addon: true, twoHand: true },
-  { id: 'battleaxe', name: 'Battleaxe', base: 7.0, mult: 2.0, speed: 1.1, shape: 'axe', addon: false, twoHand: true, axe: true },
-  { id: 'throwing_axe', name: 'Throwing Axe', base: 2.0, mult: 2.0, speed: 0.9, shape: 'axe', addon: true, axe: true },
-  { id: 'boomerang', name: 'Boomerang', base: 4.0, mult: 1.5, speed: 1.4, shape: 'boomerang', addon: false },
+  { id: 'hammer', name: 'Hammer', base: 7.5, mult: 0.5, speed: 0.9, shape: 'mace', addon: true,
+    traits: ['Enhanced knockback.', 'Nauseous Blow: inflicts Nausea on hit unless the foe wears a helmet.'] },
+  { id: 'warhammer', name: 'Warhammer', base: 6.0, mult: 1.5, speed: 1.1, shape: 'mace', addon: true, twoHand: true,
+    traits: ['Armor piercing: 50% of damage ignores armor.'] },
+  { id: 'battleaxe', name: 'Battleaxe', base: 7.0, mult: 2.0, speed: 1.1, shape: 'axe', addon: false, twoHand: true, axe: true,
+    traits: ['Versatile: usable one- or two-handed.'] },
+  { id: 'throwing_axe', name: 'Throwing Axe', base: 2.0, mult: 2.0, speed: 0.9, shape: 'axe', addon: true, axe: true,
+    traits: ['Can be thrown.', 'Bonus damage when thrown.'] },
+  { id: 'boomerang', name: 'Boomerang', base: 4.0, mult: 1.5, speed: 1.4, shape: 'boomerang', addon: false,
+    traits: ['Can be thrown; returns to the thrower.'] },
 ];
 
 // --- Materials --------------------------------------------------------------
@@ -80,8 +112,8 @@ const MATERIALS = [
 
 function buildWeaponNote(w, mat) {
   const parts = [];
-  if (w.twoHand) parts.push('Two-Handed (mining fatigue if offhand is used).');
-  if (w.unarmoredNote && !w.unarmored) parts.push('Has an unarmored damage bonus vs unarmored targets.');
+  if (w.twoHand) parts.push('Two-Handed (using the offhand lowers damage and attack speed).');
+  if (w.traits) parts.push(...w.traits);
   if (mat.trait) parts.push(mat.trait + '.');
   return parts.join(' ') || undefined;
 }
@@ -109,9 +141,11 @@ function generateSpartanWeapons() {
         attackSpeed: w.speed,
         accepts,
       };
-      if (w.unarmored) {
-        item.unarmoredMultiplier = w.unarmored;
-        item.unarmoredNote = `${w.unarmored}x damage vs unarmored targets`;
+      if (w.cond) {
+        // Engine field is `unarmoredMultiplier` (folded into the crit "max").
+        // The label may be unarmored (rapier) or no-chest-armor (katana).
+        item.unarmoredMultiplier = w.cond.mult;
+        item.unarmoredNote = `${w.cond.mult}x damage ${w.cond.label}`;
       }
       const note = buildWeaponNote(w, mat);
       if (note) item.note = note;
