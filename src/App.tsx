@@ -9,23 +9,23 @@ import {
   type DragStartEvent,
 } from '@dnd-kit/core';
 import './ui.css';
-import type { EquipSlot } from './types';
-import { getEnchant, getItem } from './data/catalog';
+import type { BaubleSlot, EquipSlot } from './types';
+import { getBauble, getEnchant, getItem } from './data/catalog';
 import { useBuildStore } from './store/buildStore';
-import { ItemPalette } from './components/ItemPalette';
-import { EnchantPalette } from './components/EnchantPalette';
+import { ItemBrowser } from './components/ItemBrowser';
 import { BuildBoard } from './components/BuildBoard';
 import { StatsPanel } from './components/StatsPanel';
 import { ItemIcon, EnchantIcon } from './components/icons';
 
 interface ActiveDrag {
-  type: 'item' | 'enchant';
+  type: 'item' | 'enchant' | 'bauble';
   id: string;
 }
 
 export default function App() {
   const setItem = useBuildStore((s) => s.setItem);
   const addEnchant = useBuildStore((s) => s.addEnchant);
+  const setBauble = useBuildStore((s) => s.setBauble);
   const reset = useBuildStore((s) => s.reset);
   const loadFromHash = useBuildStore((s) => s.loadFromHash);
   const notice = useBuildStore((s) => s.notice);
@@ -57,12 +57,20 @@ export default function App() {
     setActive(null);
     const over = e.over;
     const data = e.active.data.current as
-      | { type: 'item' | 'enchant'; id: string }
+      | { type: 'item' | 'enchant' | 'bauble'; id: string }
       | undefined;
     if (!over || !data) return;
-    const slot = (over.data.current as { slot?: EquipSlot } | undefined)?.slot;
-    if (!slot) return;
+    const overData = over.data.current as
+      | { slot?: EquipSlot; baubleSlot?: BaubleSlot }
+      | undefined;
 
+    if (data.type === 'bauble') {
+      if (overData?.baubleSlot) setBauble(overData.baubleSlot, data.id);
+      return;
+    }
+
+    const slot = overData?.slot;
+    if (!slot) return;
     if (data.type === 'item') {
       setItem(slot, data.id);
     } else {
@@ -109,8 +117,7 @@ export default function App() {
 
         <div className="workspace">
           <div className="col-left">
-            <ItemPalette />
-            <EnchantPalette />
+            <ItemBrowser />
           </div>
           <div className="col-center">
             <BuildBoard />
@@ -137,6 +144,15 @@ function DragGhost({ active }: { active: ActiveDrag }) {
     return (
       <div className="inv-slot draggable drag-overlay">
         <ItemIcon icon={item.icon} id={item.id} size={40} />
+      </div>
+    );
+  }
+  if (active.type === 'bauble') {
+    const bauble = getBauble(active.id);
+    if (!bauble) return null;
+    return (
+      <div className="inv-slot draggable drag-overlay">
+        <ItemIcon icon={bauble.icon} id={bauble.id} size={40} />
       </div>
     );
   }

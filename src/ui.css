@@ -27,7 +27,7 @@
 
 .workspace {
   display: grid;
-  grid-template-columns: 290px minmax(300px, 1fr) 380px;
+  grid-template-columns: 300px minmax(460px, 1fr) 360px;
   gap: 16px;
   align-items: start;
 }
@@ -229,6 +229,42 @@
   font-family: 'Press Start 2P', monospace;
   pointer-events: none;
 }
+/* Baubles row on the build board */
+.bauble-board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+.bauble-slot {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mc-slot);
+  border: 2px solid;
+  border-color: var(--mc-slot-shadow) var(--mc-slot-light) var(--mc-slot-light) var(--mc-slot-shadow);
+}
+.bauble-slot.is-over {
+  outline: 3px solid var(--mc-yellow);
+}
+.bauble-ghost {
+  font-size: 7px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #00000055;
+  font-family: 'Press Start 2P', monospace;
+  pointer-events: none;
+}
+.bauble-x {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  padding: 0 4px;
+  line-height: 1.2;
+}
+
 .slot-body {
   flex: 1 1 auto;
   min-width: 0;
@@ -481,4 +517,235 @@
 .drag-overlay {
   opacity: 0.92;
   transform: scale(1.05);
+}
+
+/* ---- Left: JEI-style catalog browser ---- */
+.browser-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.browser-tabs .mc-btn {
+  flex: 1 1 0;
+  padding: 5px 4px;
+  font-size: 16px;
+  text-align: center;
+}
+.browser-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 52px);
+  gap: 8px;
+  justify-content: start;
+  padding: 6px 4px;
+  max-height: 620px;
+  overflow-y: auto;
+}
+.ench-tile {
+  position: relative;
+}
+.ench-tile-lvl {
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  color: var(--mc-yellow);
+  text-shadow: 1px 1px 0 #000;
+  pointer-events: none;
+}
+
+/* ---- Center: RLCraft inventory ---- */
+.inv-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+.inv-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+/* Right-side baubles + off hand: two columns matching the in-game layout. */
+.inv-bauble-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 52px);
+  grid-auto-rows: 52px;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+.inv-bauble-grid .bauble-slot {
+  min-height: 0;
+}
+.inv-bauble-grid .equip-slot {
+  width: 100%;
+  height: 100%;
+}
+
+.equip-slot-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.equip-slot {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.equip-slot:hover {
+  outline: 2px solid #ffffff55;
+}
+.equip-slot.is-selected {
+  outline: 2px solid var(--mc-yellow);
+}
+.equip-slot.is-over {
+  outline: 3px solid var(--mc-yellow);
+}
+.equip-slot .slot-ghost {
+  position: absolute;
+  font-size: 8px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #00000066;
+  font-family: 'Press Start 2P', monospace;
+  pointer-events: none;
+}
+.equip-x {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  padding: 0 4px;
+  line-height: 1.2;
+  color: #7a1d1d;
+}
+.equip-ench-badge {
+  position: absolute;
+  bottom: -2px;
+  right: 1px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  color: var(--mc-purple);
+  text-shadow: 1px 1px 0 #000;
+  pointer-events: none;
+}
+.equip-slot-label {
+  font-size: 12px;
+  color: var(--mc-gray);
+}
+
+/* 3D character stage */
+.character-stage {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid;
+  border-color: var(--mc-surface-edge-dark) var(--mc-surface-edge)
+    var(--mc-surface-edge) var(--mc-surface-edge-dark);
+  background: #1a1b1f;
+}
+.character-canvas {
+  display: block;
+  width: 280px;
+  height: 380px;
+  touch-action: none;
+}
+.character-hint {
+  position: absolute;
+  bottom: 4px;
+  font-size: 12px;
+  color: #6f6f6f;
+  pointer-events: none;
+}
+.character-fallback {
+  width: 280px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 16px;
+  font-size: 15px;
+  color: #7c7c7c;
+}
+
+/* Selected-slot enchant editor */
+.inv-editor {
+  margin-top: 14px;
+  padding: 8px 10px;
+  background: var(--mc-surface-2);
+}
+.inv-editor-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.inv-editor-slot {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  color: var(--mc-yellow);
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* ---- Right: potion-buff-style cards ---- */
+.buff-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px 0 12px;
+}
+.buff-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 9px;
+  background: var(--mc-surface-2);
+}
+.buff-icon {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  letter-spacing: -1px;
+  border: 2px solid;
+  background: #15161a;
+  text-shadow: 1px 1px 0 #000;
+}
+.buff-body {
+  min-width: 0;
+}
+.buff-title {
+  font-size: 15px;
+  color: var(--mc-gray);
+}
+.buff-value {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  text-shadow: 2px 2px 0 #000;
+  margin: 3px 0 2px;
+}
+.buff-sub {
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+@media (max-width: 1080px) {
+  .inv-layout {
+    flex-wrap: wrap;
+  }
+  .browser-grid {
+    max-height: 360px;
+  }
 }

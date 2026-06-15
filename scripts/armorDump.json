@@ -1,0 +1,2576 @@
+[
+  {
+    "registryName": "minecraft:leather_helmet",
+    "modId": "minecraft",
+    "displayName": "Leather Cap",
+    "slot": "helmet",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "7 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:leather_chestplate",
+    "modId": "minecraft",
+    "displayName": "Leather Tunic",
+    "slot": "chestplate",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:leather_leggings",
+    "modId": "minecraft",
+    "displayName": "Leather Pants",
+    "slot": "leggings",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "8 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:leather_boots",
+    "modId": "minecraft",
+    "displayName": "Leather Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:chainmail_helmet",
+    "modId": "minecraft",
+    "displayName": "Chain Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:chainmail_chestplate",
+    "modId": "minecraft",
+    "displayName": "Chain Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "13 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:chainmail_leggings",
+    "modId": "minecraft",
+    "displayName": "Chain Leggings",
+    "slot": "leggings",
+    "armorPoints": 4,
+    "toughness": 0,
+    "locational": "12 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:chainmail_boots",
+    "modId": "minecraft",
+    "displayName": "Chain Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:iron_helmet",
+    "modId": "minecraft",
+    "displayName": "Iron Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:iron_chestplate",
+    "modId": "minecraft",
+    "displayName": "Iron Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:iron_leggings",
+    "modId": "minecraft",
+    "displayName": "Iron Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:iron_boots",
+    "modId": "minecraft",
+    "displayName": "Iron Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:diamond_helmet",
+    "modId": "minecraft",
+    "displayName": "Diamond Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "minecraft:diamond_chestplate",
+    "modId": "minecraft",
+    "displayName": "Diamond Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "minecraft:diamond_leggings",
+    "modId": "minecraft",
+    "displayName": "Diamond Leggings",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "minecraft:diamond_boots",
+    "modId": "minecraft",
+    "displayName": "Diamond Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "minecraft:golden_helmet",
+    "modId": "minecraft",
+    "displayName": "Golden Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:golden_chestplate",
+    "modId": "minecraft",
+    "displayName": "Golden Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "13 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:golden_leggings",
+    "modId": "minecraft",
+    "displayName": "Golden Leggings",
+    "slot": "leggings",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "10 Locational Armor"
+  },
+  {
+    "registryName": "minecraft:golden_boots",
+    "modId": "minecraft",
+    "displayName": "Golden Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "aquaculture:neptunium_helmet",
+    "modId": "aquaculture",
+    "displayName": "Neptunium Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "aquaculture:neptunium_chestplate",
+    "modId": "aquaculture",
+    "displayName": "Neptunium Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "aquaculture:neptunium_leggings",
+    "modId": "aquaculture",
+    "displayName": "Neptunium Leggings",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "aquaculture:neptunium_boots",
+    "modId": "aquaculture",
+    "displayName": "Neptunium Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "forgottenitems:golem_helmet",
+    "modId": "forgottenitems",
+    "displayName": "Golem Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 4,
+    "locational": "4 Locational Armor Toughness"
+  },
+  {
+    "registryName": "forgottenitems:golem_chestplate",
+    "modId": "forgottenitems",
+    "displayName": "Golem Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 4,
+    "locational": "4 Locational Armor Toughness"
+  },
+  {
+    "registryName": "forgottenitems:golem_leggings",
+    "modId": "forgottenitems",
+    "displayName": "Golem Leggings",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 4,
+    "locational": "4 Locational Armor Toughness"
+  },
+  {
+    "registryName": "forgottenitems:golem_boots",
+    "modId": "forgottenitems",
+    "displayName": "Golem Boots",
+    "slot": "boots",
+    "armorPoints": 4,
+    "toughness": 4,
+    "locational": "4 Locational Armor Toughness"
+  },
+  {
+    "registryName": "forgottenitems:cushioned_boots",
+    "modId": "forgottenitems",
+    "displayName": "Cushioned Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "nuclearcraft:helm_hazmat",
+    "modId": "nuclearcraft",
+    "displayName": "Hazmat Suit Headwear",
+    "slot": "helmet",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "7 Locational Armor"
+  },
+  {
+    "registryName": "nuclearcraft:chest_hazmat",
+    "modId": "nuclearcraft",
+    "displayName": "Hazmat Suit Chestpiece",
+    "slot": "chestplate",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "nuclearcraft:legs_hazmat",
+    "modId": "nuclearcraft",
+    "displayName": "Hazmat Suit Leggings",
+    "slot": "leggings",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "8 Locational Armor"
+  },
+  {
+    "registryName": "nuclearcraft:boots_hazmat",
+    "modId": "nuclearcraft",
+    "displayName": "Hazmat Suit Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:armor_copper_metal_helmet",
+    "modId": "iceandfire",
+    "displayName": "Copper Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:armor_copper_metal_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Copper Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 4,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:armor_copper_metal_leggings",
+    "modId": "iceandfire",
+    "displayName": "Copper Leggings",
+    "slot": "leggings",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "10 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:armor_copper_metal_boots",
+    "modId": "iceandfire",
+    "displayName": "Copper Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:armor_silver_metal_helmet",
+    "modId": "iceandfire",
+    "displayName": "Silver Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:armor_silver_metal_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Silver Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "13 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:armor_silver_metal_leggings",
+    "modId": "iceandfire",
+    "displayName": "Silver Leggings",
+    "slot": "leggings",
+    "armorPoints": 4,
+    "toughness": 0,
+    "locational": "12 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:armor_silver_metal_boots",
+    "modId": "iceandfire",
+    "displayName": "Silver Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:sheep_helmet",
+    "modId": "iceandfire",
+    "displayName": "Sheep Disguise Helmet",
+    "slot": "helmet",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "7 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:sheep_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Sheep Disguise Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:sheep_leggings",
+    "modId": "iceandfire",
+    "displayName": "Sheep Disguise Leggings",
+    "slot": "leggings",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "8 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:sheep_boots",
+    "modId": "iceandfire",
+    "displayName": "Sheep Disguise Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:deathworm_yellow_helmet",
+    "modId": "iceandfire",
+    "displayName": "Tan Death Worm Chitin Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_yellow_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Tan Death Worm Chitin Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 7,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_yellow_leggings",
+    "modId": "iceandfire",
+    "displayName": "Tan Death Worm Chitin Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_yellow_boots",
+    "modId": "iceandfire",
+    "displayName": "Tan Death Worm Chitin Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_white_helmet",
+    "modId": "iceandfire",
+    "displayName": "White Death Worm Chitin Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_white_chestplate",
+    "modId": "iceandfire",
+    "displayName": "White Death Worm Chitin Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 7,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_white_leggings",
+    "modId": "iceandfire",
+    "displayName": "White Death Worm Chitin Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_white_boots",
+    "modId": "iceandfire",
+    "displayName": "White Death Worm Chitin Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_red_helmet",
+    "modId": "iceandfire",
+    "displayName": "Red Death Worm Chitin Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_red_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Red Death Worm Chitin Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 7,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_red_leggings",
+    "modId": "iceandfire",
+    "displayName": "Red Death Worm Chitin Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:deathworm_red_boots",
+    "modId": "iceandfire",
+    "displayName": "Red Death Worm Chitin Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 1.5,
+    "locational": "1.5 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:myrmex_desert_helmet",
+    "modId": "iceandfire",
+    "displayName": "Desert Myrmex Chitin Helmet",
+    "slot": "helmet",
+    "armorPoints": 4,
+    "toughness": 0,
+    "locational": "19 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:myrmex_desert_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Desert Myrmex Chitin Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 0,
+    "locational": "19 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:myrmex_desert_leggings",
+    "modId": "iceandfire",
+    "displayName": "Desert Myrmex Chitin Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:myrmex_desert_boots",
+    "modId": "iceandfire",
+    "displayName": "Desert Myrmex Chitin Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "12 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:myrmex_jungle_helmet",
+    "modId": "iceandfire",
+    "displayName": "Jungle Myrmex Chitin Helmet",
+    "slot": "helmet",
+    "armorPoints": 4,
+    "toughness": 0,
+    "locational": "19 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:myrmex_jungle_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Jungle Myrmex Chitin Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 0,
+    "locational": "19 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:myrmex_jungle_leggings",
+    "modId": "iceandfire",
+    "displayName": "Jungle Myrmex Chitin Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:myrmex_jungle_boots",
+    "modId": "iceandfire",
+    "displayName": "Jungle Myrmex Chitin Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "12 Locational Armor"
+  },
+  {
+    "registryName": "iceandfire:armor_red_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_red_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_red_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_red_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_bronze_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_bronze_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_bronze_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_bronze_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_green_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_green_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_green_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_green_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_gray_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_gray_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_gray_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_gray_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_blue_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_blue_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_blue_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_blue_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_white_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_white_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_white_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_white_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_sapphire_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_sapphire_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_sapphire_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_sapphire_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_silver_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_silver_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_silver_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_silver_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_electric_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_electric_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_electric_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_electric_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_amethyst_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_amethyst_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_amethyst_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_amethyst_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_copper_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_copper_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_copper_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_copper_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_black_helmet",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_black_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 9,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_black_leggings",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:armor_black_boots",
+    "modId": "iceandfire",
+    "displayName": "Dragon Scale Boots",
+    "slot": "boots",
+    "armorPoints": 5,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_blue_helmet",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Helmet",
+    "slot": "helmet",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_blue_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_blue_leggings",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_blue_boots",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Boots",
+    "slot": "boots",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_bronze_helmet",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Helmet",
+    "slot": "helmet",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_bronze_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_bronze_leggings",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_bronze_boots",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Boots",
+    "slot": "boots",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_deepblue_helmet",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Helmet",
+    "slot": "helmet",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_deepblue_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_deepblue_leggings",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_deepblue_boots",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Boots",
+    "slot": "boots",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_green_helmet",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Helmet",
+    "slot": "helmet",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_green_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_green_leggings",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_green_boots",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Boots",
+    "slot": "boots",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_purple_helmet",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Helmet",
+    "slot": "helmet",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_purple_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_purple_leggings",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_purple_boots",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Boots",
+    "slot": "boots",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_red_helmet",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Helmet",
+    "slot": "helmet",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_red_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_red_leggings",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_red_boots",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Boots",
+    "slot": "boots",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_teal_helmet",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Helmet",
+    "slot": "helmet",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_teal_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_teal_leggings",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Leggings",
+    "slot": "leggings",
+    "armorPoints": 7,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:tide_teal_boots",
+    "modId": "iceandfire",
+    "displayName": "Tide Guardian Boots",
+    "slot": "boots",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:forest_troll_leather_helmet",
+    "modId": "iceandfire",
+    "displayName": "Forest Troll Leather Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:forest_troll_leather_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Forest Troll Leather Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 7,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:forest_troll_leather_leggings",
+    "modId": "iceandfire",
+    "displayName": "Forest Troll Leather Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:forest_troll_leather_boots",
+    "modId": "iceandfire",
+    "displayName": "Forest Troll Leather Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:frost_troll_leather_helmet",
+    "modId": "iceandfire",
+    "displayName": "Frost Troll Leather Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:frost_troll_leather_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Frost Troll Leather Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 7,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:frost_troll_leather_leggings",
+    "modId": "iceandfire",
+    "displayName": "Frost Troll Leather Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:frost_troll_leather_boots",
+    "modId": "iceandfire",
+    "displayName": "Frost Troll Leather Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:mountain_troll_leather_helmet",
+    "modId": "iceandfire",
+    "displayName": "Mountain Troll Leather Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:mountain_troll_leather_chestplate",
+    "modId": "iceandfire",
+    "displayName": "Mountain Troll Leather Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 7,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:mountain_troll_leather_leggings",
+    "modId": "iceandfire",
+    "displayName": "Mountain Troll Leather Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "iceandfire:mountain_troll_leather_boots",
+    "modId": "iceandfire",
+    "displayName": "Mountain Troll Leather Boots",
+    "slot": "boots",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "bountifulbaubles:crowngold",
+    "modId": "bountifulbaubles",
+    "displayName": "Golden Crown",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "defiledlands:umbrium_helmet",
+    "modId": "defiledlands",
+    "displayName": "Umbrium Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "defiledlands:umbrium_chestplate",
+    "modId": "defiledlands",
+    "displayName": "Umbrium Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "13 Locational Armor"
+  },
+  {
+    "registryName": "defiledlands:umbrium_leggings",
+    "modId": "defiledlands",
+    "displayName": "Umbrium Leggings",
+    "slot": "leggings",
+    "armorPoints": 4,
+    "toughness": 0,
+    "locational": "12 Locational Armor"
+  },
+  {
+    "registryName": "defiledlands:umbrium_boots",
+    "modId": "defiledlands",
+    "displayName": "Umbrium Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "defiledlands:scale_helmet",
+    "modId": "defiledlands",
+    "displayName": "Book Wyrm Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "defiledlands:scale_chestplate",
+    "modId": "defiledlands",
+    "displayName": "Book Wyrm Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 4,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "defiledlands:scale_leggings",
+    "modId": "defiledlands",
+    "displayName": "Book Wyrm Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "10 Locational Armor"
+  },
+  {
+    "registryName": "defiledlands:scale_boots",
+    "modId": "defiledlands",
+    "displayName": "Book Wyrm Scale Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "defiledlands:scale_golden_helmet",
+    "modId": "defiledlands",
+    "displayName": "Golden Book Wyrm Scale Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "defiledlands:scale_golden_chestplate",
+    "modId": "defiledlands",
+    "displayName": "Golden Book Wyrm Scale Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 4,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "defiledlands:scale_golden_leggings",
+    "modId": "defiledlands",
+    "displayName": "Golden Book Wyrm Scale Leggings",
+    "slot": "leggings",
+    "armorPoints": 3,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "defiledlands:scale_golden_boots",
+    "modId": "defiledlands",
+    "displayName": "Golden Book Wyrm Scale Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:swinemask",
+    "modId": "mod_lavacow",
+    "displayName": "Swine Mask",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "mod_lavacow:felarmor_helmet",
+    "modId": "mod_lavacow",
+    "displayName": "Molten Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:felarmor_chestplate",
+    "modId": "mod_lavacow",
+    "displayName": "Molten Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:felarmor_leggings",
+    "modId": "mod_lavacow",
+    "displayName": "Molten Leggings",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:felarmor_boots",
+    "modId": "mod_lavacow",
+    "displayName": "Molten Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:swinearmor_chestplate",
+    "modId": "mod_lavacow",
+    "displayName": "Swine Tunic",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "mod_lavacow:swinearmor_leggings",
+    "modId": "mod_lavacow",
+    "displayName": "Swine Pants",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "mod_lavacow:swinearmor_boots",
+    "modId": "mod_lavacow",
+    "displayName": "Swine Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "mod_lavacow:faminearmor_helmet",
+    "modId": "mod_lavacow",
+    "displayName": "Famine Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:faminearmor_chestplate",
+    "modId": "mod_lavacow",
+    "displayName": "Famine Tunic",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:faminearmor_leggings",
+    "modId": "mod_lavacow",
+    "displayName": "Famine Pants",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:faminearmor_boots",
+    "modId": "mod_lavacow",
+    "displayName": "Famine Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:skeletonking_crown",
+    "modId": "mod_lavacow",
+    "displayName": "The Crown of Rule",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:chitinarmor_helmet",
+    "modId": "mod_lavacow",
+    "displayName": "Weta Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:chitinarmor_chestplate",
+    "modId": "mod_lavacow",
+    "displayName": "Weta Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:chitinarmor_leggings",
+    "modId": "mod_lavacow",
+    "displayName": "Weta Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "mod_lavacow:chitinarmor_boots",
+    "modId": "mod_lavacow",
+    "displayName": "Weta Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 1,
+    "locational": "1 Locational Armor Toughness"
+  },
+  {
+    "registryName": "rlmixins:steel_helmet",
+    "modId": "rlmixins",
+    "displayName": "Steel Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "rlmixins:steel_chestplate",
+    "modId": "rlmixins",
+    "displayName": "Steel Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 7,
+    "toughness": 0,
+    "locational": "17 Locational Armor"
+  },
+  {
+    "registryName": "rlmixins:steel_leggings",
+    "modId": "rlmixins",
+    "displayName": "Steel Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "rlmixins:steel_boots",
+    "modId": "rlmixins",
+    "displayName": "Steel Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "12 Locational Armor"
+  },
+  {
+    "registryName": "rlmixins:scarlite_helmet",
+    "modId": "rlmixins",
+    "displayName": "Scarlite Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "rlmixins:scarlite_chestplate",
+    "modId": "rlmixins",
+    "displayName": "Scarlite Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "rlmixins:scarlite_leggings",
+    "modId": "rlmixins",
+    "displayName": "Scarlite Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "rlmixins:scarlite_boots",
+    "modId": "rlmixins",
+    "displayName": "Scarlite Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "simpledifficulty:wool_helmet",
+    "modId": "simpledifficulty",
+    "displayName": "Wool Hood",
+    "slot": "helmet",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "7 Locational Armor"
+  },
+  {
+    "registryName": "simpledifficulty:wool_chestplate",
+    "modId": "simpledifficulty",
+    "displayName": "Wool Coat",
+    "slot": "chestplate",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "5 Locational Armor"
+  },
+  {
+    "registryName": "simpledifficulty:wool_leggings",
+    "modId": "simpledifficulty",
+    "displayName": "Wool Leggings",
+    "slot": "leggings",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "simpledifficulty:wool_boots",
+    "modId": "simpledifficulty",
+    "displayName": "Wool Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "simpledifficulty:ice_helmet",
+    "modId": "simpledifficulty",
+    "displayName": "Ice Helmet",
+    "slot": "helmet",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "7 Locational Armor"
+  },
+  {
+    "registryName": "simpledifficulty:ice_chestplate",
+    "modId": "simpledifficulty",
+    "displayName": "Ice Chestplate",
+    "slot": "chestplate",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "5 Locational Armor"
+  },
+  {
+    "registryName": "simpledifficulty:ice_leggings",
+    "modId": "simpledifficulty",
+    "displayName": "Ice Leggings",
+    "slot": "leggings",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "simpledifficulty:ice_boots",
+    "modId": "simpledifficulty",
+    "displayName": "Ice Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "srparasites:armor_helm",
+    "modId": "srparasites",
+    "displayName": "Living Helm",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 3,
+    "locational": "3 Locational Armor Toughness"
+  },
+  {
+    "registryName": "srparasites:armor_chest",
+    "modId": "srparasites",
+    "displayName": "Living Chest",
+    "slot": "chestplate",
+    "armorPoints": 4,
+    "toughness": 3,
+    "locational": "3 Locational Armor Toughness"
+  },
+  {
+    "registryName": "srparasites:armor_pants",
+    "modId": "srparasites",
+    "displayName": "Living Pants",
+    "slot": "leggings",
+    "armorPoints": 3,
+    "toughness": 3,
+    "locational": "3 Locational Armor Toughness"
+  },
+  {
+    "registryName": "srparasites:armor_boots",
+    "modId": "srparasites",
+    "displayName": "Living Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 3,
+    "locational": "3 Locational Armor Toughness"
+  },
+  {
+    "registryName": "srparasites:armor_helm_sentient",
+    "modId": "srparasites",
+    "displayName": "Sentient Helm",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 4,
+    "locational": "4 Locational Armor Toughness"
+  },
+  {
+    "registryName": "srparasites:armor_chest_sentient",
+    "modId": "srparasites",
+    "displayName": "Sentient Chest",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 4,
+    "locational": "4 Locational Armor Toughness"
+  },
+  {
+    "registryName": "srparasites:armor_pants_sentient",
+    "modId": "srparasites",
+    "displayName": "Sentient Pants",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 4,
+    "locational": "4 Locational Armor Toughness"
+  },
+  {
+    "registryName": "srparasites:armor_boots_sentient",
+    "modId": "srparasites",
+    "displayName": "Sentient Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 4,
+    "locational": "4 Locational Armor Toughness"
+  },
+  {
+    "registryName": "grapplemod:longfallboots",
+    "modId": "grapplemod",
+    "displayName": "Long Fall Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:bandit_mask",
+    "modId": "variedcommodities",
+    "displayName": "Bandit Mask",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:paper_crown",
+    "modId": "variedcommodities",
+    "displayName": "Paper Crown",
+    "slot": "helmet",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "7 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:cow_leather_head",
+    "modId": "variedcommodities",
+    "displayName": "Cowleather Helmet",
+    "slot": "helmet",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "7 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:cow_leather_chest",
+    "modId": "variedcommodities",
+    "displayName": "Cowleather ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:cow_leather_legs",
+    "modId": "variedcommodities",
+    "displayName": "Cowleather Leggings",
+    "slot": "leggings",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "8 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:cow_leather_boots",
+    "modId": "variedcommodities",
+    "displayName": "Cowleather Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:nanorum_head",
+    "modId": "variedcommodities",
+    "displayName": "Heavy Industries Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:nanorum_chest",
+    "modId": "variedcommodities",
+    "displayName": "Heavy Industries Torso",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:nanorum_legs",
+    "modId": "variedcommodities",
+    "displayName": "Heavy Industries Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:nanorum_boots",
+    "modId": "variedcommodities",
+    "displayName": "Heavy Industries Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:tactical_head",
+    "modId": "variedcommodities",
+    "displayName": "Tactical Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:tactical_chest",
+    "modId": "variedcommodities",
+    "displayName": "Tactical Vest",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_leather_head",
+    "modId": "variedcommodities",
+    "displayName": "Full Leather Helmet",
+    "slot": "helmet",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "7 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_leather_chest",
+    "modId": "variedcommodities",
+    "displayName": "Full Leather ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_iron_head",
+    "modId": "variedcommodities",
+    "displayName": "Full Iron Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_iron_chest",
+    "modId": "variedcommodities",
+    "displayName": "Full Iron ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_golden_head",
+    "modId": "variedcommodities",
+    "displayName": "Full Gold Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_golden_chest",
+    "modId": "variedcommodities",
+    "displayName": "Full Gold ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "13 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_diamond_head",
+    "modId": "variedcommodities",
+    "displayName": "Full Diamond Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:full_diamond_chest",
+    "modId": "variedcommodities",
+    "displayName": "Full Diamond ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:full_bronze_head",
+    "modId": "variedcommodities",
+    "displayName": "Full Bronze Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_bronze_chest",
+    "modId": "variedcommodities",
+    "displayName": "Full Bronze ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_bronze_legs",
+    "modId": "variedcommodities",
+    "displayName": "Full Bronze Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_bronze_boots",
+    "modId": "variedcommodities",
+    "displayName": "Full Bronze Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_emerald_head",
+    "modId": "variedcommodities",
+    "displayName": "Full Emerald Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:full_emerald_chest",
+    "modId": "variedcommodities",
+    "displayName": "Full Emerald ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:full_emerald_legs",
+    "modId": "variedcommodities",
+    "displayName": "Full Emerald Leggings",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:full_emerald_boots",
+    "modId": "variedcommodities",
+    "displayName": "Full Emerald Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:full_wooden_head",
+    "modId": "variedcommodities",
+    "displayName": "Full Wooden Helmet",
+    "slot": "helmet",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "7 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_wooden_chest",
+    "modId": "variedcommodities",
+    "displayName": "Full Wooden ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_wooden_legs",
+    "modId": "variedcommodities",
+    "displayName": "Full Wooden Leggings",
+    "slot": "leggings",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "8 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:full_wooden_boots",
+    "modId": "variedcommodities",
+    "displayName": "Full Wooden Boots",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:tuxedo_chest",
+    "modId": "variedcommodities",
+    "displayName": "Tuxedo Chest",
+    "slot": "chestplate",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "13 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:tuxedo_pants",
+    "modId": "variedcommodities",
+    "displayName": "Tuxedo Pants",
+    "slot": "leggings",
+    "armorPoints": 4,
+    "toughness": 0,
+    "locational": "12 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:tuxedo_bottom",
+    "modId": "variedcommodities",
+    "displayName": "Tuxedo Trenchcoat",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:wizard_head",
+    "modId": "variedcommodities",
+    "displayName": "Wizard Head",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:wizard_chest",
+    "modId": "variedcommodities",
+    "displayName": "Wizard Chest",
+    "slot": "chestplate",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "13 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:wizard_pants",
+    "modId": "variedcommodities",
+    "displayName": "Wizard Leggings",
+    "slot": "leggings",
+    "armorPoints": 4,
+    "toughness": 0,
+    "locational": "12 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:assassin_head",
+    "modId": "variedcommodities",
+    "displayName": "Assassins Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:assassin_chest",
+    "modId": "variedcommodities",
+    "displayName": "Assassins ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:assassin_legs",
+    "modId": "variedcommodities",
+    "displayName": "Assassins Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:assassin_boots",
+    "modId": "variedcommodities",
+    "displayName": "Assassins Boots",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:soldier_head",
+    "modId": "variedcommodities",
+    "displayName": "☢ Protective Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:soldier_chest",
+    "modId": "variedcommodities",
+    "displayName": "☢ Protective ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:soldier_legs",
+    "modId": "variedcommodities",
+    "displayName": "☢ Protective Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:soldier_bottom",
+    "modId": "variedcommodities",
+    "displayName": "☢ Protective Bottoms",
+    "slot": "boots",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "9 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:x407_head",
+    "modId": "variedcommodities",
+    "displayName": "X407 Prototype Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:x407_chest",
+    "modId": "variedcommodities",
+    "displayName": "X407 Prototype ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:x407_legs",
+    "modId": "variedcommodities",
+    "displayName": "X407 Prototype Leggings",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:x407_boots",
+    "modId": "variedcommodities",
+    "displayName": "X407 Prototype Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:mithril_head",
+    "modId": "variedcommodities",
+    "displayName": "Mithril Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:mithril_chest",
+    "modId": "variedcommodities",
+    "displayName": "Mithril ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:mithril_legs",
+    "modId": "variedcommodities",
+    "displayName": "Mithril Leggings",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:mithril_boots",
+    "modId": "variedcommodities",
+    "displayName": "Mithril Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:demonic_head",
+    "modId": "variedcommodities",
+    "displayName": "Demonic Helmet",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:demonic_chest",
+    "modId": "variedcommodities",
+    "displayName": "Demonic ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:demonic_legs",
+    "modId": "variedcommodities",
+    "displayName": "Demonic Leggings",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:demonic_boots",
+    "modId": "variedcommodities",
+    "displayName": "Demonic Boots",
+    "slot": "boots",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:commissar_head",
+    "modId": "variedcommodities",
+    "displayName": "Commissar's Cap",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:commissar_chest",
+    "modId": "variedcommodities",
+    "displayName": "Commissar's Torso",
+    "slot": "chestplate",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "13 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:commissar_legs",
+    "modId": "variedcommodities",
+    "displayName": "Commissar's Leggings",
+    "slot": "leggings",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "10 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:commissar_bottom",
+    "modId": "variedcommodities",
+    "displayName": "Commissar's Bottoms",
+    "slot": "boots",
+    "armorPoints": 1,
+    "toughness": 0,
+    "locational": "6 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:infantry_helmet",
+    "modId": "variedcommodities",
+    "displayName": "Infantry Helmet",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:officer_chest",
+    "modId": "variedcommodities",
+    "displayName": "Officer ChestPlate",
+    "slot": "chestplate",
+    "armorPoints": 8,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:crown",
+    "modId": "variedcommodities",
+    "displayName": "Crown",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:crown2",
+    "modId": "variedcommodities",
+    "displayName": "Crown",
+    "slot": "helmet",
+    "armorPoints": 3,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:ninja_head",
+    "modId": "variedcommodities",
+    "displayName": "Ninja Head",
+    "slot": "helmet",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "11 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:ninja_chest",
+    "modId": "variedcommodities",
+    "displayName": "Ninja Chest",
+    "slot": "chestplate",
+    "armorPoints": 6,
+    "toughness": 0,
+    "locational": "15 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:ninja_legs",
+    "modId": "variedcommodities",
+    "displayName": "Ninja Leggings",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:chain_skirt",
+    "modId": "variedcommodities",
+    "displayName": "Chain Skirt",
+    "slot": "leggings",
+    "armorPoints": 4,
+    "toughness": 0,
+    "locational": "12 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:leather_skirt",
+    "modId": "variedcommodities",
+    "displayName": "Leather Skirt",
+    "slot": "leggings",
+    "armorPoints": 2,
+    "toughness": 0,
+    "locational": "8 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:golden_skirt",
+    "modId": "variedcommodities",
+    "displayName": "Golden Skirt",
+    "slot": "leggings",
+    "armorPoints": 3,
+    "toughness": 0,
+    "locational": "10 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:iron_skirt",
+    "modId": "variedcommodities",
+    "displayName": "Iron Skirt",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:diamond_skirt",
+    "modId": "variedcommodities",
+    "displayName": "Diamond Skirt",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:emerald_skirt",
+    "modId": "variedcommodities",
+    "displayName": "Emerald Skirt",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:bronze_skirt",
+    "modId": "variedcommodities",
+    "displayName": "Bronze Skirt",
+    "slot": "leggings",
+    "armorPoints": 5,
+    "toughness": 0,
+    "locational": "14 Locational Armor"
+  },
+  {
+    "registryName": "variedcommodities:demonic_skirt",
+    "modId": "variedcommodities",
+    "displayName": "Demonic Skirt",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  },
+  {
+    "registryName": "variedcommodities:mithril_skirt",
+    "modId": "variedcommodities",
+    "displayName": "Mithril Skirt",
+    "slot": "leggings",
+    "armorPoints": 6,
+    "toughness": 2,
+    "locational": "2 Locational Armor Toughness"
+  }
+]

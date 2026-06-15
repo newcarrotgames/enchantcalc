@@ -1,12 +1,22 @@
-import type { EnchantDef, EnchantTag, ItemDef, Pack } from '../types';
+import type {
+  BaubleDef,
+  BaubleSlot,
+  EnchantDef,
+  EnchantTag,
+  ItemDef,
+  Pack,
+} from '../types';
 import itemsRaw from './items.json';
 import enchantsRaw from './enchants.json';
+import baublesRaw from './baubles.json';
 
 export const ITEMS: ItemDef[] = itemsRaw as ItemDef[];
 export const ENCHANTS: EnchantDef[] = enchantsRaw as EnchantDef[];
+export const BAUBLES: BaubleDef[] = baublesRaw as BaubleDef[];
 
 const itemsById = new Map(ITEMS.map((i) => [i.id, i]));
 const enchantsById = new Map(ENCHANTS.map((e) => [e.id, e]));
+const baublesById = new Map(BAUBLES.map((b) => [b.id, b]));
 
 export function getItem(id: string | null | undefined): ItemDef | undefined {
   return id ? itemsById.get(id) : undefined;
@@ -14,6 +24,17 @@ export function getItem(id: string | null | undefined): ItemDef | undefined {
 
 export function getEnchant(id: string): EnchantDef | undefined {
   return enchantsById.get(id);
+}
+
+export function getBauble(id: string | null | undefined): BaubleDef | undefined {
+  return id ? baublesById.get(id) : undefined;
+}
+
+/** True when a bauble can be equipped into the given bauble slot. */
+export function baubleFitsSlot(bauble: BaubleDef, slot: BaubleSlot): boolean {
+  if (bauble.baubleType === 'any') return true;
+  if (bauble.baubleType === 'ring') return slot === 'ring1' || slot === 'ring2';
+  return bauble.baubleType === slot;
 }
 
 /** True when an enchant can be applied to an item (tag intersection). */

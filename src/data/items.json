@@ -8985,143 +8985,286 @@
     "note": "Very fast, low per-hit damage. Hold attack to spin; landing consecutive spinning hits ramps the damage up."
   },
   {
-    "id": "leather_helmet",
-    "name": "Leather Helmet",
-    "pack": "vanilla",
+    "id": "protective_helmet",
+    "name": "☢ Protective Helmet",
+    "pack": "rlcraft",
     "category": "armor",
     "slot": "helmet",
-    "group": "Leather Armor",
-    "icon": "helmet:leather",
-    "armorPoints": 1,
+    "group": "☢ Protective Armor",
+    "icon": "helmet:protective",
+    "armorPoints": 2,
     "toughness": 0,
+    "registryName": "variedcommodities:soldier_head",
     "accepts": [
       "armor",
       "helmet",
       "any"
-    ]
+    ],
+    "mod": "Varied Commodities"
   },
   {
-    "id": "leather_chestplate",
-    "name": "Leather Chestplate",
-    "pack": "vanilla",
+    "id": "protective_chestplate",
+    "name": "☢ Protective ChestPlate",
+    "pack": "rlcraft",
     "category": "armor",
     "slot": "chestplate",
-    "group": "Leather Armor",
-    "icon": "chestplate:leather",
-    "armorPoints": 3,
+    "group": "☢ Protective Armor",
+    "icon": "chestplate:protective",
+    "armorPoints": 6,
     "toughness": 0,
+    "registryName": "variedcommodities:soldier_chest",
     "accepts": [
       "armor",
       "chestplate",
       "any"
-    ]
+    ],
+    "mod": "Varied Commodities"
   },
   {
-    "id": "leather_leggings",
-    "name": "Leather Leggings",
-    "pack": "vanilla",
+    "id": "protective_leggings",
+    "name": "☢ Protective Leggings",
+    "pack": "rlcraft",
     "category": "armor",
     "slot": "leggings",
-    "group": "Leather Armor",
-    "icon": "leggings:leather",
-    "armorPoints": 2,
-    "toughness": 0,
-    "accepts": [
-      "armor",
-      "leggings",
-      "any"
-    ]
-  },
-  {
-    "id": "leather_boots",
-    "name": "Leather Boots",
-    "pack": "vanilla",
-    "category": "armor",
-    "slot": "boots",
-    "group": "Leather Armor",
-    "icon": "boots:leather",
-    "armorPoints": 1,
-    "toughness": 0,
-    "accepts": [
-      "armor",
-      "boots",
-      "any"
-    ]
-  },
-  {
-    "id": "golden_helmet",
-    "name": "Golden Helmet",
-    "pack": "vanilla",
-    "category": "armor",
-    "slot": "helmet",
-    "group": "Golden Armor",
-    "icon": "helmet:golden",
-    "armorPoints": 2,
-    "toughness": 0,
-    "accepts": [
-      "armor",
-      "helmet",
-      "any"
-    ]
-  },
-  {
-    "id": "golden_chestplate",
-    "name": "Golden Chestplate",
-    "pack": "vanilla",
-    "category": "armor",
-    "slot": "chestplate",
-    "group": "Golden Armor",
-    "icon": "chestplate:golden",
+    "group": "☢ Protective Armor",
+    "icon": "leggings:protective",
     "armorPoints": 5,
     "toughness": 0,
-    "accepts": [
-      "armor",
-      "chestplate",
-      "any"
-    ]
-  },
-  {
-    "id": "golden_leggings",
-    "name": "Golden Leggings",
-    "pack": "vanilla",
-    "category": "armor",
-    "slot": "leggings",
-    "group": "Golden Armor",
-    "icon": "leggings:golden",
-    "armorPoints": 3,
-    "toughness": 0,
+    "registryName": "variedcommodities:soldier_legs",
     "accepts": [
       "armor",
       "leggings",
       "any"
-    ]
+    ],
+    "mod": "Varied Commodities"
   },
   {
-    "id": "golden_boots",
-    "name": "Golden Boots",
-    "pack": "vanilla",
+    "id": "protective_boots",
+    "name": "☢ Protective Bottoms",
+    "pack": "rlcraft",
     "category": "armor",
     "slot": "boots",
-    "group": "Golden Armor",
-    "icon": "boots:golden",
-    "armorPoints": 1,
+    "group": "☢ Protective Armor",
+    "icon": "boots:protective",
+    "armorPoints": 2,
     "toughness": 0,
+    "registryName": "variedcommodities:soldier_bottom",
     "accepts": [
       "armor",
       "boots",
       "any"
-    ]
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "assassins_helmet",
+    "name": "Assassins Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Assassins Armor",
+    "icon": "helmet:assassins",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:assassin_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "assassins_chestplate",
+    "name": "Assassins ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Assassins Armor",
+    "icon": "chestplate:assassins",
+    "armorPoints": 6,
+    "toughness": 0,
+    "registryName": "variedcommodities:assassin_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "assassins_leggings",
+    "name": "Assassins Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Assassins Armor",
+    "icon": "leggings:assassins",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "variedcommodities:assassin_legs",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "assassins_boots",
+    "name": "Assassins Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Assassins Armor",
+    "icon": "boots:assassins",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:assassin_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "bandit_helmet",
+    "name": "Bandit Mask",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Bandit Armor",
+    "icon": "helmet:bandit",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:bandit_mask",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "book_wyrm_scale_helmet",
+    "name": "Book Wyrm Scale Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Book Wyrm Scale Armor",
+    "icon": "helmet:bookwyrm",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "defiledlands:scale_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "book_wyrm_scale_chestplate",
+    "name": "Book Wyrm Scale Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Book Wyrm Scale Armor",
+    "icon": "chestplate:bookwyrm",
+    "armorPoints": 4,
+    "toughness": 0,
+    "registryName": "defiledlands:scale_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "book_wyrm_scale_leggings",
+    "name": "Book Wyrm Scale Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Book Wyrm Scale Armor",
+    "icon": "leggings:bookwyrm",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "defiledlands:scale_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "book_wyrm_scale_boots",
+    "name": "Book Wyrm Scale Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Book Wyrm Scale Armor",
+    "icon": "boots:bookwyrm",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "defiledlands:scale_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "bronze_leggings",
+    "name": "Bronze Skirt",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Bronze Armor",
+    "icon": "leggings:bronze",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "variedcommodities:bronze_skirt",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "chain_leggings",
+    "name": "Chain Skirt",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Chain (Varied Commodities)",
+    "icon": "leggings:chainmail",
+    "armorPoints": 4,
+    "toughness": 0,
+    "registryName": "variedcommodities:chain_skirt",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
   },
   {
     "id": "chainmail_helmet",
-    "name": "Chainmail Helmet",
+    "name": "Chain Helmet",
     "pack": "vanilla",
     "category": "armor",
     "slot": "helmet",
-    "group": "Chainmail Armor",
+    "group": "Chain Armor",
     "icon": "helmet:chainmail",
     "armorPoints": 2,
     "toughness": 0,
+    "registryName": "minecraft:chainmail_helmet",
     "accepts": [
       "armor",
       "helmet",
@@ -9130,14 +9273,15 @@
   },
   {
     "id": "chainmail_chestplate",
-    "name": "Chainmail Chestplate",
+    "name": "Chain Chestplate",
     "pack": "vanilla",
     "category": "armor",
     "slot": "chestplate",
-    "group": "Chainmail Armor",
+    "group": "Chain Armor",
     "icon": "chestplate:chainmail",
     "armorPoints": 5,
     "toughness": 0,
+    "registryName": "minecraft:chainmail_chestplate",
     "accepts": [
       "armor",
       "chestplate",
@@ -9146,14 +9290,15 @@
   },
   {
     "id": "chainmail_leggings",
-    "name": "Chainmail Leggings",
+    "name": "Chain Leggings",
     "pack": "vanilla",
     "category": "armor",
     "slot": "leggings",
-    "group": "Chainmail Armor",
+    "group": "Chain Armor",
     "icon": "leggings:chainmail",
     "armorPoints": 4,
     "toughness": 0,
+    "registryName": "minecraft:chainmail_leggings",
     "accepts": [
       "armor",
       "leggings",
@@ -9162,14 +9307,15 @@
   },
   {
     "id": "chainmail_boots",
-    "name": "Chainmail Boots",
+    "name": "Chain Boots",
     "pack": "vanilla",
     "category": "armor",
     "slot": "boots",
-    "group": "Chainmail Armor",
+    "group": "Chain Armor",
     "icon": "boots:chainmail",
     "armorPoints": 1,
     "toughness": 0,
+    "registryName": "minecraft:chainmail_boots",
     "accepts": [
       "armor",
       "boots",
@@ -9177,68 +9323,494 @@
     ]
   },
   {
-    "id": "iron_helmet",
-    "name": "Iron Helmet",
-    "pack": "vanilla",
+    "id": "commissar_s_helmet",
+    "name": "Commissar's Cap",
+    "pack": "rlcraft",
     "category": "armor",
     "slot": "helmet",
-    "group": "Iron Armor",
-    "icon": "helmet:iron",
+    "group": "Commissar's Armor",
+    "icon": "helmet:commissar_s",
     "armorPoints": 2,
     "toughness": 0,
+    "registryName": "variedcommodities:commissar_head",
     "accepts": [
       "armor",
       "helmet",
       "any"
-    ]
+    ],
+    "mod": "Varied Commodities"
   },
   {
-    "id": "iron_chestplate",
-    "name": "Iron Chestplate",
-    "pack": "vanilla",
+    "id": "commissar_s_chestplate",
+    "name": "Commissar's Torso",
+    "pack": "rlcraft",
     "category": "armor",
     "slot": "chestplate",
-    "group": "Iron Armor",
-    "icon": "chestplate:iron",
-    "armorPoints": 6,
+    "group": "Commissar's Armor",
+    "icon": "chestplate:commissar_s",
+    "armorPoints": 5,
     "toughness": 0,
+    "registryName": "variedcommodities:commissar_chest",
     "accepts": [
       "armor",
       "chestplate",
       "any"
-    ]
+    ],
+    "mod": "Varied Commodities"
   },
   {
-    "id": "iron_leggings",
-    "name": "Iron Leggings",
-    "pack": "vanilla",
+    "id": "commissar_s_leggings",
+    "name": "Commissar's Leggings",
+    "pack": "rlcraft",
     "category": "armor",
     "slot": "leggings",
-    "group": "Iron Armor",
-    "icon": "leggings:iron",
-    "armorPoints": 5,
+    "group": "Commissar's Armor",
+    "icon": "leggings:commissar_s",
+    "armorPoints": 3,
     "toughness": 0,
+    "registryName": "variedcommodities:commissar_legs",
     "accepts": [
       "armor",
       "leggings",
       "any"
-    ]
+    ],
+    "mod": "Varied Commodities"
   },
   {
-    "id": "iron_boots",
-    "name": "Iron Boots",
-    "pack": "vanilla",
+    "id": "commissar_s_boots",
+    "name": "Commissar's Bottoms",
+    "pack": "rlcraft",
     "category": "armor",
     "slot": "boots",
-    "group": "Iron Armor",
-    "icon": "boots:iron",
-    "armorPoints": 2,
+    "group": "Commissar's Armor",
+    "icon": "boots:commissar_s",
+    "armorPoints": 1,
     "toughness": 0,
+    "registryName": "variedcommodities:commissar_bottom",
     "accepts": [
       "armor",
       "boots",
       "any"
-    ]
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "copper_helmet",
+    "name": "Copper Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Copper Armor",
+    "icon": "helmet:copper",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "iceandfire:armor_copper_metal_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "copper_chestplate",
+    "name": "Copper Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Copper Armor",
+    "icon": "chestplate:copper",
+    "armorPoints": 4,
+    "toughness": 0,
+    "registryName": "iceandfire:armor_copper_metal_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "copper_leggings",
+    "name": "Copper Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Copper Armor",
+    "icon": "leggings:copper",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "iceandfire:armor_copper_metal_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "copper_boots",
+    "name": "Copper Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Copper Armor",
+    "icon": "boots:copper",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "iceandfire:armor_copper_metal_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "cowleather_helmet",
+    "name": "Cowleather Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Cowleather Armor",
+    "icon": "helmet:cowleather",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "variedcommodities:cow_leather_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "cowleather_chestplate",
+    "name": "Cowleather ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Cowleather Armor",
+    "icon": "chestplate:cowleather",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "variedcommodities:cow_leather_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "cowleather_leggings",
+    "name": "Cowleather Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Cowleather Armor",
+    "icon": "leggings:cowleather",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:cow_leather_legs",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "cowleather_boots",
+    "name": "Cowleather Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Cowleather Armor",
+    "icon": "boots:cowleather",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "variedcommodities:cow_leather_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "crown_helmet",
+    "name": "Crown",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Crown Armor",
+    "icon": "helmet:crown",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "variedcommodities:crown",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "cushioned_boots",
+    "name": "Cushioned Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Cushioned Armor",
+    "icon": "boots:cushioned",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "forgottenitems:cushioned_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Forgotten Items"
+  },
+  {
+    "id": "death_worm_chitin_helmet",
+    "name": "Death Worm Chitin Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Death Worm Chitin Armor",
+    "icon": "helmet:death_worm_chitin",
+    "armorPoints": 3,
+    "toughness": 1.5,
+    "registryName": "iceandfire:deathworm_yellow_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "death_worm_chitin_chestplate",
+    "name": "Death Worm Chitin Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Death Worm Chitin Armor",
+    "icon": "chestplate:death_worm_chitin",
+    "armorPoints": 7,
+    "toughness": 1.5,
+    "registryName": "iceandfire:deathworm_yellow_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "death_worm_chitin_leggings",
+    "name": "Death Worm Chitin Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Death Worm Chitin Armor",
+    "icon": "leggings:death_worm_chitin",
+    "armorPoints": 5,
+    "toughness": 1.5,
+    "registryName": "iceandfire:deathworm_yellow_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "death_worm_chitin_boots",
+    "name": "Death Worm Chitin Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Death Worm Chitin Armor",
+    "icon": "boots:death_worm_chitin",
+    "armorPoints": 2,
+    "toughness": 1.5,
+    "registryName": "iceandfire:deathworm_yellow_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "demonic_helmet",
+    "name": "Demonic Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Demonic Armor",
+    "icon": "helmet:demonic",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "variedcommodities:demonic_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "demonic_chestplate",
+    "name": "Demonic ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Demonic Armor",
+    "icon": "chestplate:demonic",
+    "armorPoints": 8,
+    "toughness": 2,
+    "registryName": "variedcommodities:demonic_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "demonic_leggings",
+    "name": "Demonic Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Demonic Armor",
+    "icon": "leggings:demonic",
+    "armorPoints": 6,
+    "toughness": 2,
+    "registryName": "variedcommodities:demonic_legs",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "demonic_boots",
+    "name": "Demonic Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Demonic Armor",
+    "icon": "boots:demonic",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "variedcommodities:demonic_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "desert_myrmex_chitin_helmet",
+    "name": "Desert Myrmex Chitin Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Desert Myrmex Chitin Armor",
+    "icon": "helmet:desert_myrmex",
+    "armorPoints": 4,
+    "toughness": 0,
+    "registryName": "iceandfire:myrmex_desert_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Ice and Fire",
+    "note": "On par with diamond. Full set: +1 step height (Millipede)."
+  },
+  {
+    "id": "desert_myrmex_chitin_chestplate",
+    "name": "Desert Myrmex Chitin Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Desert Myrmex Chitin Armor",
+    "icon": "chestplate:desert_myrmex",
+    "armorPoints": 8,
+    "toughness": 0,
+    "registryName": "iceandfire:myrmex_desert_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Ice and Fire",
+    "note": "On par with diamond. Full set: +1 step height (Millipede)."
+  },
+  {
+    "id": "desert_myrmex_chitin_leggings",
+    "name": "Desert Myrmex Chitin Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Desert Myrmex Chitin Armor",
+    "icon": "leggings:desert_myrmex",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "iceandfire:myrmex_desert_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Ice and Fire",
+    "note": "On par with diamond. Full set: +1 step height (Millipede)."
+  },
+  {
+    "id": "desert_myrmex_chitin_boots",
+    "name": "Desert Myrmex Chitin Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Desert Myrmex Chitin Armor",
+    "icon": "boots:desert_myrmex",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "iceandfire:myrmex_desert_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Ice and Fire",
+    "note": "On par with diamond. Full set: +1 step height (Millipede)."
+  },
+  {
+    "id": "variedcommodities_diamond_leggings",
+    "name": "Diamond Skirt",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Diamond (Varied Commodities)",
+    "icon": "leggings:diamond",
+    "armorPoints": 6,
+    "toughness": 2,
+    "registryName": "variedcommodities:diamond_skirt",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
   },
   {
     "id": "diamond_helmet",
@@ -9250,6 +9822,7 @@
     "icon": "helmet:diamond",
     "armorPoints": 3,
     "toughness": 2,
+    "registryName": "minecraft:diamond_helmet",
     "accepts": [
       "armor",
       "helmet",
@@ -9266,6 +9839,7 @@
     "icon": "chestplate:diamond",
     "armorPoints": 8,
     "toughness": 2,
+    "registryName": "minecraft:diamond_chestplate",
     "accepts": [
       "armor",
       "chestplate",
@@ -9282,6 +9856,7 @@
     "icon": "leggings:diamond",
     "armorPoints": 6,
     "toughness": 2,
+    "registryName": "minecraft:diamond_leggings",
     "accepts": [
       "armor",
       "leggings",
@@ -9298,6 +9873,7 @@
     "icon": "boots:diamond",
     "armorPoints": 3,
     "toughness": 2,
+    "registryName": "minecraft:diamond_boots",
     "accepts": [
       "armor",
       "boots",
@@ -9305,363 +9881,2833 @@
     ]
   },
   {
-    "id": "steel_helmet",
-    "name": "Steel Helmet",
-    "pack": "rlcraft",
-    "mod": "RLMixins",
-    "category": "armor",
-    "slot": "helmet",
-    "group": "Steel Armor",
-    "icon": "helmet:steel",
-    "armorPoints": 3,
-    "toughness": 0,
-    "accepts": [
-      "armor",
-      "helmet",
-      "any"
-    ],
-    "note": "Between iron and diamond. Full set: Flame Hardened (fire immunity & +50% fire resistance)."
-  },
-  {
-    "id": "steel_chestplate",
-    "name": "Steel Chestplate",
-    "pack": "rlcraft",
-    "mod": "RLMixins",
-    "category": "armor",
-    "slot": "chestplate",
-    "group": "Steel Armor",
-    "icon": "chestplate:steel",
-    "armorPoints": 7,
-    "toughness": 0,
-    "accepts": [
-      "armor",
-      "chestplate",
-      "any"
-    ],
-    "note": "Between iron and diamond. Full set: Flame Hardened (fire immunity & +50% fire resistance)."
-  },
-  {
-    "id": "steel_leggings",
-    "name": "Steel Leggings",
-    "pack": "rlcraft",
-    "mod": "RLMixins",
-    "category": "armor",
-    "slot": "leggings",
-    "group": "Steel Armor",
-    "icon": "leggings:steel",
-    "armorPoints": 6,
-    "toughness": 0,
-    "accepts": [
-      "armor",
-      "leggings",
-      "any"
-    ],
-    "note": "Between iron and diamond. Full set: Flame Hardened (fire immunity & +50% fire resistance)."
-  },
-  {
-    "id": "steel_boots",
-    "name": "Steel Boots",
-    "pack": "rlcraft",
-    "mod": "RLMixins",
-    "category": "armor",
-    "slot": "boots",
-    "group": "Steel Armor",
-    "icon": "boots:steel",
-    "armorPoints": 3,
-    "toughness": 0,
-    "accepts": [
-      "armor",
-      "boots",
-      "any"
-    ],
-    "note": "Between iron and diamond. Full set: Flame Hardened (fire immunity & +50% fire resistance)."
-  },
-  {
     "id": "dragonscale_helmet",
     "name": "Dragon Scale Helmet",
     "pack": "rlcraft",
-    "mod": "Ice and Fire",
     "category": "armor",
     "slot": "helmet",
     "group": "Dragon Scale Armor",
     "icon": "helmet:dragonbone",
-    "armorPoints": 4,
+    "armorPoints": 5,
     "toughness": 2,
+    "registryName": "iceandfire:armor_red_helmet",
     "accepts": [
       "armor",
       "helmet",
       "any"
     ],
-    "note": "Top dragon armor; locational armor 19/21/18/15. Many color variants share these stats."
+    "mod": "Ice and Fire",
+    "note": "Top dragon armor. Many color variants share these stats."
   },
   {
     "id": "dragonscale_chestplate",
     "name": "Dragon Scale Chestplate",
     "pack": "rlcraft",
-    "mod": "Ice and Fire",
     "category": "armor",
     "slot": "chestplate",
     "group": "Dragon Scale Armor",
     "icon": "chestplate:dragonbone",
     "armorPoints": 9,
     "toughness": 2,
+    "registryName": "iceandfire:armor_red_chestplate",
     "accepts": [
       "armor",
       "chestplate",
       "any"
     ],
-    "note": "Top dragon armor; locational armor 19/21/18/15. Many color variants share these stats."
+    "mod": "Ice and Fire",
+    "note": "Top dragon armor. Many color variants share these stats."
   },
   {
     "id": "dragonscale_leggings",
     "name": "Dragon Scale Leggings",
     "pack": "rlcraft",
-    "mod": "Ice and Fire",
     "category": "armor",
     "slot": "leggings",
     "group": "Dragon Scale Armor",
     "icon": "leggings:dragonbone",
     "armorPoints": 7,
     "toughness": 2,
+    "registryName": "iceandfire:armor_red_leggings",
     "accepts": [
       "armor",
       "leggings",
       "any"
     ],
-    "note": "Top dragon armor; locational armor 19/21/18/15. Many color variants share these stats."
+    "mod": "Ice and Fire",
+    "note": "Top dragon armor. Many color variants share these stats."
   },
   {
     "id": "dragonscale_boots",
     "name": "Dragon Scale Boots",
     "pack": "rlcraft",
-    "mod": "Ice and Fire",
     "category": "armor",
     "slot": "boots",
     "group": "Dragon Scale Armor",
     "icon": "boots:dragonbone",
-    "armorPoints": 4,
+    "armorPoints": 5,
     "toughness": 2,
+    "registryName": "iceandfire:armor_red_boots",
     "accepts": [
       "armor",
       "boots",
       "any"
     ],
-    "note": "Top dragon armor; locational armor 19/21/18/15. Many color variants share these stats."
+    "mod": "Ice and Fire",
+    "note": "Top dragon armor. Many color variants share these stats."
   },
   {
-    "id": "desert_myrmex_chitin_helmet",
-    "name": "Desert Myrmex Chitin Helmet",
+    "id": "emerald_leggings",
+    "name": "Emerald Skirt",
     "pack": "rlcraft",
-    "mod": "Ice and Fire",
-    "category": "armor",
-    "slot": "helmet",
-    "group": "Desert Myrmex Chitin Armor",
-    "icon": "helmet:desert_myrmex",
-    "armorPoints": 4,
-    "toughness": 0,
-    "accepts": [
-      "armor",
-      "helmet",
-      "any"
-    ],
-    "note": "On par with diamond. Full set: +1 step height (Millipede)."
-  },
-  {
-    "id": "desert_myrmex_chitin_chestplate",
-    "name": "Desert Myrmex Chitin Chestplate",
-    "pack": "rlcraft",
-    "mod": "Ice and Fire",
-    "category": "armor",
-    "slot": "chestplate",
-    "group": "Desert Myrmex Chitin Armor",
-    "icon": "chestplate:desert_myrmex",
-    "armorPoints": 8,
-    "toughness": 0,
-    "accepts": [
-      "armor",
-      "chestplate",
-      "any"
-    ],
-    "note": "On par with diamond. Full set: +1 step height (Millipede)."
-  },
-  {
-    "id": "desert_myrmex_chitin_leggings",
-    "name": "Desert Myrmex Chitin Leggings",
-    "pack": "rlcraft",
-    "mod": "Ice and Fire",
     "category": "armor",
     "slot": "leggings",
-    "group": "Desert Myrmex Chitin Armor",
-    "icon": "leggings:desert_myrmex",
-    "armorPoints": 5,
-    "toughness": 0,
+    "group": "Emerald Armor",
+    "icon": "leggings:emerald",
+    "armorPoints": 6,
+    "toughness": 2,
+    "registryName": "variedcommodities:emerald_skirt",
     "accepts": [
       "armor",
       "leggings",
       "any"
     ],
-    "note": "On par with diamond. Full set: +1 step height (Millipede)."
+    "mod": "Varied Commodities"
   },
   {
-    "id": "desert_myrmex_chitin_boots",
-    "name": "Desert Myrmex Chitin Boots",
+    "id": "famine_helmet",
+    "name": "Famine Helmet",
     "pack": "rlcraft",
-    "mod": "Ice and Fire",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Famine Armor",
+    "icon": "helmet:famine",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "mod_lavacow:faminearmor_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "famine_chestplate",
+    "name": "Famine Tunic",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Famine Armor",
+    "icon": "chestplate:famine",
+    "armorPoints": 8,
+    "toughness": 2,
+    "registryName": "mod_lavacow:faminearmor_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "famine_leggings",
+    "name": "Famine Pants",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Famine Armor",
+    "icon": "leggings:famine",
+    "armorPoints": 6,
+    "toughness": 2,
+    "registryName": "mod_lavacow:faminearmor_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "famine_boots",
+    "name": "Famine Boots",
+    "pack": "rlcraft",
     "category": "armor",
     "slot": "boots",
-    "group": "Desert Myrmex Chitin Armor",
-    "icon": "boots:desert_myrmex",
+    "group": "Famine Armor",
+    "icon": "boots:famine",
     "armorPoints": 3,
-    "toughness": 0,
+    "toughness": 2,
+    "registryName": "mod_lavacow:faminearmor_boots",
     "accepts": [
       "armor",
       "boots",
       "any"
     ],
-    "note": "On par with diamond. Full set: +1 step height (Millipede)."
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "forest_troll_leather_helmet",
+    "name": "Forest Troll Leather Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Forest Troll Leather Armor",
+    "icon": "helmet:forest_troll_leather",
+    "armorPoints": 3,
+    "toughness": 1,
+    "registryName": "iceandfire:forest_troll_leather_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "forest_troll_leather_chestplate",
+    "name": "Forest Troll Leather Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Forest Troll Leather Armor",
+    "icon": "chestplate:forest_troll_leather",
+    "armorPoints": 7,
+    "toughness": 1,
+    "registryName": "iceandfire:forest_troll_leather_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "forest_troll_leather_leggings",
+    "name": "Forest Troll Leather Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Forest Troll Leather Armor",
+    "icon": "leggings:forest_troll_leather",
+    "armorPoints": 5,
+    "toughness": 1,
+    "registryName": "iceandfire:forest_troll_leather_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "forest_troll_leather_boots",
+    "name": "Forest Troll Leather Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Forest Troll Leather Armor",
+    "icon": "boots:forest_troll_leather",
+    "armorPoints": 2,
+    "toughness": 1,
+    "registryName": "iceandfire:forest_troll_leather_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "frost_troll_leather_helmet",
+    "name": "Frost Troll Leather Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Frost Troll Leather Armor",
+    "icon": "helmet:frost_troll_leather",
+    "armorPoints": 3,
+    "toughness": 1,
+    "registryName": "iceandfire:frost_troll_leather_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "frost_troll_leather_chestplate",
+    "name": "Frost Troll Leather Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Frost Troll Leather Armor",
+    "icon": "chestplate:frost_troll_leather",
+    "armorPoints": 7,
+    "toughness": 1,
+    "registryName": "iceandfire:frost_troll_leather_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "frost_troll_leather_leggings",
+    "name": "Frost Troll Leather Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Frost Troll Leather Armor",
+    "icon": "leggings:frost_troll_leather",
+    "armorPoints": 5,
+    "toughness": 1,
+    "registryName": "iceandfire:frost_troll_leather_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "frost_troll_leather_boots",
+    "name": "Frost Troll Leather Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Frost Troll Leather Armor",
+    "icon": "boots:frost_troll_leather",
+    "armorPoints": 2,
+    "toughness": 1,
+    "registryName": "iceandfire:frost_troll_leather_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "full_bronze_helmet",
+    "name": "Full Bronze Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Full Bronze Armor",
+    "icon": "helmet:full_bronze",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_bronze_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_bronze_chestplate",
+    "name": "Full Bronze ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Full Bronze Armor",
+    "icon": "chestplate:full_bronze",
+    "armorPoints": 6,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_bronze_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_bronze_leggings",
+    "name": "Full Bronze Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Full Bronze Armor",
+    "icon": "leggings:full_bronze",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_bronze_legs",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_bronze_boots",
+    "name": "Full Bronze Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Full Bronze Armor",
+    "icon": "boots:full_bronze",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_bronze_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_diamond_helmet",
+    "name": "Full Diamond Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Full Diamond Armor",
+    "icon": "helmet:full_diamond",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "variedcommodities:full_diamond_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_diamond_chestplate",
+    "name": "Full Diamond ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Full Diamond Armor",
+    "icon": "chestplate:full_diamond",
+    "armorPoints": 8,
+    "toughness": 2,
+    "registryName": "variedcommodities:full_diamond_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_emerald_helmet",
+    "name": "Full Emerald Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Full Emerald Armor",
+    "icon": "helmet:full_emerald",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "variedcommodities:full_emerald_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_emerald_chestplate",
+    "name": "Full Emerald ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Full Emerald Armor",
+    "icon": "chestplate:full_emerald",
+    "armorPoints": 8,
+    "toughness": 2,
+    "registryName": "variedcommodities:full_emerald_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_emerald_leggings",
+    "name": "Full Emerald Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Full Emerald Armor",
+    "icon": "leggings:full_emerald",
+    "armorPoints": 6,
+    "toughness": 2,
+    "registryName": "variedcommodities:full_emerald_legs",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_emerald_boots",
+    "name": "Full Emerald Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Full Emerald Armor",
+    "icon": "boots:full_emerald",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "variedcommodities:full_emerald_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_gold_helmet",
+    "name": "Full Gold Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Full Gold Armor",
+    "icon": "helmet:full_gold",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_golden_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_gold_chestplate",
+    "name": "Full Gold ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Full Gold Armor",
+    "icon": "chestplate:full_gold",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_golden_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_iron_helmet",
+    "name": "Full Iron Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Full Iron Armor",
+    "icon": "helmet:full_iron",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_iron_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_iron_chestplate",
+    "name": "Full Iron ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Full Iron Armor",
+    "icon": "chestplate:full_iron",
+    "armorPoints": 6,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_iron_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_leather_helmet",
+    "name": "Full Leather Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Full Leather Armor",
+    "icon": "helmet:full_leather",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_leather_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_leather_chestplate",
+    "name": "Full Leather ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Full Leather Armor",
+    "icon": "chestplate:full_leather",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_leather_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_wooden_helmet",
+    "name": "Full Wooden Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Full Wooden Armor",
+    "icon": "helmet:full_wooden",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_wooden_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_wooden_chestplate",
+    "name": "Full Wooden ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Full Wooden Armor",
+    "icon": "chestplate:full_wooden",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_wooden_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_wooden_leggings",
+    "name": "Full Wooden Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Full Wooden Armor",
+    "icon": "leggings:full_wooden",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_wooden_legs",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "full_wooden_boots",
+    "name": "Full Wooden Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Full Wooden Armor",
+    "icon": "boots:full_wooden",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "variedcommodities:full_wooden_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "bountifulbaubles_golden_helmet",
+    "name": "Golden Crown",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Golden (Bountiful Baubles)",
+    "icon": "helmet:gold",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "bountifulbaubles:crowngold",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Bountiful Baubles"
+  },
+  {
+    "id": "variedcommodities_golden_leggings",
+    "name": "Golden Skirt",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Golden (Varied Commodities)",
+    "icon": "leggings:gold",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "variedcommodities:golden_skirt",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "golden_helmet",
+    "name": "Golden Helmet",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Golden Armor",
+    "icon": "helmet:gold",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "minecraft:golden_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ]
+  },
+  {
+    "id": "golden_chestplate",
+    "name": "Golden Chestplate",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Golden Armor",
+    "icon": "chestplate:gold",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "minecraft:golden_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ]
+  },
+  {
+    "id": "golden_leggings",
+    "name": "Golden Leggings",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Golden Armor",
+    "icon": "leggings:gold",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "minecraft:golden_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ]
+  },
+  {
+    "id": "golden_boots",
+    "name": "Golden Boots",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Golden Armor",
+    "icon": "boots:gold",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "minecraft:golden_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ]
+  },
+  {
+    "id": "golden_book_wyrm_scale_helmet",
+    "name": "Golden Book Wyrm Scale Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Golden Book Wyrm Scale Armor",
+    "icon": "helmet:gold",
+    "armorPoints": 2,
+    "toughness": 1,
+    "registryName": "defiledlands:scale_golden_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "golden_book_wyrm_scale_chestplate",
+    "name": "Golden Book Wyrm Scale Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Golden Book Wyrm Scale Armor",
+    "icon": "chestplate:gold",
+    "armorPoints": 4,
+    "toughness": 1,
+    "registryName": "defiledlands:scale_golden_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "golden_book_wyrm_scale_leggings",
+    "name": "Golden Book Wyrm Scale Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Golden Book Wyrm Scale Armor",
+    "icon": "leggings:gold",
+    "armorPoints": 3,
+    "toughness": 1,
+    "registryName": "defiledlands:scale_golden_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "golden_book_wyrm_scale_boots",
+    "name": "Golden Book Wyrm Scale Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Golden Book Wyrm Scale Armor",
+    "icon": "boots:gold",
+    "armorPoints": 1,
+    "toughness": 1,
+    "registryName": "defiledlands:scale_golden_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "golem_helmet",
+    "name": "Golem Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Golem Armor",
+    "icon": "helmet:golem",
+    "armorPoints": 5,
+    "toughness": 4,
+    "registryName": "forgottenitems:golem_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Forgotten Items",
+    "note": "Very high armor and knockback resistance, but heavy."
+  },
+  {
+    "id": "golem_chestplate",
+    "name": "Golem Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Golem Armor",
+    "icon": "chestplate:golem",
+    "armorPoints": 8,
+    "toughness": 4,
+    "registryName": "forgottenitems:golem_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Forgotten Items",
+    "note": "Very high armor and knockback resistance, but heavy."
+  },
+  {
+    "id": "golem_leggings",
+    "name": "Golem Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Golem Armor",
+    "icon": "leggings:golem",
+    "armorPoints": 6,
+    "toughness": 4,
+    "registryName": "forgottenitems:golem_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Forgotten Items",
+    "note": "Very high armor and knockback resistance, but heavy."
+  },
+  {
+    "id": "golem_boots",
+    "name": "Golem Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Golem Armor",
+    "icon": "boots:golem",
+    "armorPoints": 4,
+    "toughness": 4,
+    "registryName": "forgottenitems:golem_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Forgotten Items",
+    "note": "Very high armor and knockback resistance, but heavy."
+  },
+  {
+    "id": "hazmat_suit_helmet",
+    "name": "Hazmat Suit Headwear",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Hazmat Suit Armor",
+    "icon": "helmet:hazmat_suit",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "nuclearcraft:helm_hazmat",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "NuclearCraft"
+  },
+  {
+    "id": "hazmat_suit_chestplate",
+    "name": "Hazmat Suit Chestpiece",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Hazmat Suit Armor",
+    "icon": "chestplate:hazmat_suit",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "nuclearcraft:chest_hazmat",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "NuclearCraft"
+  },
+  {
+    "id": "hazmat_suit_leggings",
+    "name": "Hazmat Suit Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Hazmat Suit Armor",
+    "icon": "leggings:hazmat_suit",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "nuclearcraft:legs_hazmat",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "NuclearCraft"
+  },
+  {
+    "id": "hazmat_suit_boots",
+    "name": "Hazmat Suit Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Hazmat Suit Armor",
+    "icon": "boots:hazmat_suit",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "nuclearcraft:boots_hazmat",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "NuclearCraft"
+  },
+  {
+    "id": "heavy_industries_helmet",
+    "name": "Heavy Industries Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Heavy Industries Armor",
+    "icon": "helmet:heavy_industries",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:nanorum_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "heavy_industries_chestplate",
+    "name": "Heavy Industries Torso",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Heavy Industries Armor",
+    "icon": "chestplate:heavy_industries",
+    "armorPoints": 6,
+    "toughness": 0,
+    "registryName": "variedcommodities:nanorum_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "heavy_industries_leggings",
+    "name": "Heavy Industries Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Heavy Industries Armor",
+    "icon": "leggings:heavy_industries",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "variedcommodities:nanorum_legs",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "heavy_industries_boots",
+    "name": "Heavy Industries Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Heavy Industries Armor",
+    "icon": "boots:heavy_industries",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:nanorum_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "ice_helmet",
+    "name": "Ice Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Ice Armor",
+    "icon": "helmet:ice",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "simpledifficulty:ice_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Simple Difficulty"
+  },
+  {
+    "id": "ice_chestplate",
+    "name": "Ice Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Ice Armor",
+    "icon": "chestplate:ice",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "simpledifficulty:ice_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Simple Difficulty"
+  },
+  {
+    "id": "ice_leggings",
+    "name": "Ice Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Ice Armor",
+    "icon": "leggings:ice",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "simpledifficulty:ice_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Simple Difficulty"
+  },
+  {
+    "id": "ice_boots",
+    "name": "Ice Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Ice Armor",
+    "icon": "boots:ice",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "simpledifficulty:ice_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Simple Difficulty"
+  },
+  {
+    "id": "infantry_helmet",
+    "name": "Infantry Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Infantry Armor",
+    "icon": "helmet:infantry",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:infantry_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "variedcommodities_iron_leggings",
+    "name": "Iron Skirt",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Iron (Varied Commodities)",
+    "icon": "leggings:iron",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "variedcommodities:iron_skirt",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "iron_helmet",
+    "name": "Iron Helmet",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Iron Armor",
+    "icon": "helmet:iron",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "minecraft:iron_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ]
+  },
+  {
+    "id": "iron_chestplate",
+    "name": "Iron Chestplate",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Iron Armor",
+    "icon": "chestplate:iron",
+    "armorPoints": 6,
+    "toughness": 0,
+    "registryName": "minecraft:iron_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ]
+  },
+  {
+    "id": "iron_leggings",
+    "name": "Iron Leggings",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Iron Armor",
+    "icon": "leggings:iron",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "minecraft:iron_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ]
+  },
+  {
+    "id": "iron_boots",
+    "name": "Iron Boots",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Iron Armor",
+    "icon": "boots:iron",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "minecraft:iron_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ]
   },
   {
     "id": "jungle_myrmex_chitin_helmet",
     "name": "Jungle Myrmex Chitin Helmet",
     "pack": "rlcraft",
-    "mod": "Ice and Fire",
     "category": "armor",
     "slot": "helmet",
     "group": "Jungle Myrmex Chitin Armor",
     "icon": "helmet:jungle_myrmex",
     "armorPoints": 4,
     "toughness": 0,
+    "registryName": "iceandfire:myrmex_jungle_helmet",
     "accepts": [
       "armor",
       "helmet",
       "any"
     ],
+    "mod": "Ice and Fire",
     "note": "On par with diamond. Full set: +1 step height (Millipede)."
   },
   {
     "id": "jungle_myrmex_chitin_chestplate",
     "name": "Jungle Myrmex Chitin Chestplate",
     "pack": "rlcraft",
-    "mod": "Ice and Fire",
     "category": "armor",
     "slot": "chestplate",
     "group": "Jungle Myrmex Chitin Armor",
     "icon": "chestplate:jungle_myrmex",
     "armorPoints": 8,
     "toughness": 0,
+    "registryName": "iceandfire:myrmex_jungle_chestplate",
     "accepts": [
       "armor",
       "chestplate",
       "any"
     ],
+    "mod": "Ice and Fire",
     "note": "On par with diamond. Full set: +1 step height (Millipede)."
   },
   {
     "id": "jungle_myrmex_chitin_leggings",
     "name": "Jungle Myrmex Chitin Leggings",
     "pack": "rlcraft",
-    "mod": "Ice and Fire",
     "category": "armor",
     "slot": "leggings",
     "group": "Jungle Myrmex Chitin Armor",
     "icon": "leggings:jungle_myrmex",
     "armorPoints": 5,
     "toughness": 0,
+    "registryName": "iceandfire:myrmex_jungle_leggings",
     "accepts": [
       "armor",
       "leggings",
       "any"
     ],
+    "mod": "Ice and Fire",
     "note": "On par with diamond. Full set: +1 step height (Millipede)."
   },
   {
     "id": "jungle_myrmex_chitin_boots",
     "name": "Jungle Myrmex Chitin Boots",
     "pack": "rlcraft",
-    "mod": "Ice and Fire",
     "category": "armor",
     "slot": "boots",
     "group": "Jungle Myrmex Chitin Armor",
     "icon": "boots:jungle_myrmex",
     "armorPoints": 3,
     "toughness": 0,
+    "registryName": "iceandfire:myrmex_jungle_boots",
     "accepts": [
       "armor",
       "boots",
       "any"
     ],
+    "mod": "Ice and Fire",
     "note": "On par with diamond. Full set: +1 step height (Millipede)."
   },
   {
-    "id": "golem_helmet",
-    "name": "Golem Helmet",
+    "id": "variedcommodities_leather_leggings",
+    "name": "Leather Skirt",
     "pack": "rlcraft",
-    "mod": "Forgotten Items",
-    "category": "armor",
-    "slot": "helmet",
-    "group": "Golem Armor",
-    "icon": "helmet:golem",
-    "armorPoints": 5,
-    "toughness": 4.5,
-    "accepts": [
-      "armor",
-      "helmet",
-      "any"
-    ],
-    "note": "Very high armor (4.5 toughness) and knockback resistance, but heavy. Locational armor 23/19/16/15."
-  },
-  {
-    "id": "golem_chestplate",
-    "name": "Golem Chestplate",
-    "pack": "rlcraft",
-    "mod": "Forgotten Items",
-    "category": "armor",
-    "slot": "chestplate",
-    "group": "Golem Armor",
-    "icon": "chestplate:golem",
-    "armorPoints": 8,
-    "toughness": 4.5,
-    "accepts": [
-      "armor",
-      "chestplate",
-      "any"
-    ],
-    "note": "Very high armor (4.5 toughness) and knockback resistance, but heavy. Locational armor 23/19/16/15."
-  },
-  {
-    "id": "golem_leggings",
-    "name": "Golem Leggings",
-    "pack": "rlcraft",
-    "mod": "Forgotten Items",
     "category": "armor",
     "slot": "leggings",
-    "group": "Golem Armor",
-    "icon": "leggings:golem",
-    "armorPoints": 6,
-    "toughness": 4.5,
+    "group": "Leather (Varied Commodities)",
+    "icon": "leggings:leather",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:leather_skirt",
     "accepts": [
       "armor",
       "leggings",
       "any"
     ],
-    "note": "Very high armor (4.5 toughness) and knockback resistance, but heavy. Locational armor 23/19/16/15."
+    "mod": "Varied Commodities"
   },
   {
-    "id": "golem_boots",
-    "name": "Golem Boots",
-    "pack": "rlcraft",
-    "mod": "Forgotten Items",
+    "id": "leather_helmet",
+    "name": "Leather Cap",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Leather Armor",
+    "icon": "helmet:leather",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "minecraft:leather_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ]
+  },
+  {
+    "id": "leather_chestplate",
+    "name": "Leather Tunic",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Leather Armor",
+    "icon": "chestplate:leather",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "minecraft:leather_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ]
+  },
+  {
+    "id": "leather_leggings",
+    "name": "Leather Pants",
+    "pack": "vanilla",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Leather Armor",
+    "icon": "leggings:leather",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "minecraft:leather_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ]
+  },
+  {
+    "id": "leather_boots",
+    "name": "Leather Boots",
+    "pack": "vanilla",
     "category": "armor",
     "slot": "boots",
-    "group": "Golem Armor",
-    "icon": "boots:golem",
+    "group": "Leather Armor",
+    "icon": "boots:leather",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "minecraft:leather_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ]
+  },
+  {
+    "id": "living_helmet",
+    "name": "Living Helm",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Living Armor",
+    "icon": "helmet:living",
+    "armorPoints": 2,
+    "toughness": 3,
+    "registryName": "srparasites:armor_helm",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "SRParasites"
+  },
+  {
+    "id": "living_chestplate",
+    "name": "Living Chest",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Living Armor",
+    "icon": "chestplate:living",
     "armorPoints": 4,
-    "toughness": 4.5,
+    "toughness": 3,
+    "registryName": "srparasites:armor_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "SRParasites"
+  },
+  {
+    "id": "living_leggings",
+    "name": "Living Pants",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Living Armor",
+    "icon": "leggings:living",
+    "armorPoints": 3,
+    "toughness": 3,
+    "registryName": "srparasites:armor_pants",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "SRParasites"
+  },
+  {
+    "id": "living_boots",
+    "name": "Living Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Living Armor",
+    "icon": "boots:living",
+    "armorPoints": 2,
+    "toughness": 3,
+    "registryName": "srparasites:armor_boots",
     "accepts": [
       "armor",
       "boots",
       "any"
     ],
-    "note": "Very high armor (4.5 toughness) and knockback resistance, but heavy. Locational armor 23/19/16/15."
+    "mod": "SRParasites"
+  },
+  {
+    "id": "long_fall_boots",
+    "name": "Long Fall Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Long Fall Armor",
+    "icon": "boots:long_fall",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "grapplemod:longfallboots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Grappling Hook"
+  },
+  {
+    "id": "mithril_helmet",
+    "name": "Mithril Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Mithril Armor",
+    "icon": "helmet:mithril",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "variedcommodities:mithril_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "mithril_chestplate",
+    "name": "Mithril ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Mithril Armor",
+    "icon": "chestplate:mithril",
+    "armorPoints": 8,
+    "toughness": 2,
+    "registryName": "variedcommodities:mithril_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "mithril_leggings",
+    "name": "Mithril Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Mithril Armor",
+    "icon": "leggings:mithril",
+    "armorPoints": 6,
+    "toughness": 2,
+    "registryName": "variedcommodities:mithril_legs",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "mithril_boots",
+    "name": "Mithril Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Mithril Armor",
+    "icon": "boots:mithril",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "variedcommodities:mithril_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "molten_helmet",
+    "name": "Molten Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Molten Armor",
+    "icon": "helmet:molten",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "mod_lavacow:felarmor_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "molten_chestplate",
+    "name": "Molten Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Molten Armor",
+    "icon": "chestplate:molten",
+    "armorPoints": 8,
+    "toughness": 2,
+    "registryName": "mod_lavacow:felarmor_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "molten_leggings",
+    "name": "Molten Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Molten Armor",
+    "icon": "leggings:molten",
+    "armorPoints": 6,
+    "toughness": 2,
+    "registryName": "mod_lavacow:felarmor_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "molten_boots",
+    "name": "Molten Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Molten Armor",
+    "icon": "boots:molten",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "mod_lavacow:felarmor_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "mountain_troll_leather_helmet",
+    "name": "Mountain Troll Leather Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Mountain Troll Leather Armor",
+    "icon": "helmet:mountain_troll_leather",
+    "armorPoints": 3,
+    "toughness": 1,
+    "registryName": "iceandfire:mountain_troll_leather_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "mountain_troll_leather_chestplate",
+    "name": "Mountain Troll Leather Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Mountain Troll Leather Armor",
+    "icon": "chestplate:mountain_troll_leather",
+    "armorPoints": 7,
+    "toughness": 1,
+    "registryName": "iceandfire:mountain_troll_leather_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "mountain_troll_leather_leggings",
+    "name": "Mountain Troll Leather Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Mountain Troll Leather Armor",
+    "icon": "leggings:mountain_troll_leather",
+    "armorPoints": 5,
+    "toughness": 1,
+    "registryName": "iceandfire:mountain_troll_leather_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "mountain_troll_leather_boots",
+    "name": "Mountain Troll Leather Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Mountain Troll Leather Armor",
+    "icon": "boots:mountain_troll_leather",
+    "armorPoints": 4,
+    "toughness": 1,
+    "registryName": "iceandfire:mountain_troll_leather_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "neptunium_helmet",
+    "name": "Neptunium Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Neptunium Armor",
+    "icon": "helmet:neptunium",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "aquaculture:neptunium_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Aquaculture"
+  },
+  {
+    "id": "neptunium_chestplate",
+    "name": "Neptunium Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Neptunium Armor",
+    "icon": "chestplate:neptunium",
+    "armorPoints": 8,
+    "toughness": 2,
+    "registryName": "aquaculture:neptunium_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Aquaculture"
+  },
+  {
+    "id": "neptunium_leggings",
+    "name": "Neptunium Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Neptunium Armor",
+    "icon": "leggings:neptunium",
+    "armorPoints": 6,
+    "toughness": 2,
+    "registryName": "aquaculture:neptunium_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Aquaculture"
+  },
+  {
+    "id": "neptunium_boots",
+    "name": "Neptunium Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Neptunium Armor",
+    "icon": "boots:neptunium",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "aquaculture:neptunium_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Aquaculture"
+  },
+  {
+    "id": "ninja_helmet",
+    "name": "Ninja Head",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Ninja Armor",
+    "icon": "helmet:ninja",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:ninja_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "ninja_chestplate",
+    "name": "Ninja Chest",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Ninja Armor",
+    "icon": "chestplate:ninja",
+    "armorPoints": 6,
+    "toughness": 0,
+    "registryName": "variedcommodities:ninja_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "ninja_leggings",
+    "name": "Ninja Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Ninja Armor",
+    "icon": "leggings:ninja",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "variedcommodities:ninja_legs",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "officer_chestplate",
+    "name": "Officer ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Officer Armor",
+    "icon": "chestplate:officer",
+    "armorPoints": 8,
+    "toughness": 2,
+    "registryName": "variedcommodities:officer_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "paper_helmet",
+    "name": "Paper Crown",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Paper Armor",
+    "icon": "helmet:paper",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "variedcommodities:paper_crown",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "scarlite_helmet",
+    "name": "Scarlite Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Scarlite Armor",
+    "icon": "helmet:scarlite",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "rlmixins:scarlite_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "RLMixins"
+  },
+  {
+    "id": "scarlite_chestplate",
+    "name": "Scarlite Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Scarlite Armor",
+    "icon": "chestplate:scarlite",
+    "armorPoints": 6,
+    "toughness": 0,
+    "registryName": "rlmixins:scarlite_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "RLMixins"
+  },
+  {
+    "id": "scarlite_leggings",
+    "name": "Scarlite Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Scarlite Armor",
+    "icon": "leggings:scarlite",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "rlmixins:scarlite_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "RLMixins"
+  },
+  {
+    "id": "scarlite_boots",
+    "name": "Scarlite Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Scarlite Armor",
+    "icon": "boots:scarlite",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "rlmixins:scarlite_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "RLMixins"
+  },
+  {
+    "id": "sentient_helmet",
+    "name": "Sentient Helm",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Sentient Armor",
+    "icon": "helmet:sentient",
+    "armorPoints": 3,
+    "toughness": 4,
+    "registryName": "srparasites:armor_helm_sentient",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "SRParasites"
+  },
+  {
+    "id": "sentient_chestplate",
+    "name": "Sentient Chest",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Sentient Armor",
+    "icon": "chestplate:sentient",
+    "armorPoints": 6,
+    "toughness": 4,
+    "registryName": "srparasites:armor_chest_sentient",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "SRParasites"
+  },
+  {
+    "id": "sentient_leggings",
+    "name": "Sentient Pants",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Sentient Armor",
+    "icon": "leggings:sentient",
+    "armorPoints": 5,
+    "toughness": 4,
+    "registryName": "srparasites:armor_pants_sentient",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "SRParasites"
+  },
+  {
+    "id": "sentient_boots",
+    "name": "Sentient Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Sentient Armor",
+    "icon": "boots:sentient",
+    "armorPoints": 3,
+    "toughness": 4,
+    "registryName": "srparasites:armor_boots_sentient",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "SRParasites"
+  },
+  {
+    "id": "sheep_disguise_helmet",
+    "name": "Sheep Disguise Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Sheep Disguise Armor",
+    "icon": "helmet:sheep_disguise",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "iceandfire:sheep_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "sheep_disguise_chestplate",
+    "name": "Sheep Disguise Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Sheep Disguise Armor",
+    "icon": "chestplate:sheep_disguise",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "iceandfire:sheep_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "sheep_disguise_leggings",
+    "name": "Sheep Disguise Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Sheep Disguise Armor",
+    "icon": "leggings:sheep_disguise",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "iceandfire:sheep_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "sheep_disguise_boots",
+    "name": "Sheep Disguise Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Sheep Disguise Armor",
+    "icon": "boots:sheep_disguise",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "iceandfire:sheep_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "silver_helmet",
+    "name": "Silver Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Silver Armor",
+    "icon": "helmet:silver",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "iceandfire:armor_silver_metal_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "silver_chestplate",
+    "name": "Silver Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Silver Armor",
+    "icon": "chestplate:silver",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "iceandfire:armor_silver_metal_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "silver_leggings",
+    "name": "Silver Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Silver Armor",
+    "icon": "leggings:silver",
+    "armorPoints": 4,
+    "toughness": 0,
+    "registryName": "iceandfire:armor_silver_metal_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "silver_boots",
+    "name": "Silver Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Silver Armor",
+    "icon": "boots:silver",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "iceandfire:armor_silver_metal_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "steel_helmet",
+    "name": "Steel Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Steel Armor",
+    "icon": "helmet:steel",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "rlmixins:steel_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "RLMixins",
+    "note": "Between iron and diamond. Full set: Flame Hardened (fire immunity & +50% fire resistance)."
+  },
+  {
+    "id": "steel_chestplate",
+    "name": "Steel Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Steel Armor",
+    "icon": "chestplate:steel",
+    "armorPoints": 7,
+    "toughness": 0,
+    "registryName": "rlmixins:steel_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "RLMixins",
+    "note": "Between iron and diamond. Full set: Flame Hardened (fire immunity & +50% fire resistance)."
+  },
+  {
+    "id": "steel_leggings",
+    "name": "Steel Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Steel Armor",
+    "icon": "leggings:steel",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "rlmixins:steel_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "RLMixins",
+    "note": "Between iron and diamond. Full set: Flame Hardened (fire immunity & +50% fire resistance)."
+  },
+  {
+    "id": "steel_boots",
+    "name": "Steel Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Steel Armor",
+    "icon": "boots:steel",
+    "armorPoints": 3,
+    "toughness": 0,
+    "registryName": "rlmixins:steel_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "RLMixins",
+    "note": "Between iron and diamond. Full set: Flame Hardened (fire immunity & +50% fire resistance)."
+  },
+  {
+    "id": "swine_helmet",
+    "name": "Swine Mask",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Swine Armor",
+    "icon": "helmet:swine",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "mod_lavacow:swinemask",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "swine_chestplate",
+    "name": "Swine Tunic",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Swine Armor",
+    "icon": "chestplate:swine",
+    "armorPoints": 6,
+    "toughness": 0,
+    "registryName": "mod_lavacow:swinearmor_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "swine_leggings",
+    "name": "Swine Pants",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Swine Armor",
+    "icon": "leggings:swine",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "mod_lavacow:swinearmor_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "swine_boots",
+    "name": "Swine Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Swine Armor",
+    "icon": "boots:swine",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "mod_lavacow:swinearmor_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "tactical_helmet",
+    "name": "Tactical Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Tactical Armor",
+    "icon": "helmet:tactical",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:tactical_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "tactical_chestplate",
+    "name": "Tactical Vest",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Tactical Armor",
+    "icon": "chestplate:tactical",
+    "armorPoints": 6,
+    "toughness": 0,
+    "registryName": "variedcommodities:tactical_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "the_crown_of_rule_helmet",
+    "name": "The Crown of Rule",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "The Crown of Rule Armor",
+    "icon": "helmet:gold",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "mod_lavacow:skeletonking_crown",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "tide_guardian_helmet",
+    "name": "Tide Guardian Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Tide Guardian Armor",
+    "icon": "helmet:tide",
+    "armorPoints": 4,
+    "toughness": 1,
+    "registryName": "iceandfire:tide_blue_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "tide_guardian_chestplate",
+    "name": "Tide Guardian Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Tide Guardian Armor",
+    "icon": "chestplate:tide",
+    "armorPoints": 8,
+    "toughness": 1,
+    "registryName": "iceandfire:tide_blue_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "tide_guardian_leggings",
+    "name": "Tide Guardian Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Tide Guardian Armor",
+    "icon": "leggings:tide",
+    "armorPoints": 7,
+    "toughness": 1,
+    "registryName": "iceandfire:tide_blue_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "tide_guardian_boots",
+    "name": "Tide Guardian Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Tide Guardian Armor",
+    "icon": "boots:tide",
+    "armorPoints": 4,
+    "toughness": 1,
+    "registryName": "iceandfire:tide_blue_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Ice and Fire"
+  },
+  {
+    "id": "tuxedo_chestplate",
+    "name": "Tuxedo Chest",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Tuxedo Armor",
+    "icon": "chestplate:tuxedo",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "variedcommodities:tuxedo_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "tuxedo_leggings",
+    "name": "Tuxedo Pants",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Tuxedo Armor",
+    "icon": "leggings:tuxedo",
+    "armorPoints": 4,
+    "toughness": 0,
+    "registryName": "variedcommodities:tuxedo_pants",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "tuxedo_boots",
+    "name": "Tuxedo Trenchcoat",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Tuxedo Armor",
+    "icon": "boots:tuxedo",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "variedcommodities:tuxedo_bottom",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "umbrium_helmet",
+    "name": "Umbrium Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Umbrium Armor",
+    "icon": "helmet:umbrium",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "defiledlands:umbrium_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "umbrium_chestplate",
+    "name": "Umbrium Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Umbrium Armor",
+    "icon": "chestplate:umbrium",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "defiledlands:umbrium_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "umbrium_leggings",
+    "name": "Umbrium Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Umbrium Armor",
+    "icon": "leggings:umbrium",
+    "armorPoints": 4,
+    "toughness": 0,
+    "registryName": "defiledlands:umbrium_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "umbrium_boots",
+    "name": "Umbrium Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Umbrium Armor",
+    "icon": "boots:umbrium",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "defiledlands:umbrium_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Defiled Lands"
+  },
+  {
+    "id": "weta_helmet",
+    "name": "Weta Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Weta Armor",
+    "icon": "helmet:weta",
+    "armorPoints": 2,
+    "toughness": 1,
+    "registryName": "mod_lavacow:chitinarmor_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "weta_chestplate",
+    "name": "Weta Chestplate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Weta Armor",
+    "icon": "chestplate:weta",
+    "armorPoints": 6,
+    "toughness": 1,
+    "registryName": "mod_lavacow:chitinarmor_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "weta_leggings",
+    "name": "Weta Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Weta Armor",
+    "icon": "leggings:weta",
+    "armorPoints": 5,
+    "toughness": 1,
+    "registryName": "mod_lavacow:chitinarmor_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "weta_boots",
+    "name": "Weta Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Weta Armor",
+    "icon": "boots:weta",
+    "armorPoints": 2,
+    "toughness": 1,
+    "registryName": "mod_lavacow:chitinarmor_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Savage & Ravage"
+  },
+  {
+    "id": "wizard_helmet",
+    "name": "Wizard Head",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Wizard Armor",
+    "icon": "helmet:wizard",
+    "armorPoints": 2,
+    "toughness": 0,
+    "registryName": "variedcommodities:wizard_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "wizard_chestplate",
+    "name": "Wizard Chest",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Wizard Armor",
+    "icon": "chestplate:wizard",
+    "armorPoints": 5,
+    "toughness": 0,
+    "registryName": "variedcommodities:wizard_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "wizard_leggings",
+    "name": "Wizard Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Wizard Armor",
+    "icon": "leggings:wizard",
+    "armorPoints": 4,
+    "toughness": 0,
+    "registryName": "variedcommodities:wizard_pants",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "wool_helmet",
+    "name": "Wool Hood",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "Wool Armor",
+    "icon": "helmet:wool",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "simpledifficulty:wool_helmet",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Simple Difficulty"
+  },
+  {
+    "id": "wool_chestplate",
+    "name": "Wool Coat",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "Wool Armor",
+    "icon": "chestplate:wool",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "simpledifficulty:wool_chestplate",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Simple Difficulty"
+  },
+  {
+    "id": "wool_leggings",
+    "name": "Wool Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "Wool Armor",
+    "icon": "leggings:wool",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "simpledifficulty:wool_leggings",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Simple Difficulty"
+  },
+  {
+    "id": "wool_boots",
+    "name": "Wool Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "Wool Armor",
+    "icon": "boots:wool",
+    "armorPoints": 1,
+    "toughness": 0,
+    "registryName": "simpledifficulty:wool_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Simple Difficulty"
+  },
+  {
+    "id": "x407_prototype_helmet",
+    "name": "X407 Prototype Helmet",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "helmet",
+    "group": "X407 Prototype Armor",
+    "icon": "helmet:x407_prototype",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "variedcommodities:x407_head",
+    "accepts": [
+      "armor",
+      "helmet",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "x407_prototype_chestplate",
+    "name": "X407 Prototype ChestPlate",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "chestplate",
+    "group": "X407 Prototype Armor",
+    "icon": "chestplate:x407_prototype",
+    "armorPoints": 8,
+    "toughness": 2,
+    "registryName": "variedcommodities:x407_chest",
+    "accepts": [
+      "armor",
+      "chestplate",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "x407_prototype_leggings",
+    "name": "X407 Prototype Leggings",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "leggings",
+    "group": "X407 Prototype Armor",
+    "icon": "leggings:x407_prototype",
+    "armorPoints": 6,
+    "toughness": 2,
+    "registryName": "variedcommodities:x407_legs",
+    "accepts": [
+      "armor",
+      "leggings",
+      "any"
+    ],
+    "mod": "Varied Commodities"
+  },
+  {
+    "id": "x407_prototype_boots",
+    "name": "X407 Prototype Boots",
+    "pack": "rlcraft",
+    "category": "armor",
+    "slot": "boots",
+    "group": "X407 Prototype Armor",
+    "icon": "boots:x407_prototype",
+    "armorPoints": 3,
+    "toughness": 2,
+    "registryName": "variedcommodities:x407_boots",
+    "accepts": [
+      "armor",
+      "boots",
+      "any"
+    ],
+    "mod": "Varied Commodities"
   }
 ]

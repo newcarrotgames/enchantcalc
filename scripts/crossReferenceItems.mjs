@@ -39,6 +39,7 @@ function parseArgs(argv) {
 
 function normalizeName(name) {
   return String(name || '')
+    .replace(/\u00a7./g, '') // strip Minecraft formatting codes (e.g. "§3", "§l")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, ' ')
     .trim();

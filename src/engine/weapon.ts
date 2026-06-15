@@ -1,5 +1,6 @@
 import type { AppliedEnchant, ItemDef } from '../types';
 import { getEnchant } from '../data/catalog';
+import type { BaubleBonuses } from './baubles';
 
 export interface WeaponContribution {
   enchantId: string;
@@ -78,7 +79,11 @@ const CRIT_MULTIPLIER = 1.5;
  *   min = no crit, no situational bonus, no unarmored multiplier
  *   max = crit + best situational bonus + unarmored multiplier (if any)
  */
-export function computeWeapon(item: ItemDef, applied: AppliedEnchant[]): WeaponResult {
+export function computeWeapon(
+  item: ItemDef,
+  applied: AppliedEnchant[],
+  bonuses?: BaubleBonuses,
+): WeaponResult {
   const baseDamage = item.baseDamage ?? 0;
   const attackSpeed = item.attackSpeed ?? 0;
 
@@ -132,14 +137,25 @@ export function computeWeapon(item: ItemDef, applied: AppliedEnchant[]): WeaponR
     }
   }
 
+  // Fold in global bauble bonuses (flat/% damage and attack speed).
+  if (bonuses) {
+    flatBonus += bonuses.flatDamage;
+    conditionalBonus += bonuses.conditionalDamage;
+    speedAmountSum += bonuses.attackSpeedFraction;
+  }
+
   const unarmoredMultiplier = item.unarmoredMultiplier ?? 1;
+  // Bauble +damage% scales the weapon's base portion (like an attack-damage
+  // attribute modifier), before crit and before flat enchant/bauble damage.
+  const damageMultiplier = 1 + (bonuses?.damageMultiplierFraction ?? 0);
   // Attack speed cannot drop below zero in-game.
   const attackSpeedMultiplier = Math.max(0, 1 + speedAmountSum);
   const effectiveAttackSpeed = attackSpeed * attackSpeedMultiplier;
 
+  const weaponBase = baseDamage * damageMultiplier;
   // Real damage is clamped to >= 0 (relevant for the Bluntness curse).
-  const min = Math.max(0, baseDamage + flatBonus);
-  const critWeaponPart = baseDamage * CRIT_MULTIPLIER * unarmoredMultiplier;
+  const min = Math.max(0, weaponBase + flatBonus);
+  const critWeaponPart = weaponBase * CRIT_MULTIPLIER * unarmoredMultiplier;
   const max = Math.max(0, critWeaponPart + flatBonus + conditionalBonus);
 
   const dotMax = dots.reduce((sum, d) => sum + d.max, 0);

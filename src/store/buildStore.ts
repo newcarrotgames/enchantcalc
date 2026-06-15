@@ -1,13 +1,16 @@
 import { create } from 'zustand';
-import type { BuildState, EquipSlot, Pack } from '../types';
+import type { BaubleSlot, BaubleState, BuildState, EquipSlot, Pack } from '../types';
 import {
+  baubleFitsSlot,
   enchantAppliesToItem,
+  getBauble,
   getEnchant,
   getItem,
 } from '../data/catalog';
 import { checkCompatibility } from '../engine';
 import {
   deserialize,
+  emptyBaubles,
   emptyBuild,
   serialize,
   type ScenarioOptions,
@@ -17,6 +20,7 @@ export type PackFilter = Pack | 'all';
 
 interface BuildStore {
   build: BuildState;
+  baubles: BaubleState;
   scenario: ScenarioOptions;
   packFilter: PackFilter;
   notice: string | null;
@@ -26,6 +30,8 @@ interface BuildStore {
   addEnchant: (slot: EquipSlot, enchantId: string) => void;
   setEnchantLevel: (slot: EquipSlot, enchantId: string, level: number) => void;
   removeEnchant: (slot: EquipSlot, enchantId: string) => void;
+  setBauble: (slot: BaubleSlot, baubleId: string) => void;
+  clearBauble: (slot: BaubleSlot) => void;
   setScenario: (partial: Partial<ScenarioOptions>) => void;
   setPackFilter: (p: PackFilter) => void;
   reset: () => void;
@@ -50,14 +56,19 @@ function cloneBuild(build: BuildState): BuildState {
   return out;
 }
 
-function syncHash(build: BuildState, scenario: ScenarioOptions): void {
+function syncHash(
+  build: BuildState,
+  baubles: BaubleState,
+  scenario: ScenarioOptions,
+): void {
   if (typeof window === 'undefined') return;
-  const hash = serialize({ build, scenario });
+  const hash = serialize({ build, baubles, scenario });
   history.replaceState(null, '', `#${hash}`);
 }
 
 export const useBuildStore = create<BuildStore>((set, get) => ({
   build: emptyBuild(),
+  baubles: emptyBaubles(),
   scenario: DEFAULT_SCENARIO,
   packFilter: 'rlcraft',
   notice: null,
@@ -65,7 +76,10 @@ export const useBuildStore = create<BuildStore>((set, get) => ({
   setItem: (slot, itemId) => {
     const item = getItem(itemId);
     if (!item) return;
-    if (item.slot !== slot) {
+    // The off hand accepts main-hand items too (weapons, shields), since in
+    // game you can hold a weapon/shield there. Everything else must match.
+    const offhandOk = slot === 'offhand' && item.slot === 'mainhand';
+    if (item.slot !== slot && !offhandOk) {
       set({ notice: `${item.name} can't go in the ${slot} slot.` });
       return;
     }
@@ -77,14 +91,14 @@ export const useBuildStore = create<BuildStore>((set, get) => ({
     });
     build[slot] = { itemId, enchants: keptEnchants };
     set({ build, notice: null });
-    syncHash(build, get().scenario);
+    syncHash(build, get().baubles, get().scenario);
   },
 
   clearSlot: (slot) => {
     const build = cloneBuild(get().build);
     build[slot] = { itemId: null, enchants: [] };
     set({ build });
-    syncHash(build, get().scenario);
+    syncHash(build, get().baubles, get().scenario);
   },
 
   addEnchant: (slot, enchantId) => {
@@ -109,7 +123,7 @@ export const useBuildStore = create<BuildStore>((set, get) => ({
     }
     state.enchants = [...state.enchants, { enchantId, level: def.maxLevel }];
     set({ build, notice: null });
-    syncHash(build, get().scenario);
+    syncHash(build, get().baubles, get().scenario);
   },
 
   setEnchantLevel: (slot, enchantId, level) => {
@@ -121,7 +135,7 @@ export const useBuildStore = create<BuildStore>((set, get) => ({
       a.enchantId === enchantId ? { ...a, level: clamped } : a,
     );
     set({ build });
-    syncHash(build, get().scenario);
+    syncHash(build, get().baubles, get().scenario);
   },
 
   removeEnchant: (slot, enchantId) => {
@@ -130,21 +144,40 @@ export const useBuildStore = create<BuildStore>((set, get) => ({
       (a) => a.enchantId !== enchantId,
     );
     set({ build });
-    syncHash(build, get().scenario);
+    syncHash(build, get().baubles, get().scenario);
+  },
+
+  setBauble: (slot, baubleId) => {
+    const def = getBauble(baubleId);
+    if (!def) return;
+    if (!baubleFitsSlot(def, slot)) {
+      set({ notice: `${def.name} can't go in the ${slot} slot.` });
+      return;
+    }
+    const baubles = { ...get().baubles, [slot]: baubleId };
+    set({ baubles, notice: null });
+    syncHash(get().build, baubles, get().scenario);
+  },
+
+  clearBauble: (slot) => {
+    const baubles = { ...get().baubles, [slot]: null };
+    set({ baubles });
+    syncHash(get().build, baubles, get().scenario);
   },
 
   setScenario: (partial) => {
     const scenario = { ...get().scenario, ...partial };
     set({ scenario });
-    syncHash(get().build, scenario);
+    syncHash(get().build, get().baubles, scenario);
   },
 
   setPackFilter: (p) => set({ packFilter: p }),
 
   reset: () => {
     const build = emptyBuild();
-    set({ build, scenario: DEFAULT_SCENARIO, notice: null });
-    syncHash(build, DEFAULT_SCENARIO);
+    const baubles = emptyBaubles();
+    set({ build, baubles, scenario: DEFAULT_SCENARIO, notice: null });
+    syncHash(build, baubles, DEFAULT_SCENARIO);
   },
 
   clearNotice: () => set({ notice: null }),
@@ -155,7 +188,11 @@ export const useBuildStore = create<BuildStore>((set, get) => ({
     if (!raw) return;
     const parsed = deserialize(raw);
     if (parsed) {
-      set({ build: parsed.build, scenario: parsed.scenario });
+      set({
+        build: parsed.build,
+        baubles: parsed.baubles,
+        scenario: parsed.scenario,
+      });
     }
   },
 }));

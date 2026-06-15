@@ -1,0 +1,1228 @@
+[
+  {
+    "registryName": "minecraft:elytra",
+    "modId": "minecraft",
+    "displayName": "Elytra",
+    "translationKey": "item.elytra",
+    "metadata": 0,
+    "slot": "body",
+    "tooltip": [
+      "Elytra",
+      "Bauble (Body)",
+      "Requirements:",
+      " - Agility: 32"
+    ]
+  },
+  {
+    "registryName": "nuclearcraft:geiger_counter",
+    "modId": "nuclearcraft",
+    "displayName": "Geiger Counter",
+    "translationKey": "item.nuclearcraft.geiger_counter",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Geiger Counter",
+      "Hold Shift for more info",
+      "Bauble (Any)",
+      "Found in either Industrial Crates, Fallout Shelters and Registered Fallout Shelters"
+    ]
+  },
+  {
+    "registryName": "nuclearcraft:radiation_badge",
+    "modId": "nuclearcraft",
+    "displayName": "Radiation Badge",
+    "translationKey": "item.nuclearcraft.radiation_badge",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Radiation Badge",
+      "Hold Shift for more info",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "quark:witch_hat",
+    "modId": "quark",
+    "displayName": "Witch Hat",
+    "translationKey": "item.quark:witch_hat",
+    "metadata": 0,
+    "slot": "head",
+    "tooltip": [
+      "Witch Hat",
+      "",
+      "When on head:",
+      " +7 Locational Armor",
+      "Bauble (Head)",
+      "Makes witches friendly and negates charm spectre curses"
+    ]
+  },
+  {
+    "registryName": "quark:archaeologist_hat",
+    "modId": "quark",
+    "displayName": "Archaeologist Hat",
+    "translationKey": "item.quark:archaeologist_hat",
+    "metadata": 0,
+    "slot": "head",
+    "tooltip": [
+      "Archaeologist Hat",
+      "",
+      "When on head:",
+      " +7 Locational Armor",
+      "Bauble (Head)",
+      "Grants 25% additional chance to drop ores."
+    ]
+  },
+  {
+    "registryName": "quark:pirate_hat",
+    "modId": "quark",
+    "displayName": "Pirate Hat",
+    "translationKey": "item.quark:pirate_hat",
+    "metadata": 0,
+    "slot": "head",
+    "tooltip": [
+      "Pirate Hat",
+      "",
+      "When on head:",
+      " +7 Locational Armor",
+      "Bauble (Head)"
+    ]
+  },
+  {
+    "registryName": "potionfingers:ring",
+    "modId": "potionfingers",
+    "displayName": "Potion Ring",
+    "translationKey": "item.potionfingers:ring_disabled",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Potion Ring",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "baubles:ring",
+    "modId": "baubles",
+    "displayName": "Miner's Ring",
+    "translationKey": "item.Ring.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Miner's Ring",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "iceandfire:blindfold",
+    "modId": "iceandfire",
+    "displayName": "Blindfold",
+    "translationKey": "item.iceandfire.blindfold",
+    "metadata": 0,
+    "slot": "head",
+    "tooltip": [
+      "Blindfold",
+      "",
+      "When on head:",
+      " +0.01 Locational Armor Toughness",
+      "Bauble (Head)"
+    ]
+  },
+  {
+    "registryName": "iceandfire:earplugs",
+    "modId": "iceandfire",
+    "displayName": "Earplugs",
+    "translationKey": "item.iceandfire.earplugs",
+    "metadata": 0,
+    "slot": "head",
+    "tooltip": [
+      "Earplugs",
+      "",
+      "When on head:",
+      " +0.01 Locational Armor Toughness",
+      "Bauble (Head)"
+    ]
+  },
+  {
+    "registryName": "qualitytools:emerald_ring",
+    "modId": "qualitytools",
+    "displayName": "Emerald Ring",
+    "translationKey": "item.emerald_ring",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Emerald Ring",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "qualitytools:emerald_amulet",
+    "modId": "qualitytools",
+    "displayName": "Emerald Amulet",
+    "translationKey": "item.emerald_amulet",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Emerald Amulet",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketballoon",
+    "modId": "bountifulbaubles",
+    "displayName": "Balloon",
+    "translationKey": "item.bountifulbaubles.trinketBalloon",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Balloon",
+      "Increases jump height and negates some fall damage.",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:shieldcobalt",
+    "modId": "bountifulbaubles",
+    "displayName": "Cobalt Shield",
+    "translationKey": "item.bountifulbaubles.shieldCobalt",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Cobalt Shield",
+      "Grants immunity to knockback when held or equipped in bauble slot.",
+      "Press Shift for more info",
+      "",
+      "When in main hand:",
+      " +1000 Knockback Resistance",
+      "",
+      "When in off hand:",
+      " +1000 Knockback Resistance",
+      "Bauble (Any)",
+      "Shielding Power: 10.08"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketobsidianskull",
+    "modId": "bountifulbaubles",
+    "displayName": "Obsidian Skull",
+    "translationKey": "item.bountifulbaubles.trinketObsidianSkull",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Obsidian Skull",
+      "Grants immunity to burning and 50% resistance to fire damage. (Does not protect against lava)",
+      "Holding this makes you feel vaguely nervous.",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:shieldobsidian",
+    "modId": "bountifulbaubles",
+    "displayName": "Obsidian Shield",
+    "translationKey": "item.bountifulbaubles.shieldObsidian",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Obsidian Shield",
+      "Grants partial fire resistance and immunity to knockback when held or equipped in bauble slot.",
+      "Press Shift for more info",
+      "",
+      "When in main hand:",
+      " +1000 Knockback Resistance",
+      "",
+      "When in off hand:",
+      " +1000 Knockback Resistance",
+      "Bauble (Any)",
+      "Shielding Power: 13.44"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketmagiclenses",
+    "modId": "bountifulbaubles",
+    "displayName": "Sunglasses",
+    "translationKey": "item.bountifulbaubles.trinketMagicLenses",
+    "metadata": 0,
+    "slot": "head",
+    "tooltip": [
+      "Sunglasses",
+      "Grants immunity to blindness.",
+      "Cool guys don't look at explosions.",
+      "",
+      "When on head:",
+      "Bauble (Head)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketapple",
+    "modId": "bountifulbaubles",
+    "displayName": "Forbidden Fruit",
+    "translationKey": "item.bountifulbaubles.trinketApple",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Forbidden Fruit",
+      "Grants immunity to hunger status effect, and nausea.",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketvitamins",
+    "modId": "bountifulbaubles",
+    "displayName": "Vitamins",
+    "translationKey": "item.bountifulbaubles.trinketVitamins",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Vitamins",
+      "Grants immunity to weakness and mining fatigue.",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:ringoverclocking",
+    "modId": "bountifulbaubles",
+    "displayName": "Ring of Overclocking",
+    "translationKey": "item.bountifulbaubles.ringOverclocking",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Ring of Overclocking",
+      "Grants immunity to slowness and +7% move speed.",
+      "Everyone knows that blue LEDs make your PC run faster.",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketshulkerheart",
+    "modId": "bountifulbaubles",
+    "displayName": "Shulker Heart",
+    "translationKey": "item.bountifulbaubles.trinketShulkerHeart",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Shulker Heart",
+      "Grants immunity to levitation",
+      "It's squishy...",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:ringfreeaction",
+    "modId": "bountifulbaubles",
+    "displayName": "Ring of Free Action",
+    "translationKey": "item.bountifulbaubles.ringFreeAction",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Ring of Free Action",
+      "Grants immunity to slowness and levitation and allows free movement through cobwebs",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketbezoar",
+    "modId": "bountifulbaubles",
+    "displayName": "Bezoar",
+    "translationKey": "item.bountifulbaubles.trinketBezoar",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Bezoar",
+      "Grants immunity to poison.",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketblackdragonscale",
+    "modId": "bountifulbaubles",
+    "displayName": "Black Dragon Scale",
+    "translationKey": "item.bountifulbaubles.trinketBlackDragonScale",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Black Dragon Scale",
+      "Grants immunity to withering.",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketmixeddragonscale",
+    "modId": "bountifulbaubles",
+    "displayName": "Mixed Color Dragon Scale",
+    "translationKey": "item.bountifulbaubles.trinketMixedDragonScale",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Mixed Color Dragon Scale",
+      "Grants immunity to poison and withering.",
+      "Interesting, the bezoar has fused with the scale and made it appear to be two different colors.",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketankhcharm",
+    "modId": "bountifulbaubles",
+    "displayName": "Ankh Charm",
+    "translationKey": "item.bountifulbaubles.trinketAnkhCharm",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Ankh Charm",
+      "Grants immunity to some negative status effects and allows free movement through cobwebs.",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:shieldankh",
+    "modId": "bountifulbaubles",
+    "displayName": "Ankh Shield",
+    "translationKey": "item.bountifulbaubles.shieldAnkh",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Ankh Shield",
+      "Grants partial fire resistance, immunity to knockback and some negative status effects, and allows free movement through cobwebs when held or equipped in bauble slot.",
+      "Press Shift for more info",
+      "",
+      "When in main hand:",
+      " +1000 Knockback Resistance",
+      "",
+      "When in off hand:",
+      " +1000 Knockback Resistance",
+      "Bauble (Any)",
+      "Shielding Power: 16.79"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:ringflywheel",
+    "modId": "bountifulbaubles",
+    "displayName": "Flywheel Ring",
+    "translationKey": "item.bountifulbaubles.ringFlywheel",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Flywheel Ring",
+      "Stores RF and automatically charges items in inventory when worn.",
+      "Surely nothing bad could ever result from wearing a ring that spins dozens of times a second.",
+      "0/1600000 RF",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:ringflywheeladvanced",
+    "modId": "bountifulbaubles",
+    "displayName": "Advanced Flywheel Ring",
+    "translationKey": "item.bountifulbaubles.ringFlywheelAdvanced",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Advanced Flywheel Ring",
+      "Stores RF and automatically charges items in inventory when worn.",
+      "Surely nothing bad could ever result from wearing an ender magic ring that spins dozens of times a second.",
+      "0/8000000 RF",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketluckyhorseshoe",
+    "modId": "bountifulbaubles",
+    "displayName": "Lucky Horseshoe",
+    "translationKey": "item.bountifulbaubles.trinketLuckyHorseshoe",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Lucky Horseshoe",
+      "Negates fall damage.",
+      "Why did the horse need this?",
+      "Bauble (Any)",
+      "Requirements:",
+      " - Agility: 32"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:amuletsinempty",
+    "modId": "bountifulbaubles",
+    "displayName": "Sin Pendant (Empty)",
+    "translationKey": "item.bountifulbaubles.amuletSinEmpty",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Sin Pendant (Empty)",
+      "Crafting component",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:amuletsingluttony",
+    "modId": "bountifulbaubles",
+    "displayName": "Gluttony Pendant",
+    "translationKey": "item.bountifulbaubles.amuletSinGluttony",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Gluttony Pendant",
+      "Eat faster.",
+      "Grants sinful buff (+damage, +armor) when you eat.",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:amuletsinpride",
+    "modId": "bountifulbaubles",
+    "displayName": "Pride Pendant",
+    "translationKey": "item.bountifulbaubles.amuletSinPride",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Pride Pendant",
+      "Grants sinful buff (+damage, +armor) while at full health.",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:amuletsinwrath",
+    "modId": "bountifulbaubles",
+    "displayName": "Wrath Pendant",
+    "translationKey": "item.bountifulbaubles.amuletSinWrath",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Wrath Pendant",
+      "Gives +2 damage.",
+      "Grants sinful buff (+damage, +armor) after you deal a critical hit.",
+      "Bauble (Amulet)",
+      "A trophy lost to time, reminiscent of another world."
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:trinketbrokenheart",
+    "modId": "bountifulbaubles",
+    "displayName": "Broken Heart",
+    "translationKey": "item.bountifulbaubles.trinketBrokenHeart",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Broken Heart",
+      "Lethal damage destroys empty heart containers instead.",
+      "Sleep to regenerate heart containers.",
+      "How did this happen?",
+      "Bauble (Any)",
+      "Requirements:",
+      " - Magic: 16"
+    ]
+  },
+  {
+    "registryName": "bountifulbaubles:amuletcross",
+    "modId": "bountifulbaubles",
+    "displayName": "Cross Necklace",
+    "translationKey": "item.bountifulbaubles.amuletCross",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Cross Necklace",
+      "Increases length of invincibility when damaged.",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "defiledlands:scarlite_ring",
+    "modId": "defiledlands",
+    "displayName": "Scarlite Ring",
+    "translationKey": "item.defiledlands.scarlite_ring",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Scarlite Ring",
+      "Slowly restores health",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "defiledlands:phytoprostasia_amulet",
+    "modId": "defiledlands",
+    "displayName": "Phytoprostasia Amulet",
+    "translationKey": "item.defiledlands.phytoprostasia_amulet",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Phytoprostasia Amulet",
+      "Protects from Vilespine and mature Blastem",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "mod_lavacow:goldenheart",
+    "modId": "mod_lavacow",
+    "displayName": "Golden Heart",
+    "translationKey": "item.mod_lavacow.goldenheart",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Golden Heart",
+      "Gives Regeneration and repairs all equipped gear (+1/sec).",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "mod_lavacow:halo_necklace",
+    "modId": "mod_lavacow",
+    "displayName": "Halo Necklace",
+    "translationKey": "item.mod_lavacow.halo_necklace",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Halo Necklace",
+      "Bonus Damage to Undead: +15%",
+      "Bauble (Amulet)",
+      "Lost to the Cities and Chasms Deep"
+    ]
+  },
+  {
+    "registryName": "artifacts:shock_pendant",
+    "modId": "artifacts",
+    "displayName": "Shock Pendant",
+    "translationKey": "item.artifacts.shock_pendant",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Shock Pendant",
+      "Has a chance to strike attackers with lightning when worn",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "artifacts:flame_pendant",
+    "modId": "artifacts",
+    "displayName": "Flame Pendant",
+    "translationKey": "item.artifacts.flame_pendant",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Flame Pendant",
+      "Has a chance to light attackers on fire when worn",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "artifacts:thorn_pendant",
+    "modId": "artifacts",
+    "displayName": "Thorn Pendant",
+    "translationKey": "item.artifacts.thorn_pendant",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Thorn Pendant",
+      "Has a chance to damage attackers when worn",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "artifacts:ultimate_pendant",
+    "modId": "artifacts",
+    "displayName": "Pendant of Ultimate Retribution",
+    "translationKey": "item.artifacts.ultimate_pendant",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Pendant of Ultimate Retribution",
+      "When worn, has a chance to damage attackers, light them on fire, and strike them with lightning",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "artifacts:panic_necklace",
+    "modId": "artifacts",
+    "displayName": "Panic Necklace",
+    "translationKey": "item.artifacts.panic_necklace",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Panic Necklace",
+      "Increases the wearer's movement speed after taking damage",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "artifacts:whoopie_cushion",
+    "modId": "artifacts",
+    "displayName": "Whoopie Cushion",
+    "translationKey": "item.artifacts.whoopie_cushion",
+    "metadata": 0,
+    "slot": "belt",
+    "tooltip": [
+      "Whoopie Cushion",
+      "Increases the wearer's flatulence",
+      "Bauble (Belt)"
+    ]
+  },
+  {
+    "registryName": "artifacts:bottled_cloud",
+    "modId": "artifacts",
+    "displayName": "Cloud in a Bottle",
+    "translationKey": "item.artifacts.bottled_cloud",
+    "metadata": 0,
+    "slot": "belt",
+    "tooltip": [
+      "Cloud in a Bottle",
+      "Allows the wearer to double jump",
+      "Bauble (Belt)"
+    ]
+  },
+  {
+    "registryName": "artifacts:bottled_fart",
+    "modId": "artifacts",
+    "displayName": "Fart in a Jar",
+    "translationKey": "item.artifacts.bottled_fart",
+    "metadata": 0,
+    "slot": "belt",
+    "tooltip": [
+      "Fart in a Jar",
+      "Allows the wearer to double jump",
+      "Bauble (Belt)"
+    ]
+  },
+  {
+    "registryName": "artifacts:magma_stone",
+    "modId": "artifacts",
+    "displayName": "Magma Stone",
+    "translationKey": "item.artifacts.magma_stone",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Magma Stone",
+      "Causes the wearer's melee attacks to inflict fire damage",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "artifacts:feral_claws",
+    "modId": "artifacts",
+    "displayName": "Feral Claws",
+    "translationKey": "item.artifacts.feral_claws",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Feral Claws",
+      "Increases the wearer's melee attack speed",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "artifacts:power_glove",
+    "modId": "artifacts",
+    "displayName": "Power Glove",
+    "translationKey": "item.artifacts.power_glove",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Power Glove",
+      "Increases the wearer's melee attack damage",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "artifacts:mechanical_glove",
+    "modId": "artifacts",
+    "displayName": "Mechanical Glove",
+    "translationKey": "item.artifacts.mechanical_glove",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Mechanical Glove",
+      "Increases attack damage and speed when worn",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "artifacts:fire_gauntlet",
+    "modId": "artifacts",
+    "displayName": "Fire Gauntlet",
+    "translationKey": "item.artifacts.fire_gauntlet",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Fire Gauntlet",
+      "Increases melee attack damage and speed when worn. Causes the wearer's melee attacks to inflict fire damage",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "artifacts:drinking_hat",
+    "modId": "artifacts",
+    "displayName": "Drinking Hat",
+    "translationKey": "item.artifacts.drinking_hat",
+    "metadata": 0,
+    "slot": "head",
+    "tooltip": [
+      "Drinking Hat",
+      "Decreases the time it takes to drink drinkable items when worn",
+      "Bauble (Head)"
+    ]
+  },
+  {
+    "registryName": "artifacts:star_cloak",
+    "modId": "artifacts",
+    "displayName": "Star Cloak",
+    "translationKey": "item.artifacts.star_cloak",
+    "metadata": 0,
+    "slot": "body",
+    "tooltip": [
+      "Star Cloak",
+      "When worn, causes stars to fall when injured",
+      "Bauble (Body)"
+    ]
+  },
+  {
+    "registryName": "artifacts:pocket_piston",
+    "modId": "artifacts",
+    "displayName": "Pocket Piston",
+    "translationKey": "item.artifacts.pocket_piston",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Pocket Piston",
+      "Increases knockback from all attacks when worn",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "artifacts:antidote_vessel",
+    "modId": "artifacts",
+    "displayName": "Antidote Vessel",
+    "translationKey": "item.artifacts.antidote_vessel",
+    "metadata": 0,
+    "slot": "belt",
+    "tooltip": [
+      "Antidote Vessel",
+      "When worn, reduces the maximum duration and amplifier of negative effects",
+      "Bauble (Belt)"
+    ]
+  },
+  {
+    "registryName": "artifacts:bubble_wrap",
+    "modId": "artifacts",
+    "displayName": "Bubble Wrap",
+    "translationKey": "item.artifacts.bubble_wrap",
+    "metadata": 0,
+    "slot": "belt",
+    "tooltip": [
+      "Bubble Wrap",
+      "When worn, prevents collision damage",
+      "Bauble (Belt)"
+    ]
+  },
+  {
+    "registryName": "artifacts:sacrificial_amulet",
+    "modId": "artifacts",
+    "displayName": "Sacrificial Amulet",
+    "translationKey": "item.artifacts.sacrificial_amulet",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Sacrificial Amulet",
+      "The amulet thirsts for more",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "artifacts:lucky_clover",
+    "modId": "artifacts",
+    "displayName": "Lucky Clover",
+    "translationKey": "item.artifacts.lucky_clover",
+    "metadata": 0,
+    "slot": "charm",
+    "tooltip": [
+      "Lucky Clover",
+      "Makes you feel slightly luckier",
+      "Bauble (Charm)"
+    ]
+  },
+  {
+    "registryName": "xat:weightless_stone",
+    "modId": "xat",
+    "displayName": "Stone of Negative Gravity",
+    "translationKey": "item.weightless_stone.0",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Stone of Negative Gravity",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "xat:inertia_null_stone",
+    "modId": "xat",
+    "displayName": "Stone of Inertia Null",
+    "translationKey": "item.inertia_null_stone.0",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Stone of Inertia Null",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "xat:greater_inertia_stone",
+    "modId": "xat",
+    "displayName": "Stone of Greater Inertia",
+    "translationKey": "item.greater_inertia_stone.0",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Stone of Greater Inertia",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "xat:glow_ring",
+    "modId": "xat",
+    "displayName": "Ring of Enchanted Eyes",
+    "translationKey": "item.glow_ring.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Ring of Enchanted Eyes",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "xat:sea_stone",
+    "modId": "xat",
+    "displayName": "Stone of the Sea",
+    "translationKey": "item.sea_stone.0",
+    "metadata": 0,
+    "slot": "amulet",
+    "tooltip": [
+      "Stone of the Sea",
+      "Bauble (Amulet)"
+    ]
+  },
+  {
+    "registryName": "xat:polarized_stone",
+    "modId": "xat",
+    "displayName": "Polarized Stone",
+    "translationKey": "item.polarized_stone.0",
+    "metadata": 0,
+    "slot": "belt",
+    "tooltip": [
+      "Polarized Stone",
+      "Bauble (Belt)"
+    ]
+  },
+  {
+    "registryName": "xat:dragons_eye",
+    "modId": "xat",
+    "displayName": "Fire Dragon's Eye",
+    "translationKey": "item.dragons_eye.0",
+    "metadata": 0,
+    "slot": "head",
+    "tooltip": [
+      "Fire Dragon's Eye",
+      "Bauble (Head)"
+    ]
+  },
+  {
+    "registryName": "xat:wither_ring",
+    "modId": "xat",
+    "displayName": "Wither Ring",
+    "translationKey": "item.wither_ring.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Wither Ring",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "xat:poison_stone",
+    "modId": "xat",
+    "displayName": "Poison Stone",
+    "translationKey": "item.poison_stone.0",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Poison Stone",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "xat:ender_tiara",
+    "modId": "xat",
+    "displayName": "Ender Queen's Crown",
+    "translationKey": "item.ender_tiara.0",
+    "metadata": 0,
+    "slot": "head",
+    "tooltip": [
+      "Ender Queen's Crown",
+      "Bauble (Head)"
+    ]
+  },
+  {
+    "registryName": "xat:damage_shield",
+    "modId": "xat",
+    "displayName": "Shield of Honor",
+    "translationKey": "item.damage_shield.0",
+    "metadata": 0,
+    "slot": "body",
+    "tooltip": [
+      "Shield of Honor",
+      "Bauble (Body)"
+    ]
+  },
+  {
+    "registryName": "xat:arcing_orb",
+    "modId": "xat",
+    "displayName": "Arcing Orb",
+    "translationKey": "item.arcing_orb.0",
+    "metadata": 0,
+    "slot": "belt",
+    "tooltip": [
+      "Arcing Orb",
+      "Bauble (Belt)"
+    ]
+  },
+  {
+    "registryName": "xat:teddy_bear",
+    "modId": "xat",
+    "displayName": "Teddy Bear",
+    "translationKey": "item.teddy_bear.0",
+    "metadata": 0,
+    "slot": "any",
+    "tooltip": [
+      "Teddy Bear",
+      "Bauble (Any)"
+    ]
+  },
+  {
+    "registryName": "xat:faelis_claw",
+    "modId": "xat",
+    "displayName": "Faelis Claw",
+    "translationKey": "item.faelis_claw.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Faelis Claw",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "xat:fairy_ring",
+    "modId": "xat",
+    "displayName": "Ring of the Fairies",
+    "translationKey": "item.fairy_ring.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Ring of the Fairies",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "xat:dwarf_ring",
+    "modId": "xat",
+    "displayName": "Ring of the Dwarves",
+    "translationKey": "item.dwarf_ring.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Ring of the Dwarves",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "xat:titan_ring",
+    "modId": "xat",
+    "displayName": "Ring of the Titans",
+    "translationKey": "item.titan_ring.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Ring of the Titans",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "xat:goblin_ring",
+    "modId": "xat",
+    "displayName": "Ring of the Goblins",
+    "translationKey": "item.goblin_ring.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Ring of the Goblins",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "xat:elf_ring",
+    "modId": "xat",
+    "displayName": "Ring of the Elves",
+    "translationKey": "item.elf_ring.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Ring of the Elves",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "xat:faelis_ring",
+    "modId": "xat",
+    "displayName": "Ring of the Faeles",
+    "translationKey": "item.faelis_ring.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Ring of the Faeles",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "xat:dragon_ring",
+    "modId": "xat",
+    "displayName": "Ring of the Dragons",
+    "translationKey": "item.dragon_ring.0",
+    "metadata": 0,
+    "slot": "ring",
+    "tooltip": [
+      "Ring of the Dragons",
+      "Bauble (Ring)"
+    ]
+  },
+  {
+    "registryName": "spartanweaponry:quiver_arrow",
+    "modId": "spartanweaponry",
+    "displayName": "Light Arrow Quiver",
+    "translationKey": "item.spartanweaponry:quiver_arrow",
+    "metadata": 0,
+    "slot": "body",
+    "tooltip": [
+      "Light Arrow Quiver",
+      "Passively supplies Arrows to use in Bows or Longbows",
+      "Max Capacity: 4 stacks",
+      "Ammo Collect: Disabled",
+      "Currently contains:",
+      "  - Nothing!",
+      "Bauble (Body)"
+    ]
+  },
+  {
+    "registryName": "spartanweaponry:quiver_arrow_moderate",
+    "modId": "spartanweaponry",
+    "displayName": "Moderate Arrow Quiver",
+    "translationKey": "item.spartanweaponry:quiver_arrow_moderate",
+    "metadata": 0,
+    "slot": "body",
+    "tooltip": [
+      "Moderate Arrow Quiver",
+      "Passively supplies Arrows to use in Bows or Longbows",
+      "Max Capacity: 6 stacks",
+      "Ammo Collect: Disabled",
+      "Currently contains:",
+      "  - Nothing!",
+      "Bauble (Body)",
+      "Requirements:",
+      " - Agility: 4"
+    ]
+  },
+  {
+    "registryName": "spartanweaponry:quiver_arrow_heavy",
+    "modId": "spartanweaponry",
+    "displayName": "Heavy Arrow Quiver",
+    "translationKey": "item.spartanweaponry:quiver_arrow_heavy",
+    "metadata": 0,
+    "slot": "body",
+    "tooltip": [
+      "Heavy Arrow Quiver",
+      "Passively supplies Arrows to use in Bows or Longbows",
+      "Max Capacity: 9 stacks",
+      "Ammo Collect: Disabled",
+      "Currently contains:",
+      "  - Nothing!",
+      "Bauble (Body)",
+      "Requirements:",
+      " - Agility: 8"
+    ]
+  },
+  {
+    "registryName": "spartanweaponry:quiver_bolt",
+    "modId": "spartanweaponry",
+    "displayName": "Light Bolt Quiver",
+    "translationKey": "item.spartanweaponry:quiver_bolt",
+    "metadata": 0,
+    "slot": "body",
+    "tooltip": [
+      "Light Bolt Quiver",
+      "Passively supplies Bolts to use in Crossbows",
+      "Max Capacity: 4 stacks",
+      "Ammo Collect: Disabled",
+      "Currently contains:",
+      "  - Nothing!",
+      "Bauble (Body)"
+    ]
+  },
+  {
+    "registryName": "spartanweaponry:quiver_bolt_moderate",
+    "modId": "spartanweaponry",
+    "displayName": "Moderate Bolt Quiver",
+    "translationKey": "item.spartanweaponry:quiver_bolt_moderate",
+    "metadata": 0,
+    "slot": "body",
+    "tooltip": [
+      "Moderate Bolt Quiver",
+      "Passively supplies Bolts to use in Crossbows",
+      "Max Capacity: 6 stacks",
+      "Ammo Collect: Disabled",
+      "Currently contains:",
+      "  - Nothing!",
+      "Bauble (Body)",
+      "Requirements:",
+      " - Agility: 4"
+    ]
+  },
+  {
+    "registryName": "spartanweaponry:quiver_bolt_heavy",
+    "modId": "spartanweaponry",
+    "displayName": "Heavy Bolt Quiver",
+    "translationKey": "item.spartanweaponry:quiver_bolt_heavy",
+    "metadata": 0,
+    "slot": "body",
+    "tooltip": [
+      "Heavy Bolt Quiver",
+      "Passively supplies Bolts to use in Crossbows",
+      "Max Capacity: 9 stacks",
+      "Ammo Collect: Disabled",
+      "Currently contains:",
+      "  - Nothing!",
+      "Bauble (Body)",
+      "Requirements:",
+      " - Agility: 8"
+    ]
+  },
+  {
+    "registryName": "toolbelt:belt",
+    "modId": "toolbelt",
+    "displayName": "Tool Belt",
+    "translationKey": "item.toolbelt.belt",
+    "metadata": 0,
+    "slot": "belt",
+    "tooltip": [
+      "Tool Belt",
+      "Upgrades: 0 (2 slots)",
+      "Bauble (Belt)",
+      "Requirements:",
+      " - Agility: 4"
+    ]
+  },
+  {
+    "registryName": "wearablebackpacks:backpack",
+    "modId": "wearablebackpacks",
+    "displayName": "Backpack",
+    "translationKey": "item.wearablebackpacks.backpack",
+    "metadata": 0,
+    "slot": "body",
+    "tooltip": [
+      "Backpack",
+      "Hold SHIFT for more info.",
+      "Bauble (Body)"
+    ]
+  }
+]

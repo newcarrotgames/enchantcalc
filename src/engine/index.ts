@@ -4,3 +4,9 @@ export { computeArmor } from './armor';
 export type { ArmorResult, RegionResult, ArmorOptions } from './armor';
 export { checkCompatibility } from './incompat';
 export type { ConflictResult } from './incompat';
+export { aggregateBaubleBonuses } from './baubles';
+export type {
+  BaubleBonuses,
+  BaubleAggregate,
+  BaubleContribution,
+} from './baubles';

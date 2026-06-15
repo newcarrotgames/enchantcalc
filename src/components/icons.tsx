@@ -45,6 +45,14 @@ const MATERIALS: Record<string, Material> = {
   enderium: { light: '#2f8f86', dark: '#1c5b55' },
   golem: { light: '#8f8a82', dark: '#5d5953' },
   umbrium: { light: '#7a5fa6', dark: '#4c3a6b' },
+  neptunium: { light: '#46c7c0', dark: '#2a8a85' },
+  bookwyrm: { light: '#6f8f5a', dark: '#47603a' },
+  molten: { light: '#e06a30', dark: '#a23c12' },
+  famine: { light: '#6b6f55', dark: '#454836' },
+  swine: { light: '#e0a6b0', dark: '#b06e7a' },
+  weta: { light: '#b6a06a', dark: '#7e6e42' },
+  scarlite: { light: '#c0392b', dark: '#7d2018' },
+  tide: { light: '#3f7fb0', dark: '#27517a' },
   dragonbone: { light: '#ece7d3', dark: '#b7ad8e' },
   fire_dragonbone: { light: '#ff8a3c', dark: '#b3471a' },
   ice_dragonbone: { light: '#9fe3ff', dark: '#4f9fd1' },
@@ -251,6 +259,41 @@ export function ItemIcon({
             fill={m.light}
             stroke={stroke}
           />
+        </svg>
+      );
+    case 'ring':
+      return (
+        <svg {...svgProps(size)}>
+          <circle cx="16" cy="19" r="9" fill="none" stroke="#caa64a" strokeWidth="3" />
+          <polygon points="16,4 19,9 13,9" fill={m.light} stroke={stroke} />
+          <rect x="14" y="7" width="4" height="3" fill={m.light} stroke={stroke} />
+        </svg>
+      );
+    case 'amulet':
+      return (
+        <svg {...svgProps(size)}>
+          <path d="M8 6 q8 9 16 0" fill="none" stroke="#caa64a" strokeWidth="2" />
+          <polygon
+            points="16,14 22,20 16,28 10,20"
+            fill={m.light}
+            stroke={stroke}
+          />
+        </svg>
+      );
+    case 'belt':
+      return (
+        <svg {...svgProps(size)}>
+          <rect x="4" y="13" width="24" height="6" fill="#6b4a29" stroke="#4a3219" />
+          <rect x="13" y="11" width="6" height="10" fill="#caa64a" stroke="#9a7a22" />
+          <rect x="15" y="14" width="2" height="4" fill="#4a3219" />
+        </svg>
+      );
+    case 'charm':
+      return (
+        <svg {...svgProps(size)}>
+          <circle cx="16" cy="17" r="8" fill={m.light} stroke={stroke} />
+          <circle cx="16" cy="17" r="3" fill="#caa64a" stroke="#9a7a22" />
+          <rect x="15" y="4" width="2" height="6" fill="#caa64a" />
         </svg>
       );
     default:

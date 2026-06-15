@@ -1,5 +1,6 @@
 import type { BuildState, DamageType, EquipSlot } from '../types';
 import { getEnchant, getItem } from '../data/catalog';
+import type { BaubleBonuses } from './baubles';
 
 const LAYER_CAP = 0.8; // each RLCraft reduction layer is capped at 80%
 const EPF_CAP = 20; // vanilla enchantment protection factor cap
@@ -99,10 +100,17 @@ function protectionAppliesTo(
  * Layers combine multiplicatively. Overall figures are hit-weighted across the
  * regions (chestplate covers body + both arms, so it carries the most weight).
  */
-export function computeArmor(build: BuildState, opts: ArmorOptions): ArmorResult {
-  const baseHP = opts.baseHP ?? VANILLA_BASE_HP;
+export function computeArmor(
+  build: BuildState,
+  opts: ArmorOptions,
+  bonuses?: BaubleBonuses,
+): ArmorResult {
+  const baseHP = (opts.baseHP ?? VANILLA_BASE_HP) + (bonuses?.maxHpFlat ?? 0);
   const dmg = Math.max(0.0001, opts.incomingDamage);
-  const resistanceLayer = Math.min(LAYER_CAP, 0.2 * opts.resistanceLevel);
+  const resistanceLayer = Math.min(
+    LAYER_CAP,
+    0.2 * (opts.resistanceLevel + (bonuses?.extraResistanceLevel ?? 0)),
+  );
 
   let totalArmorPoints = 0;
   let totalToughness = 0;
@@ -116,16 +124,19 @@ export function computeArmor(build: BuildState, opts: ArmorOptions): ArmorResult
     totalToughness += toughness;
 
     const hasPiece = !!item && armorPoints > 0;
-    const locationalArmor = hasPiece
-      ? armorPoints * region.armorMult + region.armorOffset
-      : 0;
+    // Baubles (head/body) can add flat locational armor to their region even
+    // with no armor piece equipped there.
+    const bonusLocArmor = bonuses?.bonusLocationalArmor[region.key] ?? 0;
+    const locationalArmor =
+      (hasPiece ? armorPoints * region.armorMult + region.armorOffset : 0) +
+      bonusLocArmor;
     const locationalToughness = hasPiece
       ? toughness * region.toughMult + region.toughOffset
       : 0;
 
     // Layer: locational armor + toughness (vanilla formula).
     let armorLayer = 0;
-    if (hasPiece && armorAppliesTo(opts.damageType)) {
+    if (locationalArmor > 0 && armorAppliesTo(opts.damageType)) {
       const defense = Math.min(
         EPF_CAP,
         Math.max(
@@ -136,9 +147,9 @@ export function computeArmor(build: BuildState, opts: ArmorOptions): ArmorResult
       armorLayer = Math.min(LAYER_CAP, defense / DEFENSE_DIVISOR);
     }
 
-    // Layer: protection enchants on this piece only (local mode).
-    let epf = 0;
-    let pct = 0;
+    // Layer: protection enchants on this piece (local mode) + global baubles.
+    let epf = bonuses?.globalEpf ?? 0;
+    let pct = bonuses?.globalProtectionPct ?? 0;
     let protectionName: string | null = null;
     let protectionLevel = 0;
     for (const a of build[region.slot].enchants) {

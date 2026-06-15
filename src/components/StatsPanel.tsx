@@ -1,6 +1,8 @@
+import type { ReactNode } from 'react';
 import type { DamageType } from '../types';
 import { getItem } from '../data/catalog';
-import { computeArmor, computeWeapon } from '../engine';
+import { aggregateBaubleBonuses, computeArmor, computeWeapon } from '../engine';
+import type { BaubleContribution } from '../engine';
 import { useBuildStore } from '../store/buildStore';
 import { roman } from './BuildBoard';
 
@@ -17,6 +19,37 @@ export function StatsPanel() {
     <div>
       <WeaponStats />
       <ArmorStats />
+    </div>
+  );
+}
+
+// A potion-effect-styled "buff" card: a coloured glyph box, a title, a big
+// value, and an optional sub line. Mirrors the vanilla active-effects list.
+function BuffCard({
+  glyph,
+  accent,
+  title,
+  value,
+  sub,
+}: {
+  glyph: string;
+  accent: string;
+  title: string;
+  value: ReactNode;
+  sub?: ReactNode;
+}) {
+  return (
+    <div className="buff-card mc-inset">
+      <div className="buff-icon" style={{ color: accent, borderColor: accent }}>
+        {glyph}
+      </div>
+      <div className="buff-body">
+        <div className="buff-title">{title}</div>
+        <div className="buff-value" style={{ color: accent }}>
+          {value}
+        </div>
+        {sub != null && <div className="buff-sub">{sub}</div>}
+      </div>
     </div>
   );
 }
@@ -49,15 +82,48 @@ function WeaponResultView({
   itemId: string;
   enchants: { enchantId: string; level: number }[];
 }) {
+  const baubles = useBuildStore((s) => s.baubles);
   const item = getItem(itemId)!;
-  const r = computeWeapon(item, enchants);
+  const { bonuses, contributions } = aggregateBaubleBonuses(baubles);
+  const r = computeWeapon(item, enchants, bonuses);
+  const baubleParts = contributions.filter((c) =>
+    c.parts.some((p) => /dmg|damage|attack speed/i.test(p)),
+  );
 
   return (
     <div className="stat-block">
       <div className="stat-headline">{item.name}</div>
-      <div className="stat-big">
-        {r.min} - {r.max} dmg
+
+      <div className="buff-list">
+        <BuffCard
+          glyph="DMG"
+          accent="var(--mc-green)"
+          title="Damage per hit"
+          value={`${r.min} - ${r.max}`}
+          sub={`base ${r.baseDamage}${r.flatBonus > 0 ? ` + ${round2(r.flatBonus)} enchant` : ''}`}
+        />
+        <BuffCard
+          glyph="DPS"
+          accent="var(--mc-aqua)"
+          title="DPS range"
+          value={`${r.dpsMin} - ${r.dpsMax}`}
+          sub={`${r.effectiveAttackSpeed}/s effective speed`}
+        />
+        {r.dots.length > 0 && (
+          <BuffCard
+            glyph="DoT"
+            accent="var(--mc-purple)"
+            title="Damage over time"
+            value={
+              r.dotExpected === r.dotMax
+                ? `+${round2(r.dotMax)}`
+                : `~${round2(r.dotExpected)}`
+            }
+            sub={`up to +${round2(r.dotMax)} (separate from per-hit)`}
+          />
+        )}
       </div>
+
       <div className="stat-row">
         <span className="k">Per hit (no crit)</span>
         <span className="v">{r.min}</span>
@@ -65,12 +131,6 @@ function WeaponResultView({
       <div className="stat-row">
         <span className="k">Per hit (crit{r.unarmoredMultiplier > 1 ? ' + situational' : ''})</span>
         <span className="v">{r.max}</span>
-      </div>
-      <div className="stat-row">
-        <span className="k">DPS range</span>
-        <span className="v">
-          {r.dpsMin} - {r.dpsMax}
-        </span>
       </div>
       <div className="stat-row">
         <span className="k">Base / speed</span>
@@ -100,31 +160,21 @@ function WeaponResultView({
       )}
 
       {r.dots.length > 0 && (
-        <>
-          <div className="stat-row">
-            <span className="k">Damage over time</span>
-            <span className="v">
-              {r.dotExpected === r.dotMax
-                ? `+${round2(r.dotMax)}`
-                : `~${round2(r.dotExpected)} (up to ${round2(r.dotMax)})`}
-            </span>
-          </div>
-          <div className="stat-note">
-            {r.dots.map((d) => (
-              <div key={d.enchantId}>
-                {d.name} {roman(d.level)}: {d.type} {dotAmountLabel(d)} over {d.seconds}s
-                {d.chance < 1 ? ` (${Math.round(d.chance * 100)}% chance)` : ''}
-                {!d.canKill ? ' [can\u2019t kill]' : ''}
-                {d.note ? ` - ${d.note}` : ''}
-              </div>
-            ))}
-            <div style={{ marginTop: 4 }}>
-              DoT is estimated and listed separately: it ticks over time, does not
-              crit or scale with attack speed, and many targets resist it. Not
-              added to the per-hit range above.
+        <div className="stat-note">
+          {r.dots.map((d) => (
+            <div key={d.enchantId}>
+              {d.name} {roman(d.level)}: {d.type} {dotAmountLabel(d)} over {d.seconds}s
+              {d.chance < 1 ? ` (${Math.round(d.chance * 100)}% chance)` : ''}
+              {!d.canKill ? ' [can\u2019t kill]' : ''}
+              {d.note ? ` - ${d.note}` : ''}
             </div>
+          ))}
+          <div style={{ marginTop: 4 }}>
+            DoT is estimated and listed separately: it ticks over time, does not
+            crit or scale with attack speed, and many targets resist it. Not
+            added to the per-hit range above.
           </div>
-        </>
+        </div>
       )}
 
       {(r.contributions.length > 0 || r.speedContributions.length > 0) && (
@@ -145,6 +195,8 @@ function WeaponResultView({
         </div>
       )}
 
+      <BaubleContribList title="Baubles" contributions={baubleParts} />
+
       <div className="stat-note">
         Min = no crit, no situational bonus. Max = critical hit (x1.5)
         {r.unarmoredMultiplier > 1 ? ` x situational bonus (${r.unarmoredNote})` : ''} plus best
@@ -158,11 +210,20 @@ function WeaponResultView({
 
 function ArmorStats() {
   const build = useBuildStore((s) => s.build);
+  const baubles = useBuildStore((s) => s.baubles);
   const scenario = useBuildStore((s) => s.scenario);
   const setScenario = useBuildStore((s) => s.setScenario);
 
-  const r = computeArmor(build, scenario);
+  const { bonuses, contributions } = aggregateBaubleBonuses(
+    baubles,
+    scenario.damageType,
+  );
+  const r = computeArmor(build, scenario, bonuses);
   const hasArmor = r.regions.some((p) => p.itemName);
+  const baubleParts = contributions.filter((c) =>
+    c.parts.some((p) => /armor|resistance|max hp|reduction|epf/i.test(p)),
+  );
+  const hasBaubleDefense = baubleParts.length > 0;
 
   return (
     <div className="panel mc-bevel">
@@ -213,27 +274,34 @@ function ArmorStats() {
         </div>
       </div>
 
-      {!hasArmor && scenario.resistanceLevel === 0 ? (
+      {!hasArmor && scenario.resistanceLevel === 0 && !hasBaubleDefense ? (
         <div className="hint">Equip armor pieces to see damage reduction.</div>
       ) : (
         <div className="stat-block">
-          <div className="stat-big">
-            {Math.round(r.totalReductionPct * 100)}% reduced
-            <span className="stat-sub"> (hit-weighted)</span>
+          <div className="buff-list">
+            <BuffCard
+              glyph="DEF"
+              accent="var(--mc-green)"
+              title="Damage reduced"
+              value={`${Math.round(r.totalReductionPct * 100)}%`}
+              sub="hit-weighted across all regions"
+            />
+            <BuffCard
+              glyph="HIT"
+              accent="var(--mc-yellow)"
+              title="Avg damage taken"
+              value={round2(scenario.incomingDamage * (1 - r.totalReductionPct))}
+              sub={`of ${scenario.incomingDamage} incoming`}
+            />
+            <BuffCard
+              glyph="HP"
+              accent="var(--mc-aqua)"
+              title={`Effective HP (${20 + bonuses.maxHpFlat} base)`}
+              value={r.effectiveHP === Infinity ? '\u221e' : r.effectiveHP}
+            />
           </div>
-          <div className="stat-row">
-            <span className="k">Avg damage taken</span>
-            <span className="v">
-              {round2(scenario.incomingDamage * (1 - r.totalReductionPct))} of{' '}
-              {scenario.incomingDamage}
-            </span>
-          </div>
-          <div className="stat-row">
-            <span className="k">Effective HP (20 base)</span>
-            <span className="v">
-              {r.effectiveHP === Infinity ? '∞' : r.effectiveHP}
-            </span>
-          </div>
+
+          <BaubleContribList title="Baubles" contributions={baubleParts} />
 
           <LayerBars layers={r.layers} />
 
@@ -309,6 +377,26 @@ function LayerBars({
           <div className="layer-bar">
             <span style={{ width: `${val * 100}%`, background: color }} />
           </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function BaubleContribList({
+  title,
+  contributions,
+}: {
+  title: string;
+  contributions: BaubleContribution[];
+}) {
+  if (contributions.length === 0) return null;
+  return (
+    <div className="stat-note">
+      <div style={{ color: '#b06bff' }}>{title}</div>
+      {contributions.map((c) => (
+        <div key={c.id}>
+          {c.name}: {c.parts.join(', ')}
         </div>
       ))}
     </div>

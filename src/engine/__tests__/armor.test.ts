@@ -6,6 +6,7 @@ function emptyBuild(): BuildState {
   const slot = () => ({ itemId: null, enchants: [] as AppliedEnchant[] });
   return {
     mainhand: slot(),
+    offhand: slot(),
     helmet: slot(),
     chestplate: slot(),
     leggings: slot(),

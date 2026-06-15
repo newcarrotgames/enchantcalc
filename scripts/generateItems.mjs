@@ -12,7 +12,7 @@
 //
 // Re-run with:  node scripts/generateItems.mjs
 
-import { writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -239,90 +239,271 @@ const VANILLA_WEAPONS = [
   ...w,
 }));
 
-// --- Vanilla armor ----------------------------------------------------------
-// [helmet, chestplate, leggings, boots] armor points; toughness applies to all.
-const ARMOR_SETS = [
-  { key: 'leather', name: 'Leather', points: [1, 3, 2, 1], toughness: 0 },
-  { key: 'golden', name: 'Golden', points: [2, 5, 3, 1], toughness: 0 },
-  { key: 'chainmail', name: 'Chainmail', points: [2, 5, 4, 1], toughness: 0 },
-  { key: 'iron', name: 'Iron', points: [2, 6, 5, 2], toughness: 0 },
-  { key: 'diamond', name: 'Diamond', points: [3, 8, 6, 3], toughness: 2 },
-];
+// --- Armor (derived from the in-game item dump) -----------------------------
+// Every wearable armor piece in the pack comes straight from the itemdumper
+// dump (itemdumps/itemdump.json in the local RLCraft Dregora install): its real
+// vanilla armor points + toughness. The engine scales these into RLCraft First
+// Aid "locational armor" per region (head x4+3, chest x2+3, legs x2+4,
+// feet x3+3), which reproduces the wiki's published locational numbers (the
+// dump even prints them in the tooltip, used as a sanity check).
+//
+// Pieces are grouped into sets by their in-game display name (consistent within
+// a set, slot word at the end). Color variants that share an identical display
+// name + stats (e.g. the ~30 Dragon Scale colors, 7 Tide Guardian colors) are
+// collapsed to one entry; a small COLOR_WORDS strip also collapses differently
+// named but identical color sets (e.g. Tan/White/Red Death Worm Chitin).
+//
+// On a machine with the local install present this refreshes the committed
+// snapshot scripts/armorDump.json so regeneration stays reproducible without the
+// install (mirrors how baubles are generated).
 
-const ARMOR_PIECES = [
-  { slot: 'helmet', label: 'Helmet', icon: 'helmet' },
-  { slot: 'chestplate', label: 'Chestplate', icon: 'chestplate' },
-  { slot: 'leggings', label: 'Leggings', icon: 'leggings' },
-  { slot: 'boots', label: 'Boots', icon: 'boots' },
-];
+const ARMOR_DUMP =
+  '/mnt/d/curseforge/minecraft/Instances/RLCraft Dregora (Local Dev)/itemdumps/itemdump.json';
+const ARMOR_SNAPSHOT = join(__dirname, 'armorDump.json');
+const BAUBLE_SNAPSHOT = join(__dirname, 'baublesDump.json');
 
-function generateArmor() {
-  const items = [];
-  for (const set of ARMOR_SETS) {
-    ARMOR_PIECES.forEach((piece, idx) => {
-      items.push({
-        id: `${set.key}_${piece.slot}`,
-        name: `${set.name} ${piece.label}`,
-        pack: 'vanilla',
-        category: 'armor',
-        slot: piece.slot,
-        group: `${set.name} Armor`,
-        icon: `${piece.icon}:${set.key}`,
-        armorPoints: set.points[idx],
-        toughness: set.toughness,
-        accepts: ['armor', piece.slot, 'any'],
-      });
-    });
+const stripColor = (s) => String(s ?? '').replace(/\u00a7./g, '');
+
+// in-game armorSlot -> our EquipSlot / icon shape.
+const SLOT_OF = { head: 'helmet', chest: 'chestplate', legs: 'leggings', feet: 'boots' };
+
+// modId -> display name (extends the bauble map for armor-only mods).
+const ARMOR_MOD_NAMES = {
+  minecraft: 'Minecraft',
+  iceandfire: 'Ice and Fire',
+  rlmixins: 'RLMixins',
+  forgottenitems: 'Forgotten Items',
+  defiledlands: 'Defiled Lands',
+  aquaculture: 'Aquaculture',
+  nuclearcraft: 'NuclearCraft',
+  quark: 'Quark',
+  simpledifficulty: 'Simple Difficulty',
+  srparasites: 'SRParasites',
+  grapplemod: 'Grappling Hook',
+  variedcommodities: 'Varied Commodities',
+  mod_lavacow: 'Savage & Ravage',
+  bountifulbaubles: 'Bountiful Baubles',
+};
+
+// Leading variant words stripped only to collapse identical color sets. Pure
+// colors only (NOT material words like copper/silver, which are distinct sets).
+const COLOR_WORDS = new Set([
+  'tan', 'white', 'red', 'blue', 'green', 'gray', 'grey', 'purple', 'teal',
+  'deepblue', 'pink', 'orange', 'yellow', 'black', 'brown', 'cyan', 'magenta',
+]);
+
+// Trailing slot words removed from a display name to get the set name.
+const SLOT_WORDS = new Set([
+  'helmet', 'cap', 'hood', 'hat', 'mask', 'headwear', 'helm', 'head', 'crown',
+  'chestplate', 'chestpiece', 'chest', 'tunic', 'coat', 'vest', 'torso', 'trenchcoat',
+  'leggings', 'pants', 'legs', 'bottoms', 'bottom', 'skirt',
+  'boots', 'boot', 'feet',
+]);
+
+// Stable, friendly ids for sets that already shipped (preserve shareable URLs)
+// plus a couple of nicer slugs. Keyed by set name.
+const SET_ID = {
+  'Dragon Scale': 'dragonscale',
+  'Desert Myrmex Chitin': 'desert_myrmex_chitin',
+  'Jungle Myrmex Chitin': 'jungle_myrmex_chitin',
+};
+
+// Verified set-bonus / flavor notes kept from the previous curated catalog.
+const SET_NOTES = {
+  'Steel': 'Between iron and diamond. Full set: Flame Hardened (fire immunity & +50% fire resistance).',
+  'Dragon Scale': 'Top dragon armor. Many color variants share these stats.',
+  'Desert Myrmex Chitin': 'On par with diamond. Full set: +1 step height (Millipede).',
+  'Jungle Myrmex Chitin': 'On par with diamond. Full set: +1 step height (Millipede).',
+  'Golem': 'Very high armor and knockback resistance, but heavy.',
+};
+
+// Fallback SVG material color key per set name (real sprites override this when
+// extractIcons.mjs finds them; the color only shows when no sprite exists, e.g.
+// the Savage & Ravage / Lavacow sets whose textures are not in the jars).
+const SET_MATERIAL = {
+  Leather: 'leather', Chain: 'chainmail', Iron: 'iron', Golden: 'gold',
+  Diamond: 'diamond', Steel: 'steel', Copper: 'copper', Silver: 'silver',
+  'Dragon Scale': 'dragonbone', 'Desert Myrmex Chitin': 'desert_myrmex',
+  'Jungle Myrmex Chitin': 'jungle_myrmex', Golem: 'golem', Neptunium: 'neptunium',
+  Umbrium: 'umbrium', 'Book Wyrm Scale': 'bookwyrm', 'Golden Book Wyrm Scale': 'gold',
+  Molten: 'molten', Famine: 'famine', Swine: 'swine', Weta: 'weta',
+  'The Crown of Rule': 'gold', Scarlite: 'scarlite', 'Tide Guardian': 'tide',
+};
+
+const slug = (s) =>
+  stripColor(s).toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+
+// Remove a single leading color word (kept for collapsing color variants).
+function stripColorWord(name) {
+  const parts = name.split(/\s+/);
+  if (parts.length > 1 && COLOR_WORDS.has(parts[0].toLowerCase())) {
+    return parts.slice(1).join(' ');
   }
-  return items;
+  return name;
 }
 
-// Notable modded armor on the vanilla armor-point scale. The engine scales
-// these into RLCraft First Aid "locational armor" per body region
-// (head x4+3, chest x2+3, legs x2+4, feet x3+3), which reproduces the wiki's
-// published locational numbers. `points` is [helmet, chestplate, leggings,
-// boots]; null = that piece does not exist for the set.
-// NOTE: Dragonsteel armor does NOT exist in RLCraft. The pack ships the
-// "I&F: RLCraft Edition" fork of Ice and Fire (verified in the local install,
-// Ice and Fire-2.0.9.jar), which has no dragonsteel items. Dragon Scale is the
-// top dragon armor. Values are back-derived from the wiki's locational numbers.
-const MODDED_ARMOR = [
-  // Steel (RLMixins): locational 15/17/16/12, no toughness -> vanilla 3/7/6/3.
-  { key: 'steel', name: 'Steel', mod: 'RLMixins', color: 'steel', points: [3, 7, 6, 3], toughness: 0, note: 'Between iron and diamond. Full set: Flame Hardened (fire immunity & +50% fire resistance).' },
-  // Dragon Scale: locational 19/21/18/15, toughness 2 -> vanilla 4/9/7/4.
-  { key: 'dragonscale', name: 'Dragon Scale', mod: 'Ice and Fire', color: 'dragonbone', points: [4, 9, 7, 4], toughness: 2, note: 'Top dragon armor; locational armor 19/21/18/15. Many color variants share these stats.' },
-  // Myrmex Chitin: full 4-piece set, locational 19/19/14/12 -> vanilla 4/8/5/3.
-  { key: 'desert_myrmex_chitin', name: 'Desert Myrmex Chitin', mod: 'Ice and Fire', color: 'desert_myrmex', points: [4, 8, 5, 3], toughness: 0, note: 'On par with diamond. Full set: +1 step height (Millipede).' },
-  { key: 'jungle_myrmex_chitin', name: 'Jungle Myrmex Chitin', mod: 'Ice and Fire', color: 'jungle_myrmex', points: [4, 8, 5, 3], toughness: 0, note: 'On par with diamond. Full set: +1 step height (Millipede).' },
-  // Golem Armor (Forgotten Items): material reduction [feet 4, legs 6, chest 8,
-  // head 5] (verified by decompiling ItemList.addArmorMaterial) -> vanilla
-  // [helmet 5, chest 8, legs 6, boots 4], toughness 4.5, plus +0.25 knockback
-  // resistance per piece. Locational armor 23/19/16/15.
-  { key: 'golem', name: 'Golem', mod: 'Forgotten Items', color: 'golem', points: [5, 8, 6, 4], toughness: 4.5, note: 'Very high armor (4.5 toughness) and knockback resistance, but heavy. Locational armor 23/19/16/15.' },
-];
-
-function generateModdedArmor() {
-  const items = [];
-  for (const set of MODDED_ARMOR) {
-    ARMOR_PIECES.forEach((piece, idx) => {
-      const pts = set.points[idx];
-      if (pts == null) return;
-      items.push({
-        id: `${set.key}_${piece.slot}`,
-        name: `${set.name} ${piece.label}`,
-        pack: 'rlcraft',
-        mod: set.mod,
-        category: 'armor',
-        slot: piece.slot,
-        group: `${set.name} Armor`,
-        icon: `${piece.icon}:${set.color}`,
-        armorPoints: pts,
-        toughness: set.toughness,
-        accepts: ['armor', piece.slot, 'any'],
-        note: set.note,
-      });
-    });
+// Derive the set name from a piece's display name: drop a leading color word,
+// then a trailing slot word. Falls back to the full name when that empties it.
+function setNameOf(displayName) {
+  const cleaned = stripColorWord(stripColor(displayName).trim());
+  const parts = cleaned.split(/\s+/);
+  if (parts.length > 1 && SLOT_WORDS.has(parts[parts.length - 1].toLowerCase())) {
+    return parts.slice(0, -1).join(' ');
   }
+  return cleaned;
+}
+
+// Pull the in-game locational-armor tooltip line (sanity-check / note source).
+function locationalLine(tooltip) {
+  const l = (tooltip ?? []).map(stripColor).find((x) => /Locational Armor/i.test(x));
+  return l ? l.trim().replace(/^\+?/, '') : null;
+}
+
+function loadArmorDump() {
+  if (existsSync(ARMOR_DUMP)) {
+    const dump = JSON.parse(readFileSync(ARMOR_DUMP, 'utf8'));
+    const items = Array.isArray(dump) ? dump : dump.items ?? [];
+    // Items already worn as baubles (e.g. Quark hats) are listed in the bauble
+    // catalog; skip them here so they are not double-counted as helmets.
+    let baubleRegs = new Set();
+    if (existsSync(BAUBLE_SNAPSHOT)) {
+      baubleRegs = new Set(
+        JSON.parse(readFileSync(BAUBLE_SNAPSHOT, 'utf8')).map((b) => b.registryName),
+      );
+    }
+    const seen = new Set();
+    const out = [];
+    for (const it of items) {
+      const slot = SLOT_OF[it.armorSlot];
+      if (!slot) continue;
+      if (!(it.armorPoints > 0)) continue; // skip 0-point cosmetics (lifebelt, blindfold)
+      if (baubleRegs.has(it.registryName)) continue;
+      if (seen.has(it.registryName)) continue;
+      seen.add(it.registryName);
+      out.push({
+        registryName: it.registryName,
+        modId: it.modId ?? it.registryName.split(':')[0],
+        displayName: stripColor(it.displayName),
+        slot,
+        armorPoints: it.armorPoints,
+        toughness: it.toughness ?? 0,
+        locational: locationalLine(it.tooltip),
+      });
+    }
+    writeFileSync(ARMOR_SNAPSHOT, JSON.stringify(out, null, 2) + '\n');
+    console.log(`  Refreshed ${ARMOR_SNAPSHOT} (${out.length} armor pieces)`);
+    return out;
+  }
+  if (existsSync(ARMOR_SNAPSHOT)) {
+    const out = JSON.parse(readFileSync(ARMOR_SNAPSHOT, 'utf8'));
+    console.log(`  Using committed snapshot ${ARMOR_SNAPSHOT} (${out.length} armor pieces)`);
+    return out;
+  }
+  throw new Error(
+    'No item dump and no armor snapshot found. Run /dumpitems in-game, or restore scripts/armorDump.json.',
+  );
+}
+
+// Prefer the canonically-named variant when collapsing identical-stat pieces.
+const CANONICAL_PIECE_WORD = new Set(['helmet', 'chestplate', 'leggings', 'boots']);
+function pieceScore(p) {
+  const last = stripColor(p.displayName).trim().split(/\s+/).pop().toLowerCase();
+  return CANONICAL_PIECE_WORD.has(last) ? 1 : 0;
+}
+
+function generateArmorFromDump() {
+  const pieces = loadArmorDump();
+
+  // Group pieces into sets keyed by (mod, set name); color variants that share
+  // a set name + stats collapse automatically.
+  const sets = new Map();
+  for (const p of pieces) {
+    const setName = setNameOf(p.displayName);
+    const key = `${p.modId}|${setName}`;
+    let set = sets.get(key);
+    if (!set) {
+      set = { setName, modId: p.modId, pieces: {} };
+      sets.set(key, set);
+    }
+    const existing = set.pieces[p.slot];
+    if (existing) {
+      if (existing.armorPoints !== p.armorPoints) {
+        // Same set name + slot, different stats: keep the stronger, warn once.
+        console.warn(
+          `  WARN: ${setName} ${p.slot} stat conflict (${existing.armorPoints} vs ${p.armorPoints}); keeping higher`,
+        );
+        if (p.armorPoints <= existing.armorPoints) continue;
+      } else if (pieceScore(p) <= pieceScore(existing)) {
+        // Identical stats (color/cosmetic variant): keep the canonically-named
+        // piece (e.g. "Mithril Leggings" over "Mithril Skirt").
+        continue;
+      }
+    }
+    set.pieces[p.slot] = p;
+  }
+
+  // Group labels must be unique per set; when two mods share a set name (e.g.
+  // vanilla "Iron" vs Varied Commodities' "Iron Skirt"), suffix the mod so the
+  // palette keeps them apart (vanilla keeps the bare label).
+  const nameCounts = {};
+  for (const set of sets.values()) {
+    nameCounts[set.setName] = (nameCounts[set.setName] ?? 0) + 1;
+  }
+  const modName = (modId) => ARMOR_MOD_NAMES[modId] ?? modId;
+  const groupLabel = (set) =>
+    nameCounts[set.setName] > 1 && set.modId !== 'minecraft'
+      ? `${set.setName} (${modName(set.modId)})`
+      : `${set.setName} Armor`;
+
+  // Vanilla first so it claims the clean ids (iron_helmet, ...) that tests and
+  // shareable URLs rely on; modded ids fall back to a mod-prefixed form on clash.
+  const ordered = [...sets.values()].sort(
+    (a, b) =>
+      (a.modId === 'minecraft' ? 0 : 1) - (b.modId === 'minecraft' ? 0 : 1) ||
+      a.setName.localeCompare(b.setName),
+  );
+
+  const usedIds = new Set();
+  const items = [];
+  for (const set of ordered) {
+    const { setName, modId } = set;
+    const material = SET_MATERIAL[setName] ?? slug(setName);
+    const note = SET_NOTES[setName];
+    for (const slot of ['helmet', 'chestplate', 'leggings', 'boots']) {
+      const p = set.pieces[slot];
+      if (!p) continue;
+      const base =
+        modId === 'minecraft'
+          ? p.registryName.split(':')[1] // iron_helmet, chainmail_leggings, ...
+          : `${SET_ID[setName] ?? slug(setName)}_${slot}`;
+      let id = base;
+      if (usedIds.has(id)) id = `${slug(modId)}_${base}`;
+      for (let n = 2; usedIds.has(id); n++) id = `${base}_${n}`;
+      usedIds.add(id);
+
+      const item = {
+        id,
+        name: stripColorWord(p.displayName),
+        pack: modId === 'minecraft' ? 'vanilla' : 'rlcraft',
+        category: 'armor',
+        slot,
+        group: groupLabel(set),
+        icon: `${slot}:${material}`,
+        armorPoints: p.armorPoints,
+        toughness: round2(p.toughness),
+        registryName: p.registryName,
+        accepts: ['armor', slot, 'any'],
+      };
+      if (modId !== 'minecraft') item.mod = modName(modId);
+      if (note) item.note = note;
+      items.push(item);
+    }
+  }
+  // Stable ordering: by group then slot.
+  const slotOrder = { helmet: 0, chestplate: 1, leggings: 2, boots: 3 };
+  items.sort(
+    (a, b) => a.group.localeCompare(b.group) || slotOrder[a.slot] - slotOrder[b.slot],
+  );
   return items;
 }
 
@@ -330,8 +511,7 @@ const all = [
   ...VANILLA_WEAPONS,
   ...generateSpartanWeapons(),
   ...generateNunchaku(),
-  ...generateArmor(),
-  ...generateModdedArmor(),
+  ...generateArmorFromDump(),
 ];
 
 writeFileSync(OUT, JSON.stringify(all, null, 2) + '\n');

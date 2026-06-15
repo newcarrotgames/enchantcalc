@@ -6,6 +6,7 @@ export type ItemCategory = 'weapon' | 'armor';
 
 export type EquipSlot =
   | 'mainhand'
+  | 'offhand'
   | 'helmet'
   | 'chestplate'
   | 'leggings'
@@ -59,6 +60,9 @@ export interface ItemDef {
   // Armor stats (per piece).
   armorPoints?: number;
   toughness?: number;
+  // Registry id from the in-game dump (e.g. "iceandfire:armor_red_helmet"),
+  // for armor derived from the dump. Used for icon extraction / cross-ref.
+  registryName?: string;
 
   accepts: EnchantTag[];
   note?: string;
@@ -70,6 +74,12 @@ export type EnchantEffectKind =
   | 'percentReduction' // RLCraft custom % reduction per level (capped)
   | 'vanillaProtection' // EPF-based vanilla protection
   | 'dot' // damage over time after a hit (Fire Aspect family, Envenomed)
+  // Bauble-only effect kinds (unused by enchants, but share the EnchantEffect
+  // shape so the engine can consume both; baubles fix the level at 1).
+  | 'damageMultiplier' // scales the weapon's base damage by a fraction (base = +0.15 => +15%)
+  | 'locationalArmor' // adds flat locational armor to the region matching the bauble's slot
+  | 'resistance' // adds Resistance levels (like the potion), 20%/level
+  | 'maxHp' // adds flat max HP (raises effective-HP baseline)
   | 'info'; // listed but not modelled numerically (chance-based, cosmetic)
 
 // Kind of damage-over-time an enchant inflicts on the target after a hit.
@@ -137,3 +147,55 @@ export interface SlotState {
 }
 
 export type BuildState = Record<EquipSlot, SlotState>;
+
+// --- Baubles ---------------------------------------------------------------
+// RLCraft's Baubles mod adds 7 accessory slots. A bauble declares a
+// `baubleType`; a `ring` fits either ring slot, and an `any`-type bauble fits
+// any of the 7 slots. Baubles can't be enchanted, so they have no enchant list.
+export type BaubleSlotType =
+  | 'amulet'
+  | 'ring'
+  | 'belt'
+  | 'head'
+  | 'body'
+  | 'charm'
+  | 'any';
+
+export type BaubleSlot =
+  | 'amulet'
+  | 'ring1'
+  | 'ring2'
+  | 'belt'
+  | 'head'
+  | 'body'
+  | 'charm';
+
+export const BAUBLE_SLOTS: BaubleSlot[] = [
+  'amulet',
+  'ring1',
+  'ring2',
+  'belt',
+  'head',
+  'body',
+  'charm',
+];
+
+export interface BaubleDef {
+  id: string;
+  name: string;
+  pack: Pack;
+  mod?: string;
+  // Registry id from the in-game dump (e.g. "bountifulbaubles:amuletsinwrath").
+  // Used for icon extraction and cross-referencing against the dump.
+  registryName: string;
+  baubleType: BaubleSlotType;
+  icon: string;
+  group?: string;
+  // A bauble may grant several effects at once; [] = pure-info (searchable only).
+  effects: EnchantEffect[];
+  description: string;
+  source: string;
+}
+
+// Equipped bauble id per slot (null = empty). Baubles carry no enchants.
+export type BaubleState = Record<BaubleSlot, string | null>;
