@@ -32,6 +32,30 @@ const REGIONS: Region[] = [
 ];
 const TOTAL_WEIGHT = REGIONS.reduce((n, r) => n + r.weight, 0); // 8
 
+// The locational armor/toughness a single armor piece grants its region, as
+// shown in the in-game First Aid tooltip ("When on head: +23 Locational Armor,
+// +2 Locational Armor Toughness"). Uses the same firstaid.cfg multipliers as
+// the combat math above, so the two never drift apart.
+export interface LocationalArmor {
+  region: string; // 'head' | 'body' | 'legs' | 'feet'
+  armor: number;
+  toughness: number;
+}
+
+export function locationalArmorForSlot(
+  slot: EquipSlot,
+  armorPoints: number,
+  toughness: number,
+): LocationalArmor | null {
+  const region = REGIONS.find((r) => r.slot === slot);
+  if (!region) return null;
+  return {
+    region: region.key,
+    armor: round1(armorPoints * region.armorMult + region.armorOffset),
+    toughness: round1(toughness * region.toughMult + region.toughOffset),
+  };
+}
+
 // First Aid LOCAL_ENCHANTMENTS mode scales a single piece's vanilla protection
 // enchant so it matches vanilla's 4-piece balance. Default x4, with per-enchant
 // overrides from firstaid.cfg (enchantmenthandling.overrideentries).

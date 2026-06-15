@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useDroppable } from '@dnd-kit/core';
-import type { BaubleSlot, EquipSlot } from '../types';
+import type { BaubleSlot, EquipSlot, ItemDef } from '../types';
 import { ARMOR_SLOTS } from '../types';
 import { getBauble, getEnchant, getItem } from '../data/catalog';
+import { locationalArmorForSlot } from '../engine';
 import { useBuildStore } from '../store/buildStore';
 import { ItemIcon } from './icons';
 import { Tooltip } from './MCTooltip';
@@ -291,6 +292,34 @@ function EnchantChips({ slot }: { slot: EquipSlot }) {
   );
 }
 
+// Mirrors the in-game First Aid armor tooltip: armor pieces report the
+// "When on <region>:" locational block (the values the game actually shows),
+// not the raw vanilla armor points (which never appear in-game).
+function ArmorTooltipStats({ item }: { item: ItemDef }) {
+  const loc = locationalArmorForSlot(
+    item.slot,
+    item.armorPoints ?? 0,
+    item.toughness ?? 0,
+  );
+  if (!loc) {
+    return (
+      <>
+        <div className="tt-yellow">{item.armorPoints} Armor</div>
+        <div className="tt-yellow">{item.toughness} Toughness</div>
+      </>
+    );
+  }
+  return (
+    <>
+      <div className="tt-blue">When on {loc.region}:</div>
+      {loc.toughness > 0 && (
+        <div className="tt-blue tt-indent">+{loc.toughness} Locational Armor Toughness</div>
+      )}
+      <div className="tt-blue tt-indent">+{loc.armor} Locational Armor</div>
+    </>
+  );
+}
+
 export function ItemTooltip({ itemId }: { itemId: string }) {
   const item = getItem(itemId);
   if (!item) return null;
@@ -306,10 +335,7 @@ export function ItemTooltip({ itemId }: { itemId: string }) {
           {item.unarmoredNote && <div className="tt-gray">{item.unarmoredNote}</div>}
         </>
       ) : (
-        <>
-          <div className="tt-yellow">{item.armorPoints} Armor</div>
-          <div className="tt-yellow">{item.toughness} Toughness</div>
-        </>
+        <ArmorTooltipStats item={item} />
       )}
       {item.note && <div className="tt-gray">{item.note}</div>}
     </div>

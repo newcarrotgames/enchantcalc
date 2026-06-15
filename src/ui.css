@@ -512,6 +512,12 @@
 .mc-tooltip .tt-red {
   color: var(--mc-red);
 }
+.mc-tooltip .tt-blue {
+  color: var(--mc-blue);
+}
+.mc-tooltip .tt-indent {
+  padding-left: 10px;
+}
 
 /* Drag overlay item */
 .drag-overlay {
