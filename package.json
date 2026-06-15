@@ -15,14 +15,14 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "skinview3d": "^3.4.2",
-    "three": "^0.184.0",
+    "three": "^0.156.1",
     "zustand": "^4.5.5"
   },
   "devDependencies": {
     "@types/node": "^22.19.19",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "@types/three": "^0.184.1",
+    "@types/three": "^0.156.0",
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "~5.6.3",
     "vite": "^6.0.7",

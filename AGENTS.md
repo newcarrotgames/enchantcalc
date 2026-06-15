@@ -13,9 +13,15 @@ damage reduction. Pure, unit-tested calculation engine; everything ships static.
 - Stack: React 18 + TypeScript + Vite, `@dnd-kit` (drag/drop), `zustand` (state),
   `three` + `skinview3d` (the 3D center character), Vitest (tests). Node v20.18.2 -
   toolchain versions are pinned in `package.json` for this Node; do not bump blindly.
-  Note: `skinview3d` bundles its own (older) `@types/three`, which clashes with the
-  root `@types/three` at the `Object3D.add` boundary - `CharacterModel.tsx` bridges
-  the two copies with a small structural `Addable` cast rather than `any`.
+  Note: `skinview3d` 3.4.2 is built against `three` 0.156, so the root `three` and
+  `@types/three` are pinned to `^0.156` to match it, and `vite.config.ts` sets
+  `resolve.dedupe: ['three']` so there is exactly one `three` instance. This is
+  load-bearing: `skinview3d` renders the scene, so if `CharacterModel.tsx`'s overlay
+  meshes come from a different `three` version, the renderer chokes on the foreign
+  material (e.g. `material.onBuild is not a function`, which crashed the 3D view on
+  the first armor equip). With a single instance the overlays parent directly onto
+  the player body parts (no cast needed). Do NOT bump root `three` ahead of what
+  `skinview3d` supports.
 - `base: './'` so `dist/` deploys to any static host.
 
 ## Commands

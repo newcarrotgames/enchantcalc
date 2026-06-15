@@ -94,35 +94,32 @@ function makeOverlay(
   return mesh;
 }
 
-// skinview3d bundles its own (older) @types/three, so its Object3D.add is typed
-// against a different three than ours. Parent our meshes through this minimal
-// structural type to bridge the two copies without `any`.
-type Addable = { add: (object: object) => void };
-
 // Build the region overlays and parent them to the matching body parts so they
-// track the idle animation.
+// track the idle animation. The app and skinview3d share a single `three`
+// instance (deduped in vite.config.ts), so our meshes are the same type as the
+// player object's body parts and can be parented directly.
 function buildOverlays(player: PlayerObject): OverlayMap {
   const s = player.skin;
 
   const head = makeOverlay([9.2, 9.2, 9.2], [0, 4, 0], REGION_COLOR.helmet);
-  (s.head as unknown as Addable).add(head);
+  s.head.add(head);
 
   const body = makeOverlay([9, 13, 5], [0, 0, 0], REGION_COLOR.chestplate);
   const rArm = makeOverlay([5, 13, 5], [0, -4, 0], REGION_COLOR.chestplate);
   const lArm = makeOverlay([5, 13, 5], [0, -4, 0], REGION_COLOR.chestplate);
-  (s.body as unknown as Addable).add(body);
-  (s.rightArm as unknown as Addable).add(rArm);
-  (s.leftArm as unknown as Addable).add(lArm);
+  s.body.add(body);
+  s.rightArm.add(rArm);
+  s.leftArm.add(lArm);
 
   const rLegU = makeOverlay([5, 7, 5], [0, -3, 0], REGION_COLOR.leggings);
   const lLegU = makeOverlay([5, 7, 5], [0, -3, 0], REGION_COLOR.leggings);
-  (s.rightLeg as unknown as Addable).add(rLegU);
-  (s.leftLeg as unknown as Addable).add(lLegU);
+  s.rightLeg.add(rLegU);
+  s.leftLeg.add(lLegU);
 
   const rLegL = makeOverlay([5.2, 5, 5.2], [0, -9, 0], REGION_COLOR.boots);
   const lLegL = makeOverlay([5.2, 5, 5.2], [0, -9, 0], REGION_COLOR.boots);
-  (s.rightLeg as unknown as Addable).add(rLegL);
-  (s.leftLeg as unknown as Addable).add(lLegL);
+  s.rightLeg.add(rLegL);
+  s.leftLeg.add(lLegL);
 
   return {
     helmet: [head],
